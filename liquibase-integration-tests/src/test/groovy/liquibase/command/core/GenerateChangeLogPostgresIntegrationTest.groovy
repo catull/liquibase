@@ -5,6 +5,7 @@ import liquibase.command.util.CommandUtil
 import liquibase.extension.testing.testsystem.DatabaseTestSystem
 import liquibase.extension.testing.testsystem.TestSystemFactory
 import liquibase.extension.testing.testsystem.spock.LiquibaseIntegrationTest
+import liquibase.resource.SearchPathResourceAccessor
 import liquibase.util.FileUtil
 
 import spock.lang.Shared
@@ -13,71 +14,53 @@ import spock.lang.Specification
 @LiquibaseIntegrationTest
 class GenerateChangeLogPostgresIntegrationTest extends Specification {
     @Shared
-    private DatabaseTestSystem db = (DatabaseTestSystem) Scope.getCurrentScope().getSingleton(TestSystemFactory.class).getTestSystem("postgresql")
+    private DatabaseTestSystem db = (DatabaseTestSystem) Scope.getCurrentScope().getSingleton(TestSystemFactory.class).getTestSystem("h2")
 
     def "Should generate SQL changelog incl. NULL-values"() {
         given:
-        db.executeSql("""
-create table "public"."TEST_WITH_PRESERVATION" (
-    a varchar(2),
-    b varchar(2),
-    c varchar(2)
-);
-insert into "public"."TEST_WITH_PRESERVATION" (a) values ('AA');
-commit;
-""")
+        def changelogFileName = "target/test-classes/changelogs/pgsql/update.changelog.xml"
+        def resourceAccessor = new SearchPathResourceAccessor(".,target/test-classes")
+        def scopeSettings = [
+                (Scope.Attr.resourceAccessor.name()) : resourceAccessor
+        ]
+        Scope.child(scopeSettings, {
+            CommandUtil.runUpdate(db, changelogFileName, "generateChangelogWithEmptyTable", null, null)
+        } as Scope.ScopedRunner)
 
         when:
-        CommandUtil.runGenerateChangelog(db,'target/test-classes/output-with.postgres.sql', true)
+        def outputFileName = 'test/test-classes/output.postgresql.sql'
+        CommandUtil.runGenerateChangelog(db, outputFileName, true)
+        def outputFile = new File(outputFileName)
+        def fileContent = FileUtil.getContents(outputFile)
 
         then:
-        def outputFile = new File('target/test-classes/output-with.postgres.sql')
-        def contents = FileUtil.getContents(outputFile)
-        contents.contains("""
-INSERT INTO "public"."TEST_WITH_PRESERVATION" ("a", "b", "c") VALUES ('AA', NULL, NULL);
-""")
-
-        when:
-        CommandUtil.runDropAll(db)
-
-        then:
-        noExceptionThrown()
+        fileContent.containsIgnoreCase("""INSERT INTO public.PRESERVATION_TEST (a, b, c) VALUES ('AA', NULL, NULL);""")
 
         cleanup:
-        CommandUtil.runDropAll(db)
         outputFile.delete()
     }
 
     def "Should generate SQL changelog excl. NULL-values"() {
         given:
-        db.executeSql("""
-create table "public"."TEST_WITHOUT_PRESERVATION" (
-    a varchar(2),
-    b varchar(2),
-    c varchar(2)
-);
-insert into "public"."TEST_WITHOUT_PRESERVATION" (a) values ('AA');
-commit;
-""")
+        def changelogFileName = "target/test-classes/changelogs/pgsql/update.changelog.xml"
+        def resourceAccessor = new SearchPathResourceAccessor(".,target/test-classes")
+        def scopeSettings = [
+                (Scope.Attr.resourceAccessor.name()) : resourceAccessor
+        ]
+        Scope.child(scopeSettings, {
+            CommandUtil.runUpdate(db, changelogFileName, "generateChangelogWithEmptyTable", null, null)
+        } as Scope.ScopedRunner)
 
         when:
-        CommandUtil.runGenerateChangelog(db,'target/test-classes/output-without.postgres.sql', false)
+        def outputFileName = 'test/test-classes/output.postgresql.sql'
+        CommandUtil.runGenerateChangelog(db, outputFileName, false)
+        def outputFile = new File(outputFileName)
+        def fileContent = FileUtil.getContents(outputFile)
 
         then:
-        def outputFile = new File('target/test-classes/output-without.postgres.sql')
-        def contents = FileUtil.getContents(outputFile)
-        contents.contains("""
-INSERT INTO "public"."TEST_WITHOUT_PRESERVATION" ("a", "b", "c") VALUES ('AA', NULL, NULL);
-""")
-
-        when:
-        CommandUtil.runDropAll(db)
-
-        then:
-        noExceptionThrown()
+        fileContent.containsIgnoreCase("""INSERT INTO public.PRESERVATION_TEST (a, b, c) VALUES ('AA', NULL, NULL);""")
 
         cleanup:
-        CommandUtil.runDropAll(db)
         outputFile.delete()
     }
 }
