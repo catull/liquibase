@@ -14,7 +14,7 @@ import spock.lang.Specification
 @LiquibaseIntegrationTest
 class GenerateChangeLogPostgresIntegrationTest extends Specification {
     @Shared
-    private DatabaseTestSystem db = (DatabaseTestSystem) Scope.getCurrentScope().getSingleton(TestSystemFactory.class).getTestSystem("h2")
+    private DatabaseTestSystem db = (DatabaseTestSystem) Scope.getCurrentScope().getSingleton(TestSystemFactory.class).getTestSystem("postgresql")
 
     def "Should generate SQL changelog incl. NULL-values"() {
         given:
