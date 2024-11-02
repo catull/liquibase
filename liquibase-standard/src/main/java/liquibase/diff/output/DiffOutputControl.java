@@ -32,7 +32,7 @@ public class DiffOutputControl {
     @Setter
     private boolean isReplaceIfExistsSet = false;
 
-    private boolean preserveNullValues;
+    private boolean preserveNullValues = true;
 
     private CompareControl.SchemaComparison[] schemaComparisons;
 

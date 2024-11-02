@@ -36,7 +36,7 @@ public class DiffOutputControlCommandStep extends AbstractHelperCommandStep {
 
         DIFF_OUTPUT_CONTROL = builder.result("diffOutputControl", DiffOutputControl.class).build();
 
-        PRESERVE_NULL_VALUES = builder.argument("preserverNullValues", Boolean.class).defaultValue(true)
+        PRESERVE_NULL_VALUES = builder.argument("preserveNullValues", Boolean.class).defaultValue(true)
                 .description("If true, preserves NULL values in columns. Defaults to true.").build();
     }
 

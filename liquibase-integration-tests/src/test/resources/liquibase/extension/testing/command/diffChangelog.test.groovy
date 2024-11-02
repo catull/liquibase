@@ -54,7 +54,7 @@ Optional Args:
   password (String) Password to use to connect to the database
     Default: null
     OBFUSCATED
-  preserverNullValues (Boolean) If true, preserves NULL values in columns. Defaults to true.
+  preserveNullValues (Boolean) If true, preserves NULL values in columns. Defaults to true.
     Default: true
   referenceDefaultCatalogName (String) The default catalog name to use for the reference database connection
     Default: null

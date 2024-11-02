@@ -92,7 +92,6 @@ class CommandUtil {
         commandScope.execute()
     }
 
-
     static void runGenerateChangelog(DatabaseTestSystem db, String outputFile, boolean preserveNullValues) throws CommandExecutionException {
         CommandScope commandScope = new CommandScope(GenerateChangelogCommandStep.COMMAND_NAME)
         commandScope.addArgumentValue(DbUrlConnectionArgumentsCommandStep.URL_ARG, db.getConnectionUrl())

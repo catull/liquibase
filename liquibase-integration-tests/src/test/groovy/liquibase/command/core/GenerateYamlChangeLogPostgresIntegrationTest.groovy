@@ -7,16 +7,15 @@ import liquibase.extension.testing.testsystem.TestSystemFactory
 import liquibase.extension.testing.testsystem.spock.LiquibaseIntegrationTest
 import liquibase.resource.SearchPathResourceAccessor
 import liquibase.util.FileUtil
-
 import spock.lang.Shared
 import spock.lang.Specification
 
 @LiquibaseIntegrationTest
-class GenerateChangeLogPostgresIntegrationTest extends Specification {
+class GenerateYamlChangeLogPostgresIntegrationTest extends Specification {
     @Shared
     private DatabaseTestSystem db = (DatabaseTestSystem) Scope.getCurrentScope().getSingleton(TestSystemFactory.class).getTestSystem("postgresql")
 
-    def "Should generate SQL changelog incl. NULL-values"() {
+    def "Should generate YAML changelog incl. NULL-values"() {
         given:
         def changelogFileName = "target/test-classes/changelogs/pgsql/update.changelog.xml"
         def resourceAccessor = new SearchPathResourceAccessor(".,target/test-classes")
@@ -28,19 +27,32 @@ class GenerateChangeLogPostgresIntegrationTest extends Specification {
         } as Scope.ScopedRunner)
 
         when:
-        def outputFileName = 'test/test-classes/output.postgresql.sql'
+        def outputFileName = 'test/test-classes/output.postgresql.yaml'
         CommandUtil.runGenerateChangelog(db, outputFileName, true)
         def outputFile = new File(outputFileName)
         def fileContent = FileUtil.getContents(outputFile)
 
         then:
-        fileContent.containsIgnoreCase("""INSERT INTO public.PRESERVATION_TEST (a, b, c) VALUES ('AA', NULL, NULL);""")
+        fileContent.contains("""
+    changes:
+    - insert:
+        columns:
+        - column:
+            name: a
+            value: AA
+        - column:
+            name: b
+        - column:
+            name: c
+        schemaName: public
+        tableName: preservation_test
+""")
 
         cleanup:
         outputFile.delete()
     }
 
-    def "Should generate SQL changelog excl. NULL-values"() {
+    def "Should generate YAML changelog excl. NULL-values"() {
         given:
         def changelogFileName = "target/test-classes/changelogs/pgsql/update.changelog.xml"
         def resourceAccessor = new SearchPathResourceAccessor(".,target/test-classes")
@@ -52,13 +64,28 @@ class GenerateChangeLogPostgresIntegrationTest extends Specification {
         } as Scope.ScopedRunner)
 
         when:
-        def outputFileName = 'test/test-classes/output.postgresql.sql'
+        def outputFileName = 'test/test-classes/output.postgresql.yaml'
         CommandUtil.runGenerateChangelog(db, outputFileName, false)
         def outputFile = new File(outputFileName)
         def fileContent = FileUtil.getContents(outputFile)
 
         then:
-        fileContent.containsIgnoreCase("""INSERT INTO public.PRESERVATION_TEST (a, b, c) VALUES ('AA', NULL, NULL);""")
+        fileContent.contains("""
+    changes:
+    - insert:
+        columns:
+        - column:
+            name: a
+            value: AA
+        schemaName: public
+        tableName: preservation_test
+""")
+        !fileContent.contains("""
+        - column:
+            name: b
+        - column:
+            name: c
+""")
 
         cleanup:
         outputFile.delete()

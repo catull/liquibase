@@ -58,7 +58,7 @@ Optional Args:
   password (String) Password to use to connect to the database
     Default: null
     OBFUSCATED
-  preserverNullValues (Boolean) If true, preserves NULL values in columns. Defaults to true.
+  preserveNullValues (Boolean) If true, preserves NULL values in columns. Defaults to true.
     Default: true
   replaceIfExistsTypes (String) Sets replaceIfExists="true" for changes of these types (supported types: createProcedure, createView)
     Default: none
