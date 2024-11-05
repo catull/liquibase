@@ -29,13 +29,18 @@ public class InsertGenerator extends AbstractSqlGenerator<InsertStatement> {
     public Sql[] generateSql(InsertStatement statement, Database database, SqlGeneratorChain sqlGeneratorChain) {
        
         StringBuilder sql = new StringBuilder();
-        
+        if (statement.getPrologue() != null) {
+            sql.append(statement.getPrologue());
+        }
         if(!previousInsertHasHeader) {
         	generateHeader(sql,statement,database);
         } else {
             sql.append(",");        	
         }
         generateValues(sql,statement,database);
+        if (statement.getEpilogue() != null) {
+            sql.append(statement.getEpilogue());
+        }
 
         return new Sql[] {
                 new UnparsedSql(sql.toString(), getAffectedTable(statement))

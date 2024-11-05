@@ -21,7 +21,9 @@ public class OracleTestSystem extends DatabaseTestSystem {
     @Override
     protected @NotNull DatabaseWrapper createContainerWrapper() {
         return new DockerDatabaseWrapper(
-                new OracleContainer(DockerImageName.parse(getImageName()).withTag(getVersion()))
+                new OracleContainer(DockerImageName.parse(getImageName())
+                        .asCompatibleSubstituteFor("gvenzl/oracle-xe")
+                        .withTag(getVersion()))
                         .withUsername(getUsername())
                         .withPassword(getPassword())
                         .withDatabaseName(getCatalog()),

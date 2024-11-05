@@ -3,6 +3,7 @@ package liquibase.database.core;
 import liquibase.CatalogAndSchema;
 import liquibase.GlobalConfiguration;
 import liquibase.Scope;
+import liquibase.change.ColumnConfig;
 import liquibase.database.AbstractJdbcDatabase;
 import liquibase.database.DatabaseConnection;
 import liquibase.database.OfflineConnection;
@@ -17,14 +18,36 @@ import liquibase.statement.SequenceNextValueFunction;
 import liquibase.statement.core.RawCallStatement;
 import liquibase.statement.core.RawParameterizedSqlStatement;
 import liquibase.structure.DatabaseObject;
-import liquibase.structure.core.*;
+import liquibase.structure.core.Catalog;
+import liquibase.structure.core.Column;
+import liquibase.structure.core.Index;
+import liquibase.structure.core.PrimaryKey;
+import liquibase.structure.core.Schema;
 import liquibase.util.JdbcUtil;
 import liquibase.util.StringUtil;
+
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Method;
-import java.sql.*;
-import java.util.*;
+import java.sql.Blob;
+import java.sql.CallableStatement;
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Types;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Properties;
+import java.util.ResourceBundle;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -642,7 +665,7 @@ public class OracleDatabase extends AbstractJdbcDatabase {
      * The maximum length of an identifier differs by Oracle version and object type.
      */
     public boolean isValidOracleIdentifier(String identifier, Class<? extends DatabaseObject> type) {
-        if ((identifier == null) || (identifier.length() < 1))
+        if ((identifier == null) || (identifier.isEmpty()))
             return false;
 
         if (!identifier.matches("^(i?)[A-Z][A-Z0-9\\$\\_\\#]*$"))
@@ -674,7 +697,6 @@ public class OracleDatabase extends AbstractJdbcDatabase {
         } catch (DatabaseException ex) {
             throw new UnexpectedLiquibaseException("Cannot determine the Oracle database version number", ex);
         }
-
     }
 
     @Override
@@ -689,5 +711,70 @@ public class OracleDatabase extends AbstractJdbcDatabase {
             return "NUMBER(*, 0)";
         }
         return super.correctObjectName(objectName, objectType);
+    }
+
+    @Override
+    public void setColumnValue (final ColumnConfig column, final byte[] value) {
+        try {
+            column.setValue(new String(value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
+        }
+        catch (UnsupportedEncodingException ignored) {}
+    }
+
+    @Override
+    public void setColumnValue (final ColumnConfig column, final Blob blob) {
+        try {
+            int length = (int) blob.length();
+            // Single-quote characters must be escaped.
+            String value = new String(blob.getBytes(1, length)).replace("'", "''");
+            length = value.length();
+            if (this.literalStringMaxLength >= length) {
+                column.setValue("TO_BLOB (HEXTORAW (RAWTOHEX('" + value + "')))");
+                return;
+            }
+            String[] chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
+            column.setValue("EMPTY_BLOB()");
+            StringBuilder sb = new StringBuilder("declare\n")
+                    .append("  TYPE t_chunks IS table OF varchar2(").append(this.literalStringMaxLength).append(");\n")
+                    .append("  v_blob blob;\n\n")
+                    .append("  v_chunks t_chunks := t_chunks(\n  '")
+                    .append(String.join("',\n  '", chunks))
+                    .append("'\n  );\n\n")
+                    .append("  procedure writeBlobChunk (p_data in varchar2) IS\n")
+                    .append("    chnk RAW(32767) := UTL_RAW.cast_to_raw (p_data);\n")
+                    .append("  begin\n")
+                    .append("    DBMS_LOB.writeappend (v_blob, UTL_RAW.length (chnk), chnk);\n")
+                    .append("  end;\n\n")
+                    .append("begin\n  ");
+
+            column.setPrologue(sb.toString());
+
+            sb = new StringBuilder("\n")
+                .append("  returning RESOURCE_BYTES_ into v_blob;\n\n")
+                .append("  for i in v_chunks.first .. v_chunks.last loop\n")
+                .append("    writeBlobChunk (v_chunks (i));\n")
+                .append("  end loop;\n")
+                .append("end;");
+            column.setEpilogue(sb.toString());
+        } catch (SQLException e) {
+            throw new UnexpectedLiquibaseException("Cannot convert Blob", e);
+        }
+    }
+
+    @Override
+    public void setColumnValue (final ColumnConfig column, final Clob clob) {
+        try {
+            int length = (int) clob.length();
+            // Single-quote characters must be escaped.
+            String value = clob.getSubString(1, length).replace("'", "''");
+            // ORACLE TO_CLOB accepts literal strings NOT exceeding 4000 characters in length.
+            // Thus, we have to concatenate chunks of up to 4'000 characters.
+            // There's a configuration value for that: GlobalConfiguration#.LITERAL_STRING_MAX_LENGTH:
+            String[] chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
+            value = "TO_CLOB ('" + StringUtil.join(chunks, "') || TO_CLOB ('", Object::toString) + "')";
+            column.setValue(value);
+        } catch (SQLException e) {
+            throw new UnexpectedLiquibaseException("Cannot convert Clob", e);
+        }
     }
 }

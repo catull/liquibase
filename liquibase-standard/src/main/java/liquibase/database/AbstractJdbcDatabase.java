@@ -110,6 +110,8 @@ public abstract class AbstractJdbcDatabase implements Database {
 
     private boolean defaultCatalogSet;
 
+    protected int literalStringMaxLength;
+
     private final Map<String, Object> attributes = new HashMap<>();
 
     public String getName() {
@@ -1571,5 +1573,15 @@ public abstract class AbstractJdbcDatabase implements Database {
     @Override
     public CatalogAndSchema.CatalogAndSchemaCase getSchemaAndCatalogCase() {
         return CatalogAndSchema.CatalogAndSchemaCase.UPPER_CASE;
+    }
+
+    @Override
+    public int getLiteralStringMaxLength() {
+        return literalStringMaxLength;
+    }
+
+    @Override
+    public void setLiteralStringMaxLength(int literalStringMaxLength) {
+        this.literalStringMaxLength = literalStringMaxLength;
     }
 }

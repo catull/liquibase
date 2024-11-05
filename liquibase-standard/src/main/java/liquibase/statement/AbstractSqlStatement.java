@@ -1,9 +1,19 @@
 package liquibase.statement;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public abstract class AbstractSqlStatement implements SqlStatement {
 
     private boolean continueOnError;
 
+    @Getter
+    @Setter
+    protected String prologue;
+
+    @Getter
+    @Setter
+    protected String epilogue;
 
     @Override
     public boolean skipOnUnsupported() {

@@ -269,6 +269,14 @@ Global Options
                                liquibaseTablespaceName', environment variable:
                                'LIQUIBASE_LIQUIBASE_TABLESPACE_NAME')
 
+      --literal-string-max-length=PARAM
+                             Length of literal strings that can be used for
+                               assignments of constant strings.
+                             DEFAULT: -1
+                             (defaults file: 'liquibase.
+                               literalStringMaxLength', environment variable:
+                               'LIQUIBASE_LITERAL_STRING_MAX_LENGTH')
+
       --log-channels=PARAM   DEFAULT: Controls which log channels have their
                                level set by the liquibase.logLevel setting.
                                Comma separate multiple values. To set the level

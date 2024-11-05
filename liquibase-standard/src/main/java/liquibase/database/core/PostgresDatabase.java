@@ -3,6 +3,7 @@ package liquibase.database.core;
 import liquibase.CatalogAndSchema;
 import liquibase.GlobalConfiguration;
 import liquibase.Scope;
+import liquibase.change.ColumnConfig;
 import liquibase.changelog.column.LiquibaseColumn;
 import liquibase.database.AbstractJdbcDatabase;
 import liquibase.database.DatabaseConnection;
@@ -21,6 +22,7 @@ import liquibase.util.JdbcUtil;
 import liquibase.util.StringUtil;
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.sql.ResultSet;
@@ -319,10 +321,10 @@ public class PostgresDatabase extends AbstractJdbcDatabase {
 
     /*
      * Check if given string has case problems according to postgresql documentation.
-     * If there are at least one characters with upper case while all other are in lower case (or vice versa) this
+     * If there are at least one character with upper case while all others are in lower case (or vice versa) this
      * string should be escaped.
      *
-     * Note: This may make postgres support more case sensitive than normally is, but needs to be left in for backwards
+     * Note: This may make postgres support more case-sensitive than normally is, but needs to be left in for backwards
      * compatibility.
      * Method is public so a subclass extension can override it to always return false.
      */
@@ -417,7 +419,7 @@ public class PostgresDatabase extends AbstractJdbcDatabase {
 
     @Override
     public void setDefaultCatalogName(String defaultCatalogName) {
-        if (StringUtil.isNotEmpty(defaultCatalogName)) {
+        if (StringUtils.isNotEmpty(defaultCatalogName)) {
             Scope.getCurrentScope().getUI().sendMessage("WARNING: Postgres does not support catalogs, so the values set in 'defaultCatalogName' and 'referenceDefaultCatalogName' will be ignored.");
         }
         super.setDefaultCatalogName(defaultCatalogName);
@@ -431,5 +433,13 @@ public class PostgresDatabase extends AbstractJdbcDatabase {
     @Override
     public boolean supportsDatabaseChangeLogHistory() {
         return true;
+    }
+
+    @Override
+    public void setColumnValue (ColumnConfig column, byte[] value) {
+        try {
+            column.setValue(new String(value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
+        }
+        catch (UnsupportedEncodingException ignored) {}
     }
 }

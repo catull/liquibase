@@ -76,38 +76,47 @@ public abstract class JdbcUtil {
      * @see java.sql.Timestamp
      */
     public static Object getResultSetValue(ResultSet rs, int index) throws SQLException {
-        Object obj = null;
+        Object obj;
+
         try {
             obj = rs.getObject(index);
         } catch (SQLException e) {
             if ("The conversion from char to SMALLINT is unsupported.".equals(e.getMessage())) {
                 //issue with sqlserver jdbc 3.0 http://social.msdn.microsoft.com/Forums/sqlserver/en-US/2c908b45-6f75-484a-a891-5e8206f8844f/conversion-error-in-the-jdbc-30-driver-when-accessing-metadata
-                obj = rs.getString(index);
+                return rs.getString(index);
             } else {
                 throw e;
             }
         }
-        if (obj instanceof Blob) {
-            obj = rs.getBytes(index);
-        } else if (obj instanceof Clob) {
-            obj = rs.getString(index);
-        } else if ((obj != null) && obj.getClass().getName().startsWith("oracle.sql.TIMESTAMP")) {
-            obj = rs.getTimestamp(index);
-        } else if ((obj != null) && obj.getClass().getName().startsWith("oracle.sql.DATE")) {
-            String metaDataClassName = rs.getMetaData().getColumnClassName(index);
-            if ("java.sql.Timestamp".equals(metaDataClassName) ||
-                    "oracle.sql.TIMESTAMP".equals(metaDataClassName)) {
-                obj = rs.getTimestamp(index);
-            } else {
-                obj = rs.getDate(index);
-            }
-        } else if ((obj instanceof Date)) {
-            if ("java.sql.Timestamp".equals(rs.getMetaData().getColumnClassName(index))) {
-                obj = rs.getTimestamp(index);
-            }
-        } else if (obj instanceof SQLXML) {
-            obj = rs.getSQLXML(index).getString();
+
+        if (obj == null) {
+            return null;
         }
+        if (obj instanceof Blob) {
+            return obj;
+        }
+        if (obj instanceof Clob) {
+            return obj;
+        }
+        if (obj instanceof SQLXML) {
+            return obj;
+        }
+
+        if (obj.getClass().getName().startsWith("oracle.sql.TIMESTAMP")) {
+            return rs.getTimestamp(index);
+        }
+        String metaDataClassName = rs.getMetaData().getColumnClassName(index);
+        if (obj.getClass().getName().startsWith("oracle.sql.DATE")) {
+            if ("java.sql.Timestamp".equals(metaDataClassName) ||
+                "oracle.sql.TIMESTAMP".equals(metaDataClassName)) {
+                return rs.getTimestamp(index);
+            } else {
+                return rs.getDate(index);
+            }
+        } else if ((obj instanceof Date) && ("java.sql.Timestamp".equals(metaDataClassName))) {
+            return rs.getTimestamp(index);
+        }
+
         return obj;
     }
 

@@ -32,6 +32,12 @@ public class InsertDataChange extends AbstractChange implements ChangeWithColumn
     private List<ColumnConfig> columns;
     private String dbms;
 
+    @Setter
+    private String prologue;
+
+    @Setter
+    private String epilogue;
+
     public InsertDataChange() {
         columns = new ArrayList<>();
     }
@@ -108,6 +114,12 @@ public class InsertDataChange extends AbstractChange implements ChangeWithColumn
                     }
                 }
             }
+            if (column.getPrologue() != null) {
+                this.prologue = column.getPrologue();
+            }
+            if (column.getEpilogue() != null) {
+                this.epilogue = column.getEpilogue();
+            }
         }
 
         if (needsPreparedStatement) {
@@ -116,8 +128,9 @@ public class InsertDataChange extends AbstractChange implements ChangeWithColumn
             };
         }
 
-
         InsertStatement statement = new InsertStatement(getCatalogName(), getSchemaName(), getTableName());
+        statement.setPrologue (this.prologue);
+        statement.setEpilogue (this.epilogue);
 
         for (ColumnConfig column : columns) {
 
