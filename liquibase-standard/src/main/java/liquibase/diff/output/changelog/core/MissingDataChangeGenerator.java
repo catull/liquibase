@@ -87,10 +87,15 @@ public class MissingDataChangeGenerator extends AbstractChangeGenerator implemen
 
                 // loop over all columns for this row
                 for (int i = 0; i < columnNames.size(); i++) {
+                    Object value = JdbcUtil.getResultSetValue(rs, i + 1);
+
+                    if (null == value) {
+                        continue;
+                    }
+
                     ColumnConfig column = new ColumnConfig();
                     column.setName(columnNames.get(i));
 
-                    Object value = JdbcUtil.getResultSetValue(rs, i + 1);
                     if (value == null) {
                         column.setValue(null);
                     } else if (value instanceof Number) {

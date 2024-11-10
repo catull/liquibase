@@ -725,36 +725,37 @@ public class OracleDatabase extends AbstractJdbcDatabase {
     public void setColumnValue (final ColumnConfig column, final Blob blob) {
         try {
             int length = (int) blob.length();
-            // Single-quote characters must be escaped.
-            String value = new String(blob.getBytes(1, length)).replace("'", "''");
-            length = value.length();
-            if (this.literalStringMaxLength >= length) {
-                column.setValue("TO_BLOB (HEXTORAW (RAWTOHEX('" + value + "')))");
-                return;
+            byte[] bytes = blob.getBytes(1, length);
+            StringBuilder sb = new StringBuilder(bytes.length * 2);
+
+            for (byte b: bytes) {
+                sb.append(String.format("%02X", b));
             }
-            String[] chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
+
+            String value = sb.toString();
+            List<String> chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
             column.setValue("EMPTY_BLOB()");
-            StringBuilder sb = new StringBuilder("declare\n")
+            sb = new StringBuilder("declare\n")
                     .append("  TYPE t_chunks IS table OF varchar2(").append(this.literalStringMaxLength).append(");\n")
                     .append("  v_blob blob;\n\n")
-                    .append("  v_chunks t_chunks := t_chunks(\n  '")
-                    .append(String.join("',\n  '", chunks))
-                    .append("'\n  );\n\n")
+                    .append("  v_chunks t_chunks := t_chunks (\n    HEXTORAW ('")
+                    .append(String.join("'),\n    HEXTORAW ('", chunks))
+                    .append("')\n  );\n\n")
                     .append("  procedure writeBlobChunk (p_data in varchar2) IS\n")
                     .append("    chnk RAW(32767) := UTL_RAW.cast_to_raw (p_data);\n")
                     .append("  begin\n")
-                    .append("    DBMS_LOB.writeappend (v_blob, UTL_RAW.length (chnk), chnk);\n")
+                    .append("    DBMS_LOB.writeAppend (v_blob, UTL_RAW.length (chnk), chnk);\n")
                     .append("  end;\n\n")
                     .append("begin\n  ");
 
             column.setPrologue(sb.toString());
 
             sb = new StringBuilder("\n")
-                .append("  returning RESOURCE_BYTES_ into v_blob;\n\n")
+                .append("  returning ").append(column.getName()).append(" into v_blob;\n\n")
                 .append("  for i in v_chunks.first .. v_chunks.last loop\n")
                 .append("    writeBlobChunk (v_chunks (i));\n")
                 .append("  end loop;\n")
-                .append("end;");
+                .append("end;\n/");
             column.setEpilogue(sb.toString());
         } catch (SQLException e) {
             throw new UnexpectedLiquibaseException("Cannot convert Blob", e);
@@ -770,7 +771,7 @@ public class OracleDatabase extends AbstractJdbcDatabase {
             // ORACLE TO_CLOB accepts literal strings NOT exceeding 4000 characters in length.
             // Thus, we have to concatenate chunks of up to 4'000 characters.
             // There's a configuration value for that: GlobalConfiguration#.LITERAL_STRING_MAX_LENGTH:
-            String[] chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
+            List<String> chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
             value = "TO_CLOB ('" + StringUtil.join(chunks, "') || TO_CLOB ('", Object::toString) + "')";
             column.setValue(value);
         } catch (SQLException e) {

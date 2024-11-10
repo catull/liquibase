@@ -16,6 +16,9 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StringUtil {
     private static final Pattern upperCasePattern = Pattern.compile(".*[A-Z].*");
@@ -1155,10 +1158,10 @@ public class StringUtil {
     }
 
     /**
-     * Split the input string into chunks no larger than the supplied chunkSize. If the string is shorter than the
-     * chunkSize, the resultant array will contain only a single entry.
+     * Split the input string into chunks no larger than the supplied chunkSize.
+     * If the string is shorter than the chunkSize, the resultant List will contain only a single entry.
      */
-    public static String[] splitToChunks(String input, int chunkSize) {
-        return input.split("(?<=\\G.{" + chunkSize + "})");
+    public static List<String> splitToChunks(String input, int chunkSize) {
+        return Arrays.asList(input.split("(?<=\\G[\\s\\S]{" + chunkSize + "})"));
     }
 }

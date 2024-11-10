@@ -740,9 +740,9 @@ class StringUtilTest extends Specification {
 
         where:
         input                            | expected
-        "hello"                          | ["hello"].toArray()
-        "hellohello"                     | ["hellohello"].toArray()
-        "hellohellohello"                | ["hellohello", "hello"].toArray()
-        "hellohellohellohellohellohello" | ["hellohello", "hellohello", "hellohello"].toArray()
+        "hello"                          | ["hello"]
+        "hellohello"                     | ["hellohello"]
+        "hellohellohello"                | ["hellohello", "hello"]
+        "hellohellohellohellohellohello" | ["hellohello", "hellohello", "hellohello"]
     }
 }

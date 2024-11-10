@@ -1,6 +1,7 @@
 package liquibase.sqlgenerator.core;
 
 import liquibase.database.Database;
+import liquibase.database.core.OracleDatabase;
 import liquibase.datatype.DataTypeFactory;
 import liquibase.exception.ValidationErrors;
 import liquibase.sql.Sql;
@@ -43,10 +44,20 @@ public class InsertGenerator extends AbstractSqlGenerator<InsertStatement> {
         }
 
         return new Sql[] {
-                new UnparsedSql(sql.toString(), getAffectedTable(statement))
+                generateUnparsedSql(database, statement, sql.toString())
         };
     }
-    
+
+    private UnparsedSql generateUnparsedSql(Database database, InsertStatement statement, String sql) {
+        Relation relation = getAffectedTable(statement);
+
+        if (database instanceof OracleDatabase && sql.startsWith("declare")) {
+            return new UnparsedSql(sql, "/", relation);
+        }
+
+        return new UnparsedSql(sql, relation);
+    }
+
     public void setPreviousInsertStatement(boolean previousInsertHasHeader) {
     	this.previousInsertHasHeader = previousInsertHasHeader;
     }
