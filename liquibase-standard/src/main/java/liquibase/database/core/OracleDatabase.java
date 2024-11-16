@@ -726,6 +726,7 @@ public class OracleDatabase extends AbstractJdbcDatabase {
         try {
             int length = (int) blob.length();
             byte[] bytes = blob.getBytes(1, length);
+
             StringBuilder sb = new StringBuilder(bytes.length * 2);
 
             for (byte b: bytes) {
@@ -735,14 +736,15 @@ public class OracleDatabase extends AbstractJdbcDatabase {
             String value = sb.toString();
             List<String> chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
             column.setValue("EMPTY_BLOB()");
+
             sb = new StringBuilder("declare\n")
-                    .append("  TYPE t_chunks IS table OF varchar2(").append(this.literalStringMaxLength).append(");\n")
+                    .append("  TYPE t_chunks IS table OF VARCHAR2(").append(this.literalStringMaxLength).append(");\n")
                     .append("  v_blob blob;\n\n")
-                    .append("  v_chunks t_chunks := t_chunks (\n    HEXTORAW ('")
-                    .append(String.join("'),\n    HEXTORAW ('", chunks))
-                    .append("')\n  );\n\n")
-                    .append("  procedure writeBlobChunk (p_data in varchar2) IS\n")
-                    .append("    chnk RAW(32767) := UTL_RAW.cast_to_raw (p_data);\n")
+                    .append("  v_chunks t_chunks := t_chunks (\n    '")
+                    .append(String.join("',\n    '", chunks))
+                    .append("'\n  );\n\n")
+                    .append("  procedure writeBlobChunk (p_data in VARCHAR2) IS\n")
+                    .append("    chnk RAW(32767) := HEXTORAW (p_data);\n")
                     .append("  begin\n")
                     .append("    DBMS_LOB.writeAppend (v_blob, UTL_RAW.length (chnk), chnk);\n")
                     .append("  end;\n\n")
@@ -766,13 +768,19 @@ public class OracleDatabase extends AbstractJdbcDatabase {
     public void setColumnValue (final ColumnConfig column, final Clob clob) {
         try {
             int length = (int) clob.length();
-            // Single-quote characters must be escaped.
-            String value = clob.getSubString(1, length).replace("'", "''");
+            byte[] bytes = clob.getSubString(1, length).getBytes();
+            StringBuilder sb = new StringBuilder();
+
+            for (byte b: bytes) {
+                sb.append(String.format("%02X", b));
+             }
+
+            String value = sb.toString();
             // ORACLE TO_CLOB accepts literal strings NOT exceeding 4000 characters in length.
             // Thus, we have to concatenate chunks of up to 4'000 characters.
             // There's a configuration value for that: GlobalConfiguration#.LITERAL_STRING_MAX_LENGTH:
             List<String> chunks = StringUtil.splitToChunks(value, this.literalStringMaxLength);
-            value = "TO_CLOB ('" + StringUtil.join(chunks, "') || TO_CLOB ('", Object::toString) + "')";
+            value = "TO_CLOB (UTL_RAW.CAST_TO_VARCHAR2('" + StringUtil.join(chunks, "')) || TO_CLOB (UTL_RAW.CAST_TO_VARCHAR2('", Object::toString) + "'))";
             column.setValue(value);
         } catch (SQLException e) {
             throw new UnexpectedLiquibaseException("Cannot convert Clob", e);
