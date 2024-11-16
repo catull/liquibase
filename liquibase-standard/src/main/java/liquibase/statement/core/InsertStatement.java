@@ -43,6 +43,14 @@ public class InsertStatement extends AbstractSqlStatement {
     }
     
     public InsertStatement addColumn(ColumnConfig columnConfig) {
+        String prologue = columnConfig.getPrologue();
+        if (null != prologue) {
+            setPrologue(prologue);
+        }
+        String epilogue = columnConfig.getEpilogue();
+        if (null != prologue) {
+            setPrologue(epilogue);
+        }
     	return addColumnValue(columnConfig.getName(), columnConfig.getValueObject());
     }
 }

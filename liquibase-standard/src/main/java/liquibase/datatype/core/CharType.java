@@ -16,7 +16,6 @@ import liquibase.util.StringUtil;
 
 import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Locale;
 
 @DataTypeInfo(name="char", aliases = {"java.sql.Types.CHAR", "bpchar", "character"}, minParameters = 0, maxParameters = 1, priority = LiquibaseDataType.PRIORITY_DEFAULT)
@@ -85,21 +84,9 @@ public class CharType extends LiquibaseDataType {
             return "N'"+database.escapeStringForDatabase(val)+"'";
         }
 
-        /*
-          It is a somewhat safe assumption that if the database is Oracle and the length of the string exceeds 4000
-          characters then the column must be a clob type column, because Oracle doesn't support varchars longer than
-          2000 characters. It would be better to read the column config directly, but that info isn't available at this
-          point in the code.
-         */
         if (database instanceof OracleDatabase &&
-                LiquibaseCommandLineConfiguration.WORKAROUND_ORACLE_CLOB_CHARACTER_LIMIT.getCurrentValue() &&
-                stringValue.length() > 4000) {
-            Scope.getCurrentScope().getLog(getClass()).fine("A string longer than 4000 characters has been detected on an insert statement, " +
-                    "and the database is Oracle. Oracle forbids insert statements with strings longer than 4000 characters, " +
-                    "so Liquibase is going to workaround this limitation. If an error occurs, this can be disabled by setting "
-                    + LiquibaseCommandLineConfiguration.WORKAROUND_ORACLE_CLOB_CHARACTER_LIMIT.getKey() + " to false.");
-            List<String> chunks = StringUtil.splitToChunks(stringValue, 4000);
-            return "to_clob( '" + StringUtil.join(chunks, "' ) || to_clob( '", obj -> database.escapeStringForDatabase(obj.toString())) + "' )";
+                (stringValue.startsWith("TO_CLOB") || stringValue.startsWith("TO_BLOB") || stringValue.startsWith("EMPTY_BLOB()"))) {
+            return stringValue;
         }
 
         return "'"+database.escapeStringForDatabase(val)+"'";

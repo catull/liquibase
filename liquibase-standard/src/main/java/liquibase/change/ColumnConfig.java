@@ -20,6 +20,8 @@ import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+
+import lombok.Setter;
 import org.apache.commons.lang3.BooleanUtils;
 
 /**
@@ -61,6 +63,12 @@ public class ColumnConfig extends AbstractLiquibaseSerializable {
     private Boolean descending;
     private Boolean included;
 
+    @Getter
+    @Setter
+    private String prologue;
+    @Getter
+    @Setter
+    private String epilogue;
     /**
      * Create a ColumnConfig object based on a {@link Column} snapshot.
      * It will attempt to set as much as possible based on the information in the snapshot.

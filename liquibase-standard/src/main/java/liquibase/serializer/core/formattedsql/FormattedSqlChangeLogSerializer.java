@@ -1,6 +1,9 @@
 package liquibase.serializer.core.formattedsql;
 
-import liquibase.*;
+import liquibase.ContextExpression;
+import liquibase.GlobalConfiguration;
+import liquibase.Labels;
+import liquibase.Scope;
 import liquibase.change.Change;
 import liquibase.changelog.ChangeLogChild;
 import liquibase.changelog.ChangeSet;
@@ -24,7 +27,6 @@ public class FormattedSqlChangeLogSerializer  implements ChangeLogSerializer {
 
     private static final String SQL_FILE_NAME_REGEX = ".*\\.(\\w+)\\.sql";
     private static final Pattern SQL_FILE_NAME_PATTERN = Pattern.compile(SQL_FILE_NAME_REGEX);
-
 
     @Override
     public String[] getValidFileExtensions() {
@@ -128,7 +130,6 @@ public class FormattedSqlChangeLogSerializer  implements ChangeLogSerializer {
         }
 
         out.write(builder.toString().getBytes(GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
-
     }
 
     @Override

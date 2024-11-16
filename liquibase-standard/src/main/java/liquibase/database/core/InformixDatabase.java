@@ -1,18 +1,22 @@
 package liquibase.database.core;
 
 import liquibase.CatalogAndSchema;
+import liquibase.GlobalConfiguration;
 import liquibase.Scope;
+import liquibase.change.ColumnConfig;
 import liquibase.database.AbstractJdbcDatabase;
 import liquibase.database.DatabaseConnection;
 import liquibase.database.OfflineConnection;
 import liquibase.exception.DatabaseException;
 import liquibase.exception.UnexpectedLiquibaseException;
 import liquibase.executor.ExecutorService;
+import liquibase.statement.DatabaseFunction;
 import liquibase.statement.core.GetViewDefinitionStatement;
 import liquibase.statement.core.RawParameterizedSqlStatement;
 import liquibase.structure.DatabaseObject;
 import liquibase.structure.core.Table;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.List;
@@ -262,5 +266,13 @@ public class InformixDatabase extends AbstractJdbcDatabase {
     @Override
     public boolean supportsCreateIfNotExists(Class<? extends DatabaseObject> type) {
         return type.isAssignableFrom(Table.class);
+    }
+
+    @Override
+    public void setColumnValue (ColumnConfig column, byte[] value) {
+        try {
+            column.setValue(new String(value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
+        }
+        catch (UnsupportedEncodingException ignored) {}
     }
 }

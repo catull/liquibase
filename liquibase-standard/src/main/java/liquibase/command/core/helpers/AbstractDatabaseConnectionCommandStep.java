@@ -66,6 +66,7 @@ public abstract class AbstractDatabaseConnectionCommandStep extends AbstractHelp
         String databaseChangeLogTablespaceName = StringUtil.trimToNull(GlobalConfiguration.LIQUIBASE_TABLESPACE_NAME.getCurrentValue());
         String databaseChangeLogLockTableName = StringUtil.trimToNull(GlobalConfiguration.DATABASECHANGELOGLOCK_TABLE_NAME.getCurrentValue());
         String databaseChangeLogTableName = StringUtil.trimToNull(GlobalConfiguration.DATABASECHANGELOG_TABLE_NAME.getCurrentValue());
+        int literalStringMaxLength = GlobalConfiguration.LITERAL_STRING_MAX_LENGTH.getCurrentValue();
 
         try {
             defaultCatalogName = StringUtil.trimToNull(defaultCatalogName);
@@ -100,6 +101,9 @@ public abstract class AbstractDatabaseConnectionCommandStep extends AbstractHelp
                 } else {
                     database.setDatabaseChangeLogLockTableName(databaseChangeLogTableName + "LOCK");
                 }
+            }
+            if (-1 != literalStringMaxLength) {
+                database.setLiteralStringMaxLength(literalStringMaxLength);
             }
             DatabaseUtils.initializeDatabase(defaultCatalogName, defaultSchemaName, database);
         } catch (Exception e) {
