@@ -307,7 +307,7 @@ public class XMLChangeLogSerializer implements ChangeLogSerializer {
                     ) {
                 //ok
             } else {
-                throw new UnexpectedLiquibaseException(INVALID_STRING_ENCODING_MESSAGE);
+                throw new UnexpectedLiquibaseException(INVALID_STRING_ENCODING_MESSAGE + " with codePoint " + codePoint);
             }
         }
 
