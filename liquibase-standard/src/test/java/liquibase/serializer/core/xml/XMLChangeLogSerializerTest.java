@@ -1016,14 +1016,14 @@ public class XMLChangeLogSerializerTest {
         change.addColumn(new ColumnConfig().setName("x").setValue(null));
         change.addColumn(new ColumnConfig().setName("y").setValue(null));
 
-        String out = new XMLChangeLogSerializer().serialize(change, true);
+        String actualOutput = new XMLChangeLogSerializer().serialize(change, true);
         assertEquals("<createTable catalogName=\"a\"\n" +
                 "        schemaName=\"b\"\n" +
                 "        tableName=\"c\"\n" +
                 "        value=\"null\">\n" +
                 "    <column name=\"x\" value=\"null\"/>\n" +
                 "    <column name=\"y\" value=\"null\"/>\n" +
-                "</createTable>", out);
+                "</createTable>", actualOutput);
     }
 
     private static Map<String, String> attsMap(String... values) {
