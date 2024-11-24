@@ -5,11 +5,8 @@ import liquibase.change.core.CreateTableChange;
 import liquibase.change.core.InsertDataChange;
 import liquibase.changelog.ChangeSet;
 
-import liquibase.serializer.core.xml.XMLChangeLogSerializer;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class YamlChangeLogSerializerTest {
 
