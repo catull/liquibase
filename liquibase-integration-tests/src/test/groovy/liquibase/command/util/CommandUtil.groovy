@@ -92,17 +92,14 @@ class CommandUtil {
         commandScope.execute()
     }
 
-    static void runGenerateChangelog(DatabaseTestSystem db, String outputFile, boolean preserveNullValues) throws CommandExecutionException {
+    static void runGenerateChangelog (DatabaseTestSystem db, String outputFile, String diffType) {
         CommandScope commandScope = new CommandScope(GenerateChangelogCommandStep.COMMAND_NAME)
         commandScope.addArgumentValue(DbUrlConnectionArgumentsCommandStep.URL_ARG, db.getConnectionUrl())
         commandScope.addArgumentValue(DbUrlConnectionArgumentsCommandStep.USERNAME_ARG, db.getUsername())
         commandScope.addArgumentValue(DbUrlConnectionArgumentsCommandStep.PASSWORD_ARG, db.getPassword())
-        commandScope.addArgumentValue(DiffOutputControlCommandStep.INCLUDE_SCHEMA_ARG, true)
         commandScope.addArgumentValue(GenerateChangelogCommandStep.OVERWRITE_OUTPUT_FILE_ARG, true)
         commandScope.addArgumentValue(GenerateChangelogCommandStep.CHANGELOG_FILE_ARG, outputFile)
-        commandScope.addArgumentValue(DiffOutputControlCommandStep.PRESERVE_NULL_VALUES, preserveNullValues)
-        commandScope.addArgumentValue(PreCompareCommandStep.DIFF_TYPES_ARG, 'data')
-
+        commandScope.addArgumentValue(PreCompareCommandStep.DIFF_TYPES_ARG, diffType)
         OutputStream outputStream = new ByteArrayOutputStream()
         commandScope.setOutput(outputStream)
         commandScope.execute()
