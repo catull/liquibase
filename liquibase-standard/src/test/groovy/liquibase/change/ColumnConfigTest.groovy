@@ -7,6 +7,7 @@ import liquibase.serializer.LiquibaseSerializable
 import liquibase.statement.DatabaseFunction
 import liquibase.statement.SequenceNextValueFunction
 import liquibase.structure.core.*
+
 import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -433,6 +434,8 @@ class ColumnConfigTest extends Specification {
             testValue = true
         } else if (field in ["included"]) {
             testValue = true
+        } else if (field in ["epilogue", "prologue"]) {
+            testValue = null
         }
         node.addChild(null, field, testValue)
         try {
@@ -445,7 +448,7 @@ class ColumnConfigTest extends Specification {
         assert column.getSerializableFieldValue(field).toString() == testValue.toString()
 
         where:
-        field << new ColumnConfig().getSerializableFields().findAll({ !it.equals("constraints") })
+        field << new ColumnConfig().getSerializableFields().findAll({ "constraints" != it })
     }
 
     @Unroll("#featureName: #field")
