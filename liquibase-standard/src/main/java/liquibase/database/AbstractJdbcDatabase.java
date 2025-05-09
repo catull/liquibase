@@ -829,7 +829,14 @@ public abstract class AbstractJdbcDatabase implements Database {
 
     @Override
     public String toString() {
-        if (getConnection() == null) {
+        boolean closed = false;
+        try {
+            closed = getConnection().isClosed();
+        } catch (Exception ignored) {
+
+        }
+
+        if (getConnection() == null || closed) {
             return getShortName() + " Database";
         }
 
