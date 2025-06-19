@@ -19,6 +19,7 @@ import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class DiffOutputControl {
 
@@ -32,7 +33,12 @@ public class DiffOutputControl {
     @Setter
     private boolean isReplaceIfExistsSet = false;
 
-    private boolean preserveNullValues = true;
+    @Getter
+    @Setter
+    private String excludeObjects;
+    @Getter
+    @Setter
+    private String includeObjects;
 
     private CompareControl.SchemaComparison[] schemaComparisons;
 
