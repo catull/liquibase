@@ -1,5 +1,6 @@
 package liquibase.command;
 
+import liquibase.Beta;
 import liquibase.exception.CommandValidationException;
 
 import java.util.List;
@@ -76,11 +77,11 @@ public interface CommandStep {
     List<Class<?>> providedDependencies();
 
     /**
-     * Returns a boolean to indicate that this CommandStep is a stub
-     * If an extension overrides the CommandStep then the stub sill be ignored
-     * @return boolean
+     * Informational method to determine if this step is internal to Liquibase and should not be disclosed to end users
+     * @return true if this step is internal to Liquibase and should not be shown in the help output
      */
-    default boolean isStub() {
+    @Beta
+    default boolean isInternal() {
         return false;
     }
 }

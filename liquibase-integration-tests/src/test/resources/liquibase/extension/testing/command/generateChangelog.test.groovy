@@ -27,7 +27,7 @@ Optional Args:
     Default: null
   contextFilter (String) Changeset contexts to generate
     Default: null
-  dataOutputDirectory (String) Directory to write table data to
+  dataOutputDirectory (String) Specifies a directory to send the loadData output of a diff-changelog/generate-changelog command as a CSV file.
     Default: null
   defaultCatalogName (String) The default catalog name to use for the database connection
     Default: null
@@ -39,11 +39,13 @@ Optional Args:
     Default: null
   driverPropertiesFile (String) The JDBC driver properties file
     Default: null
-  excludeObjects (String) Objects to exclude from diff
+  excludeObjects (String) Objects to exclude from diff. Supports regular expressions. Defaults to null.
     Default: null
+  ignoreMissingReferences (Boolean) If true, diff operations will ignore referenced objects which are not found in a snapshot.
+    Default: false
   includeCatalog (Boolean) If true, the catalog will be included in generated changeSets. Defaults to false.
     Default: false
-  includeObjects (String) Objects to include in diff
+  includeObjects (String) Objects to include in diff. Supports regular expressions. Defaults to null.
     Default: null
   includeSchema (Boolean) If true, the schema will be included in generated changeSets. Defaults to false.
     Default: false

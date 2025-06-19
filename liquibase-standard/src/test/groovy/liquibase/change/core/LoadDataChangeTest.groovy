@@ -22,11 +22,7 @@ import liquibase.resource.ResourceAccessor
 import liquibase.resource.SearchPathResourceAccessor
 import liquibase.snapshot.MockSnapshotGeneratorFactory
 import liquibase.snapshot.SnapshotGeneratorFactory
-import liquibase.statement.BatchDmlExecutablePreparedStatement
-import liquibase.statement.DatabaseFunction
-import liquibase.statement.ExecutablePreparedStatement
-import liquibase.statement.ExecutablePreparedStatementBase
-import liquibase.statement.SqlStatement
+import liquibase.statement.*
 import liquibase.statement.core.InsertSetStatement
 import liquibase.statement.core.InsertStatement
 import liquibase.structure.DatabaseObject
@@ -87,11 +83,21 @@ class LoadDataChangeTest extends StandardChangeTest {
         col3.setName("string")
         change.addColumn(col3)
 
+        LoadDataColumnConfig col4 = new LoadDataColumnConfig()
+        col4.setType(LoadDataChange.LOAD_DATA_TYPE.CLOB)
+        col4.setName("invalid")
+        change.addColumn(col4)
+
+        LoadDataColumnConfig col5 = new LoadDataColumnConfig()
+        col5.setType(LoadDataChange.LOAD_DATA_TYPE.CLOB)
+        col5.setName("empty")
+        change.addColumn(col5)
+
         change.setSchemaName("SCHEMA_NAME")
         change.setTableName("TABLE_NAME")
         change.setRelativeToChangelogFile(Boolean.TRUE)
         change.setChangeSet(changeSet)
-        change.setFile("change/core/sample.data.for.clob.types.csv")
+        change.setFile("../liquibase/change/core/sample.data.for.clob.types.csv")
 
         def mockDBCsv = new MockDatabase() {
             @Override
@@ -114,7 +120,8 @@ class LoadDataChangeTest extends StandardChangeTest {
         "change/core/SQLFileTestData.sql" == columns.get(0).getValueClobFile()
         "nothing.txt" == columns.get(1).getValue()
         "sample text" == columns.get(2).getValue()
-
+        "/dev/null/foo:a" == columns.get(3).getValue()
+        null == columns.get(4).getValue()
     }
 
     def "loadDataEmpty database agnostic"() throws Exception {
@@ -1039,5 +1046,3 @@ class LoadDataChangeTest extends StandardChangeTest {
         }
     }
 }
-
-
