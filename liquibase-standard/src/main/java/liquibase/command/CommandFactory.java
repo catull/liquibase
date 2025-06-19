@@ -3,7 +3,6 @@ package liquibase.command;
 import liquibase.Scope;
 import liquibase.SingletonObject;
 import liquibase.servicelocator.ServiceLocator;
-import liquibase.util.CollectionUtil;
 import liquibase.util.DependencyUtil;
 import liquibase.util.StringUtil;
 
@@ -20,7 +19,7 @@ public class CommandFactory implements SingletonObject {
     /**
      * A cache of all found command names and their corresponding command definition.
      */
-    private static final Map<String[], CommandDefinition> COMMAND_DEFINITIONS = new ConcurrentHashMap<>();
+    private static final Map<String, CommandDefinition> COMMAND_DEFINITIONS = new ConcurrentHashMap<>();
     /**
      * A cache of all found CommandStep classes and their corresponding override CommandStep.
      */
@@ -45,13 +44,14 @@ public class CommandFactory implements SingletonObject {
      * @throws IllegalArgumentException if the commandName is not known
      */
     public CommandDefinition getCommandDefinition(String... commandName) throws IllegalArgumentException{
-        CommandDefinition commandDefinition = COMMAND_DEFINITIONS.get(commandName);
+        String commandNameKey = StringUtil.join(commandName, " ");
+        CommandDefinition commandDefinition = COMMAND_DEFINITIONS.get(commandNameKey);
         if (commandDefinition == null) { //Check if we have already computed arguments, dependencies, pipeline and adjusted definition
             commandDefinition = new CommandDefinition(commandName);
             computePipelineForCommandDefinition(commandDefinition);
             consolidateCommandArgumentsForCommand(commandDefinition);
             adjustCommandDefinitionForSteps(commandDefinition);
-            COMMAND_DEFINITIONS.put(commandName, commandDefinition);
+            COMMAND_DEFINITIONS.put(commandNameKey, commandDefinition);
         }
         return commandDefinition;
     }
@@ -72,7 +72,6 @@ public class CommandFactory implements SingletonObject {
         Collection<CommandStep> allCommandStepInstances = findAllInstances();
         Map<Class<? extends CommandStep>, CommandStep> overrides = findAllOverrides(allCommandStepInstances);
         for (CommandStep step : allCommandStepInstances) {
-
             // order > 0 means is means that this CommandStep has been declared as part of this command
             if (step.getOrder(commandDefinition) > 0) {
                 Optional<CommandStep> overrideStep = getOverride(overrides, step);
@@ -150,9 +149,12 @@ public class CommandFactory implements SingletonObject {
     }
 
     private void adjustCommandDefinitionForSteps(CommandDefinition commandDefinition) {
+        boolean allInternal = true;
         for (CommandStep step : commandDefinition.getPipeline()) {
             step.adjustCommandDefinition(commandDefinition);
+            allInternal = step.isInternal() && allInternal;
         }
+        commandDefinition.setInternal(allInternal);
     }
 
     /**
@@ -162,17 +164,11 @@ public class CommandFactory implements SingletonObject {
      */
     public SortedSet<CommandDefinition> getCommands(boolean includeInternal) {
         Map<String, String[]> commandNames = new HashMap<>();
-        Set<String> keys = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
-        Collection<CommandStep> allFoundInstances = findAllInstances();
-        for (CommandStep step : allFoundInstances) {
+        for (CommandStep step : findAllInstances()) {
             String[][] names = step.defineCommandNames();
             if (names != null) {
                 for (String[] name : names) {
-                    String key = StringUtil.join(name, " ");
-                    if (! step.isStub() || ! keys.contains(key)) {
-                        commandNames.put(key, name);
-                        keys.add(key);
-                    }
+                    commandNames.put(StringUtil.join(name, " "), name);
                 }
             }
         }
@@ -192,46 +188,38 @@ public class CommandFactory implements SingletonObject {
         return Collections.unmodifiableSortedSet(commands);
 
     }
-    
+
     /**
      * Called by {@link CommandArgumentDefinition.Building#build()} to
      * register that a particular {@link CommandArgumentDefinition} is available for a command.
      */
     protected void register(String[] commandName, CommandArgumentDefinition<?> definition) {
-        register(commandName, definition, false);
-    }
-
-    /**
-     * Called by {@link CommandArgumentDefinition.Building#build()} to
-     * register that a particular {@link CommandArgumentDefinition} is available for a command.
-     * This method supports an additional argument which allows duplicate arguments to exist
-     * without throwing an exception.  This is used by stub commands implemented for Pro features
-     * that do not have their extension present.
-     */
-    protected void register(String[] commandName, CommandArgumentDefinition<?> definition, boolean allowDuplicates) {
         String commandNameKey = StringUtil.join(commandName, " ");
         if (!commandArgumentDefinitions.containsKey(commandNameKey)) {
             commandArgumentDefinitions.put(commandNameKey, new TreeSet<>());
         }
 
         if (commandArgumentDefinitions.get(commandNameKey).contains(definition)) {
-            if (! allowDuplicates) {
-                throw new IllegalArgumentException("Duplicate argument '" + definition.getName() + "' found for command '" + commandNameKey + "'");
-            }
-            return;
+           throw new IllegalArgumentException("Duplicate argument '" + definition.getName() + "' found for command '" + commandNameKey + "'");
         }
         if (definition.isRequired() && definition.getDefaultValue() != null) {
             throw new IllegalArgumentException("Argument '" + definition.getName() + "' for command '" + commandNameKey + "' has both a default value and the isRequired flag set to true. Arguments with default values cannot be marked as required.");
         }
         this.commandArgumentDefinitions.get(commandNameKey).add(definition);
+        CommandDefinition commandDefinition = COMMAND_DEFINITIONS.get(commandNameKey);
+        if (commandDefinition != null){
+            commandDefinition.add(definition);
+        }
     }
 
     /**
      * Unregisters all information about the given {@link CommandStep}.
-     * This is used to handle a situation where we have multiple command step instances
+     * <bNOTE:</b> package-protected method used primarily for testing and may be removed or modified in the future.
      */
-    public void unregister(String[] commandName) {
-        commandArgumentDefinitions.remove(StringUtil.join(commandName, " "));
+    protected void unregister(String[] commandName) {
+        String commandNameKey = StringUtil.join(commandName, " ");
+        commandArgumentDefinitions.remove(commandNameKey);
+        COMMAND_DEFINITIONS.remove(commandNameKey);
     }
 
     /**
@@ -275,36 +263,12 @@ public class CommandFactory implements SingletonObject {
     private synchronized Collection<CommandStep> findAllInstances() {
         if (this.allInstances == null) {
             this.allInstances = new ArrayList<>();
+
             ServiceLocator serviceLocator = Scope.getCurrentScope().getServiceLocator();
             this.allInstances.addAll(serviceLocator.findInstances(CommandStep.class));
-            filterStubInstances();
         }
-        return this.allInstances;
-    }
 
-    //
-    // Sort all command stubs to the bottom of the list so that any non-stubs
-    // will come first.  If a stub is found and the non-stub is present, the stub
-    // is removed from the list.
-    //
-    private void filterStubInstances() {
-        ((List<CommandStep>) this.allInstances).sort(Comparator.comparing(CommandStep::isStub));
-        Set<String> commandNames = new LinkedHashSet<>();
-        Collection<CommandStep> toRemove = new ArrayList<>();
-        for (CommandStep step : this.allInstances) {
-            String[][] names = step.defineCommandNames();
-            if (names != null) {
-                for (String[] name : names) {
-                    String key = StringUtil.join(name, " ").toLowerCase();
-                    if (step.isStub() && commandNames.contains(key)) {
-                        toRemove.add(step);
-                    } else {
-                        commandNames.add(key);
-                    }
-                }
-            }
-        }
-        this.allInstances.removeAll(toRemove);
+        return this.allInstances;
     }
 
     /**

@@ -13,6 +13,8 @@ import liquibase.statement.SequenceNextValueFunction;
 import liquibase.structure.core.*;
 import liquibase.util.*;
 import lombok.Getter;
+import lombok.Setter;
+import org.apache.commons.lang3.BooleanUtils;
 
 import java.math.BigInteger;
 import java.text.NumberFormat;
@@ -21,8 +23,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import lombok.Setter;
-import org.apache.commons.lang3.BooleanUtils;
 
 /**
  * The standard configuration used by Change classes to represent a column.
@@ -69,6 +69,13 @@ public class ColumnConfig extends AbstractLiquibaseSerializable {
     @Getter
     @Setter
     private String epilogue;
+    /**
+     * The raw date value as it was passed in, before any parsing or processing.
+     * This is useful for extensions that need to know the original value passed in, such as Neo4j extension
+     */
+    @Getter
+    private String rawDateValue;
+
     /**
      * Create a ColumnConfig object based on a {@link Column} snapshot.
      * It will attempt to set as much as possible based on the information in the snapshot.
@@ -398,6 +405,7 @@ public class ColumnConfig extends AbstractLiquibaseSerializable {
      * @throws DateParseException if the columnType isn't supported for "now" or "today" values.
      */
     public ColumnConfig setValueDate(String valueDate) throws DateParseException {
+        this.rawDateValue = valueDate;
         if ((valueDate == null) || "null".equalsIgnoreCase(valueDate)) {
             this.valueDate = null;
         } else if (NowAndTodayUtil.isNowOrTodayFormat(valueDate)) {
@@ -827,9 +835,10 @@ public class ColumnConfig extends AbstractLiquibaseSerializable {
         setValueNumeric(parsedNode.getChildValue(null, "valueNumeric", String.class));
 
         try {
+            this.rawDateValue = parsedNode.getChildValue(null, "valueDate", String.class);
             valueDate = parsedNode.getChildValue(null, "valueDate", Date.class);
         } catch (ParsedNodeException e) {
-            valueComputed = new DatabaseFunction(parsedNode.getChildValue(null, "valueDate", String.class));
+            valueComputed = new DatabaseFunction(this.rawDateValue);
         }
         valueBoolean = parsedNode.getChildValue(null, "valueBoolean", Boolean.class);
         valueBlobFile = parsedNode.getChildValue(null, "valueBlobFile", String.class);
