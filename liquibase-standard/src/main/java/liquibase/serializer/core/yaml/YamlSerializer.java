@@ -25,7 +25,15 @@ import org.yaml.snakeyaml.resolver.Resolver;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 public abstract class YamlSerializer implements LiquibaseSerializer {
 
@@ -58,7 +66,7 @@ public abstract class YamlSerializer implements LiquibaseSerializer {
     }
 
     protected Yaml createYaml() {
-        DumperOptions dumperOptions= createDumperOptions();
+        DumperOptions dumperOptions = createDumperOptions();
         return new Yaml(new SafeConstructor(YamlParser.createLoaderOptions()), getLiquibaseRepresenter(dumperOptions), dumperOptions, getLiquibaseResolver());
     }
 
@@ -109,9 +117,9 @@ public abstract class YamlSerializer implements LiquibaseSerializer {
                     value = ((Map) toMap((LiquibaseSerializable) value)).values().iterator().next();
                 }
                 if (value instanceof LiquibaseSerializable) {
-                    if(value instanceof RollbackContainer) {
+                    if (value instanceof RollbackContainer) {
                         List<Change> changesToRollback = ((RollbackContainer) value).getChanges();
-                        if(changesToRollback.size() == 1) {
+                        if (changesToRollback.size() == 1) {
                             value = toMap(changesToRollback.get(0));
                         } else {
                             value = toMap((LiquibaseSerializable) value);
@@ -121,75 +129,18 @@ public abstract class YamlSerializer implements LiquibaseSerializer {
                     }
                 }
                 if (value instanceof Collection) {
-                    List valueAsList = new ArrayList((Collection) value);
-                    if (valueAsList.isEmpty()) {
+                    if (((Collection) value).isEmpty()) {
                         continue;
                     }
-                    for (int i = 0; i < valueAsList.size(); i++) {
-                        if (valueAsList.get(i) instanceof LiquibaseSerializable) {
-                            if (!preserveNullValues && valueAsList.get(i) instanceof ColumnConfig) {
-                                ColumnConfig columnConfig = (ColumnConfig) valueAsList.get(i);
-                                if (columnConfig.isNull()) {
-                                    continue;
-                                }
-                            }
-                            Object m = convertToMap(valueAsList, i);
-                            valueAsList.set(i, m);
-                        }
-                    }
+                    List valueAsList = handleCollection(value);
                     value = valueAsList;
 
                 }
                 if (value instanceof Map) {
-                    if  (((Map<?, ?>) value).isEmpty()) {
+                    if (((Map<?, ?>) value).isEmpty()) {
                         continue;
                     }
-
-                    for (Object key : new HashSet<>(((Map) value).keySet())) {
-                        Object mapValue = ((Map<?, ?>) value).get(key);
-                        if (mapValue == null) {
-                            ((Map<?, ?>) value).remove(key);
-                        }
-
-                        if (mapValue instanceof LiquibaseSerializable) {
-                            ((Map) value).put(key, toMap((LiquibaseSerializable) mapValue));
-                        } else if (mapValue instanceof Collection) {
-                            List valueAsList = new ArrayList((Collection) mapValue);
-                            if (valueAsList.isEmpty()) {
-                                continue;
-                            }
-
-                            //
-                            // Be on the lookout for the potential for an object to
-                            // be found that did not have a snapshot ID.  In that case,
-                            // we do not want to serialize it with the rest of the objects,
-                            // but instead move it to the "referencedObjects" section of the snapshot
-                            //
-                            boolean setOne = false;
-                            for (int i = 0; i < valueAsList.size(); i++) {
-                                if (valueAsList.get(i) instanceof LiquibaseSerializable) {
-                                    LiquibaseSerializable innerObject = (LiquibaseSerializable) valueAsList.get(i);
-                                    noSnapshotIdFound = false;
-                                    Object returnMap = toMap(innerObject);
-                                    if (!noSnapshotIdFound) {
-                                        valueAsList.set(i, returnMap);
-                                        setOne = true;
-                                    }
-                                }
-                            }
-                            //
-                            // If there was at least one object of this type then put the list
-                            // else remove the entire key
-                            //
-                            if (setOne) {
-                                ((Map) value).put(key, valueAsList);
-                            } else {
-                                ((Map)value).remove(key);
-                            }
-                        }
-                    }
-
-
+                    value = handleMap(value);
                 }
                 objectMap.put(field, value);
             }
@@ -200,20 +151,96 @@ public abstract class YamlSerializer implements LiquibaseSerializer {
         return containerMap;
     }
 
+    private Map<?, ?> handleMap(Object value) {
+        Map mapRepresentation = (Map) value;
+        for (Object key : new HashSet<>(mapRepresentation.keySet())) {
+            Object mapValue = ((Map<?, ?>) value).get(key);
+            if (mapValue == null) {
+                ((Map<?, ?>) value).remove(key);
+            }
+
+            if (mapValue instanceof LiquibaseSerializable) {
+                mapRepresentation.put(key, toMap((LiquibaseSerializable) mapValue));
+            } else if (mapValue instanceof Collection) {
+                List valueAsList = new ArrayList((Collection) mapValue);
+                if (valueAsList.isEmpty()) {
+                    continue;
+                }
+
+                //
+                // Be on the lookout for the potential for an object to
+                // be found that did not have a snapshot ID.  In that case,
+                // we do not want to serialize it with the rest of the objects,
+                // but instead move it to the "referencedObjects" section of the snapshot
+                //
+                boolean setOne = false;
+                for (int i = 0; i < valueAsList.size(); i++) {
+                    if (valueAsList.get(i) instanceof LiquibaseSerializable) {
+                        LiquibaseSerializable innerObject = (LiquibaseSerializable) valueAsList.get(i);
+                        noSnapshotIdFound = false;
+                        Object returnMap = toMap(innerObject);
+                        if (!noSnapshotIdFound) {
+                            valueAsList.set(i, returnMap);
+                            setOne = true;
+                        }
+                    } else if (valueAsList.get(i) instanceof Collection) {
+                        if (((Collection) valueAsList.get(i)).isEmpty()) {
+                            continue;
+                        }
+                        List<?> innerList = handleCollection(valueAsList.get(i));
+                        valueAsList.set(i, innerList);
+                        setOne = true;
+                    } else if (valueAsList.get(i) instanceof Map) {
+                        if (((Map<?, ?>) valueAsList.get(i)).isEmpty()) {
+                            continue;
+                        }
+                        valueAsList.set(i, handleMap(valueAsList.get(i)));
+                        setOne = true;
+                    }
+                }
+                //
+                // If there was at least one object of this type then put the list
+                // else remove the entire key
+                //
+                if (setOne) {
+                    mapRepresentation.put(key, valueAsList);
+                } else {
+                    mapRepresentation.remove(key);
+                }
+            }
+        }
+        return mapRepresentation;
+    }
+
+    List<?> handleCollection(Object value) {
+        List valueAsList = new ArrayList((Collection) value);
+        for (int i = 0; i < valueAsList.size(); i++) {
+            if (valueAsList.get(i) instanceof LiquibaseSerializable) {
+                Object m = convertToMap(valueAsList, i);
+                if (!preserveNullValues && m instanceof ColumnConfig) {
+                    ColumnConfig columnConfig = (ColumnConfig) m;
+                    if (columnConfig.isNull()) {
+                        continue;
+                    }
+                }
+                valueAsList.set(i, m);
+            }
+        }
+        return valueAsList;
+    }
+
     /**
-     *
      * If the object has a "referencedObjects" field then
      * we want that to sort to last in the last
      *
-     * @param   object                 The object which fields need sorting
-     * @return  List<String>
-     *
+     * @param object The object which fields need sorting
+     * @return List<String>
      */
     private List<String> sortFieldList(LiquibaseSerializable object) {
         Set<String> serializableObjectFields = getSerializableObjectFields(object);
         // Convert the Set to a List for sorting
         List<String> fieldList = new ArrayList<>(serializableObjectFields);
-        if (! fieldList.contains("referencedObjects")) {
+        if (!fieldList.contains("referencedObjects")) {
             return fieldList;
         }
         // Sort the list using a custom Comparator
