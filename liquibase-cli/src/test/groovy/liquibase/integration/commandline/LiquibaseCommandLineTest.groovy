@@ -811,6 +811,7 @@ https://docs.liquibase.com
     }
 
     def "help output" () {
+        System.setProperty("picocli.ansi", "false") // Required for cygwin / MSYS
         when:
         Assumptions.assumeTrue(System.getProperty("skipHelpTests") == null, "Skipping help test")
         def oldOut = System.out
