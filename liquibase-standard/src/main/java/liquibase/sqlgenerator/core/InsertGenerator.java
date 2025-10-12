@@ -2,6 +2,7 @@ package liquibase.sqlgenerator.core;
 
 import liquibase.database.Database;
 import liquibase.database.core.HsqlDatabase;
+import liquibase.database.core.OracleDatabase;
 import liquibase.datatype.DataTypeFactory;
 import liquibase.exception.ValidationErrors;
 import liquibase.sql.Sql;
@@ -31,19 +32,34 @@ public class InsertGenerator extends AbstractSqlGenerator<InsertStatement> {
     public Sql[] generateSql(InsertStatement statement, Database database, SqlGeneratorChain sqlGeneratorChain) {
        
         StringBuilder sql = new StringBuilder();
-        
+        if (statement.getPrologue() != null) {
+            sql.append(statement.getPrologue());
+        }
         if(!previousInsertHasHeader) {
         	generateHeader(sql,statement,database);
         } else {
             sql.append(",");        	
         }
         generateValues(sql,statement,database);
+        if (statement.getEpilogue() != null) {
+            sql.append(statement.getEpilogue());
+        }
 
         return new Sql[] {
-                new UnparsedSql(sql.toString(), getAffectedTable(statement))
+                generateUnparsedSql(database, statement, sql.toString())
         };
     }
-    
+
+    private UnparsedSql generateUnparsedSql(Database database, InsertStatement statement, String sql) {
+        Relation relation = getAffectedTable(statement);
+
+        if (database instanceof OracleDatabase && sql.startsWith("declare")) {
+            return new UnparsedSql(sql, "/", relation);
+        }
+
+        return new UnparsedSql(sql, relation);
+    }
+
     public void setPreviousInsertStatement(boolean previousInsertHasHeader) {
     	this.previousInsertHasHeader = previousInsertHasHeader;
     }

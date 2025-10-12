@@ -746,10 +746,10 @@ class StringUtilTest extends Specification {
         StringUtil.splitToChunks(input, 10) == expected
 
         where:
-        input | expected
-        "hello" | ["hello"]
-        "hellohello" | ["hellohello"]
-        "hellohellohello" | ["hellohello", "hello"]
+        input                            | expected
+        "hello"                          | ["hello"]
+        "hellohello"                     | ["hellohello"]
+        "hellohellohello"                | ["hellohello", "hello"]
         "hellohellohellohellohellohello" | ["hellohello", "hellohello", "hellohello"]
     }
 }

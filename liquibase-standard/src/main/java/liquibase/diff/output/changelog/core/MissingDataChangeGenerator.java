@@ -3,9 +3,7 @@ package liquibase.diff.output.changelog.core;
 import liquibase.change.Change;
 import liquibase.change.ColumnConfig;
 import liquibase.change.core.InsertDataChange;
-import liquibase.GlobalConfiguration;
 import liquibase.database.Database;
-import liquibase.database.core.InformixDatabase;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.diff.output.DiffOutputControl;
 import liquibase.diff.output.changelog.AbstractChangeGenerator;
@@ -13,7 +11,6 @@ import liquibase.diff.output.changelog.ChangeGeneratorChain;
 import liquibase.diff.output.changelog.MissingObjectChangeGenerator;
 import liquibase.exception.CommandExecutionException;
 import liquibase.exception.UnexpectedLiquibaseException;
-import liquibase.statement.DatabaseFunction;
 import liquibase.structure.DatabaseObject;
 import liquibase.structure.core.Data;
 import liquibase.structure.core.ForeignKey;
@@ -24,8 +21,11 @@ import liquibase.util.JdbcUtil;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.sql.Blob;
+import java.sql.Clob;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLXML;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -123,9 +123,14 @@ public class MissingDataChangeGenerator extends AbstractChangeGenerator implemen
 
                 // loop over all columns for this row
                 for (int i = 0; i < columnNames.size(); i++) {
+                    Object value = JdbcUtil.getResultSetValue(rs, i + 1);
+
+                    if (null == value) {
+                        continue;
+                    }
+
                     ColumnConfig column = new ColumnConfig();
                     column.setName(columnNames.get(i));
-                    Object value = JdbcUtil.getResultSetValue(rs, i + 1);
                     if (value == null) {
                         column.setValue(null);
                     } else if (value instanceof Number) {
@@ -135,10 +140,13 @@ public class MissingDataChangeGenerator extends AbstractChangeGenerator implemen
                     } else if (value instanceof Date) {
                         column.setValueDate((Date) value);
                     } else if (value instanceof byte[]) {
-                        if (referenceDatabase instanceof InformixDatabase) {
-                            column.setValue(new String((byte[]) value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
-                        }
-                        column.setValueComputed(new DatabaseFunction("UNSUPPORTED FOR DIFF: BINARY DATA"));
+                        referenceDatabase.setColumnValue(column, (byte[]) value);
+                    } else if (value instanceof Blob) {
+                        referenceDatabase.setColumnValue(column, (Blob) value);
+                    } else if (value instanceof Clob) {
+                        referenceDatabase.setColumnValue(column, (Clob) value);
+                    } else if (value instanceof SQLXML) {
+                        referenceDatabase.setColumnValue(column, (SQLXML) value);
                     } else { // fall back to simple string
                         column.setValue(value.toString());
                     }

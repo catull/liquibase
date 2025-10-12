@@ -847,4 +847,13 @@ public class MockDatabase implements Database, InternalDatabase {
     public boolean supportsCreateIfNotExists(Class<? extends DatabaseObject> type) {
         return false;
     }
+
+    @Override
+    public int getLiteralStringMaxLength() {
+        return 2_000;
+    }
+
+    @Override
+    public void setLiteralStringMaxLength(int literalStringMaxLength) {
+    }
 }

@@ -3,6 +3,7 @@ package liquibase.database;
 import liquibase.CatalogAndSchema;
 import liquibase.Scope;
 import liquibase.change.Change;
+import liquibase.change.ColumnConfig;
 import liquibase.change.core.DropTableChange;
 import liquibase.changelog.ChangeSet;
 import liquibase.changelog.DatabaseChangeLog;
@@ -25,14 +26,28 @@ import liquibase.sqlgenerator.SqlGeneratorFactory;
 import liquibase.statement.DatabaseFunction;
 import liquibase.statement.SqlStatement;
 import liquibase.structure.DatabaseObject;
-import liquibase.structure.core.*;
-import liquibase.util.SqlUtil;
+import liquibase.structure.core.Catalog;
+import liquibase.structure.core.ForeignKey;
+import liquibase.structure.core.Index;
+import liquibase.structure.core.PrimaryKey;
+import liquibase.structure.core.Schema;
+import liquibase.structure.core.Sequence;
+import liquibase.structure.core.UniqueConstraint;
 import liquibase.util.StringUtil;
 
 import java.io.IOException;
 import java.io.Writer;
 import java.math.BigInteger;
-import java.util.*;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.SQLXML;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -411,7 +426,6 @@ public interface Database extends PrioritizedService, AutoCloseable {
         return true;
     }
 
-
     CatalogAndSchema.CatalogAndSchemaCase getSchemaAndCatalogCase();
 
     /**
@@ -696,5 +710,24 @@ public interface Database extends PrioritizedService, AutoCloseable {
         return null;
     }
 
-}
+    default void setColumnValue (ColumnConfig column, byte[] value) {
+        column.setValueComputed(new DatabaseFunction("UNSUPPORTED FOR DIFF: BINARY DATA"));
+    }
 
+    default void setColumnValue (ColumnConfig column, Blob value) {
+        column.setValueComputed(new DatabaseFunction("UNSUPPORTED FOR DIFF: BINARY DATA"));
+    }
+
+    default void setColumnValue (ColumnConfig column, Clob value) {
+        column.setValueComputed(new DatabaseFunction("UNSUPPORTED FOR DIFF: BINARY DATA"));
+    }
+
+    default void setColumnValue (ColumnConfig column, SQLXML value) {
+        column.setValueComputed(new DatabaseFunction("UNSUPPORTED FOR DIFF: BINARY DATA"));
+    }
+
+    int getLiteralStringMaxLength();
+
+    void setLiteralStringMaxLength(int literalStringMaxLength);
+
+}

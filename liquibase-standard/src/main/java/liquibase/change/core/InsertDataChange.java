@@ -31,6 +31,10 @@ public class InsertDataChange extends AbstractChange implements ChangeWithColumn
     private String tableName;
     private List<ColumnConfig> columns;
     private String dbms;
+    @Setter
+    private String prologue;
+    @Setter
+    private String epilogue;
 
     public InsertDataChange() {
         columns = new ArrayList<>();
@@ -90,9 +94,17 @@ public class InsertDataChange extends AbstractChange implements ChangeWithColumn
 
         InsertStatement statement = new InsertStatement(getCatalogName(), getSchemaName(), getTableName());
         for (ColumnConfig column : columns) {
+            if (column.getPrologue() != null) {
+                this.prologue = column.getPrologue();
+            }
+            if (column.getEpilogue() != null) {
+                this.epilogue = column.getEpilogue();
+            }
             if (prepareColumn(database, column)) continue;
             statement.addColumnValue(column.getName(), column.getValueObject());
         }
+        statement.setPrologue(this.prologue);
+        statement.setEpilogue(this.epilogue);
         return new SqlStatement[]{
                 statement
         };
