@@ -349,6 +349,10 @@ public interface Database extends PrioritizedService, AutoCloseable {
 
     String escapeTableName(String catalogName, String schemaName, String tableName);
 
+    default String escapeTablespaceName(String tablespaceName) {
+        return escapeObjectName(tablespaceName, Tablespace.class);
+    }
+
     String escapeIndexName(String catalogName, String schemaName, String indexName);
 
     String escapeObjectName(String objectName, Class<? extends DatabaseObject> objectType);
