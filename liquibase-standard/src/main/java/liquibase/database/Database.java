@@ -32,6 +32,7 @@ import liquibase.structure.core.Index;
 import liquibase.structure.core.PrimaryKey;
 import liquibase.structure.core.Schema;
 import liquibase.structure.core.Sequence;
+import liquibase.structure.core.Tablespace;
 import liquibase.structure.core.UniqueConstraint;
 import liquibase.util.StringUtil;
 
