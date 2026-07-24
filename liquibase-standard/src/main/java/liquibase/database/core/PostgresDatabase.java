@@ -281,6 +281,14 @@ public class PostgresDatabase extends AbstractJdbcDatabase {
     }
 
     @Override
+    public void setColumnValue (ColumnConfig column, byte[] value) {
+        try {
+            column.setValue(new String(value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
+        }
+        catch (UnsupportedEncodingException ignored) {}
+    }
+
+    @Override
     public boolean supportsCreateIfNotExists(Class<? extends DatabaseObject> type) {
         return type.isAssignableFrom(Table.class);
     }
@@ -291,10 +299,22 @@ public class PostgresDatabase extends AbstractJdbcDatabase {
     }
 
     @Override
-    public void setColumnValue (ColumnConfig column, byte[] value) {
-        try {
-            column.setValue(new String(value, GlobalConfiguration.OUTPUT_FILE_ENCODING.getCurrentValue()));
-        }
-        catch (UnsupportedEncodingException ignored) {}
+    public boolean supportsEnumTypeSnapshot() {
+        return true;
+    }
+
+    @Override
+    public boolean supportsCompositeTypeSnapshot() {
+        return true;
+    }
+
+    @Override
+    public boolean supportsCheckConstraintSnapshot() {
+        return true;
+    }
+
+    @Override
+    public boolean supportsStoredLogicSnapshot() {
+        return true;
     }
 }
