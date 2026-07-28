@@ -568,7 +568,7 @@ public abstract class AbstractJdbcDatabase implements Database {
 
             if (generateIncrementBy) {
                 if (generateStartWith) {
-                    if(!(this instanceof PostgresDatabase)) {
+                    if(!(this instanceof AbstractPostgresDatabase)) {
                         autoIncrementClause += ", ";
                     }
                     else {
@@ -772,7 +772,7 @@ public abstract class AbstractJdbcDatabase implements Database {
     @Override
     public boolean supportsDropTableCascadeConstraints() {
         return ((this instanceof SQLiteDatabase) || (this instanceof SybaseDatabase) || (this instanceof
-                SybaseASADatabase) || (this instanceof PostgresDatabase) || (this instanceof OracleDatabase));
+                SybaseASADatabase) || (this instanceof AbstractPostgresDatabase) || (this instanceof OracleDatabase));
     }
 
     @Override
