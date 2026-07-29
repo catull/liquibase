@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019fa88f-ae7b-761d-9dd2-57cd1dcbf7d1",
-  "CreatedAt": "2026-07-28T11:50:16.443401931Z",
+  "ReportID": "019fadb9-8924-701a-a2ef-4288ef6404a0",
+  "CreatedAt": "2026-07-29T11:54:05.476007792Z",
   "ArtifactID": "sha256:ab06f77e82c54ce2f2a004f579c5c6b6c1689d650816b8124569f23747ebbd32",
   "ArtifactName": "liquibase/liquibase:5.0.3",
   "ArtifactType": "container_image",
@@ -11138,6 +11138,9 @@
             "https://access.redhat.com/errata/RHSA-2026:42240",
             "https://access.redhat.com/errata/RHSA-2026:42644",
             "https://access.redhat.com/errata/RHSA-2026:42946",
+            "https://access.redhat.com/errata/RHSA-2026:44622",
+            "https://access.redhat.com/errata/RHSA-2026:46394",
+            "https://access.redhat.com/errata/RHSA-2026:46395",
             "https://access.redhat.com/security/cve/CVE-2026-27145",
             "https://bugzilla.redhat.com/2445356",
             "https://bugzilla.redhat.com/2484207",
@@ -11151,14 +11154,14 @@
             "https://go.dev/issue/79694",
             "https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw",
             "https://linux.oracle.com/cve/CVE-2026-27145.html",
-            "https://linux.oracle.com/errata/ELSA-2026-39573.html",
+            "https://linux.oracle.com/errata/ELSA-2026-46395.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-27145",
             "https://pkg.go.dev/vuln/GO-2026-5037",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json",
             "https://www.cve.org/CVERecord?id=CVE-2026-27145"
           ],
           "PublishedDate": "2026-06-02T23:16:35.57Z",
-          "LastModifiedDate": "2026-07-22T19:10:00.12Z"
+          "LastModifiedDate": "2026-07-28T13:17:51.113Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39822",
