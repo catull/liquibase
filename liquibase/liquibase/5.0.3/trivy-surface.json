@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019ff598-b5e4-70de-aecf-c298765e17fa",
-  "CreatedAt": "2026-08-12T10:50:53.796058528Z",
+  "ReportID": "019ffac0-14e6-7b6c-a725-8abbbced26dd",
+  "CreatedAt": "2026-08-13T10:52:00.102749987Z",
   "ArtifactID": "sha256:ab06f77e82c54ce2f2a004f579c5c6b6c1689d650816b8124569f23747ebbd32",
   "ArtifactName": "liquibase/liquibase:5.0.3",
   "ArtifactType": "container_image",
@@ -10707,6 +10707,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481896",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481897",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481898",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34180",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34181",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34182",
@@ -10831,6 +10832,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481896",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481897",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481898",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34180",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34181",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34182",
@@ -11120,6 +11122,7 @@
             "azure": 2,
             "bitnami": 2,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3
           },
@@ -11184,11 +11187,18 @@
             "https://access.redhat.com/errata/RHSA-2026:51187",
             "https://access.redhat.com/errata/RHSA-2026:52946",
             "https://access.redhat.com/errata/RHSA-2026:53374",
+            "https://access.redhat.com/errata/RHSA-2026:53412",
+            "https://access.redhat.com/errata/RHSA-2026:53413",
+            "https://access.redhat.com/errata/RHSA-2026:53415",
+            "https://access.redhat.com/errata/RHSA-2026:53416",
+            "https://access.redhat.com/errata/RHSA-2026:53530",
+            "https://access.redhat.com/errata/RHSA-2026:54168",
             "https://access.redhat.com/security/cve/CVE-2026-27145",
             "https://bugzilla.redhat.com/2445356",
             "https://bugzilla.redhat.com/2484207",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2445356",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2484207",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145",
             "https://errata.almalinux.org/9/ALSA-2026-36317.html",
@@ -11204,7 +11214,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-27145"
           ],
           "PublishedDate": "2026-06-02T23:16:35.57Z",
-          "LastModifiedDate": "2026-08-11T13:18:11.657Z"
+          "LastModifiedDate": "2026-08-12T12:18:14.25Z"
         },
         {
           "VulnerabilityID": "CVE-2026-39822",
@@ -11243,6 +11253,7 @@
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3
           },
@@ -11261,6 +11272,7 @@
             "https://access.redhat.com/security/cve/CVE-2026-39822",
             "https://bugzilla.redhat.com/2498152",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2498152",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822",
             "https://errata.almalinux.org/9/ALSA-2026-38878.html",
             "https://errata.rockylinux.org/RLSA-2026:38878",
