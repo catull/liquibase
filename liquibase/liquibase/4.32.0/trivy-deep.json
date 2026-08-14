@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019ffac0-f746-7b1d-b97d-2450b824e61b",
-  "CreatedAt": "2026-08-13T10:52:58.054730039Z",
+  "ReportID": "019fffe3-f323-798a-8e64-633524e5906f",
+  "CreatedAt": "2026-08-14T10:49:16.835626289Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -603,6 +603,7 @@
             "https://access.redhat.com/errata/RHSA-2026:50847",
             "https://access.redhat.com/errata/RHSA-2026:50848",
             "https://access.redhat.com/errata/RHSA-2026:50849",
+            "https://access.redhat.com/errata/RHSA-2026:54435",
             "https://access.redhat.com/security/cve/CVE-2026-54513",
             "https://bugzilla.redhat.com/2492010",
             "https://bugzilla.redhat.com/2492015",
@@ -627,7 +628,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54513"
           ],
           "PublishedDate": "2026-06-23T21:17:02.333Z",
-          "LastModifiedDate": "2026-08-06T13:18:20.053Z"
+          "LastModifiedDate": "2026-08-13T13:19:12.537Z"
         },
         {
           "VulnerabilityID": "CVE-2025-49146",
@@ -2366,7 +2367,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -2452,7 +2453,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -2538,7 +2539,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -2624,7 +2625,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -2713,7 +2714,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -2802,7 +2803,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
