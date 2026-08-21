@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a02040-de8d-75ee-81e6-5a783870ce7f",
-  "CreatedAt": "2026-08-20T17:38:37.325389991Z",
+  "ReportID": "01a0233d-061f-7c27-b274-0e33e79f2785",
+  "CreatedAt": "2026-08-21T07:33:16.959797816Z",
   "ArtifactID": "sha256:861b2251f36d8146cd3f9043aeb03076b825b2c971176366c6de75af40289b90",
   "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:cdbdec7fa9dd7d547185b52db4e8c0b350f9789b",
   "ArtifactType": "container_image",
@@ -32,7 +32,7 @@
       "ghcr.io/catull/liquibase/liquibase-liquibase:cdbdec7fa9dd7d547185b52db4e8c0b350f9789b"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:ab4940f2181f56211f09483910bdd1922cf85caad7200a7068d385922a39b3cf"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:41aff94b0e69d6ebf4e5e6de70e28f3230d5b8ef994c914485107b299778033f"
     ],
     "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:cdbdec7fa9dd7d547185b52db4e8c0b350f9789b",
     "ImageConfig": {
@@ -11028,6 +11028,7 @@
             "https://access.redhat.com/errata/RHSA-2026:56223",
             "https://access.redhat.com/errata/RHSA-2026:56340",
             "https://access.redhat.com/errata/RHSA-2026:56431",
+            "https://access.redhat.com/errata/RHSA-2026:57194",
             "https://access.redhat.com/security/cve/CVE-2026-39821",
             "https://bugzilla.redhat.com/2480756",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2480756",
@@ -11051,7 +11052,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
-          "LastModifiedDate": "2026-08-19T12:18:01.253Z"
+          "LastModifiedDate": "2026-08-20T13:18:12.15Z"
         },
         {
           "VulnerabilityID": "CVE-2026-46600",
