@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a032bd-d556-7d1f-ba67-8f2b43f1f282",
-  "CreatedAt": "2026-08-24T07:48:16.854861133Z",
+  "ReportID": "01a037d7-f9cd-7f33-aeb1-9d23e02db4f1",
+  "CreatedAt": "2026-08-25T07:34:56.205997713Z",
   "ArtifactID": "sha256:b4aeb4e73cc15db3b595bba1b0aae7266d11b1a932ee20efa7c9c8ebdf844aba",
   "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:def19740161323a107a410eaa76aaee39dbb8c51",
   "ArtifactType": "container_image",
@@ -32,7 +32,7 @@
       "ghcr.io/catull/liquibase/liquibase-liquibase:def19740161323a107a410eaa76aaee39dbb8c51"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:a671b1589d0a66a72f5c360b42de59ce910e01ea3e486162036b1602b6039e38"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:74afcf061843d9515b0714245cb782d594c3860f2902db478800dc2683669c56"
     ],
     "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:def19740161323a107a410eaa76aaee39dbb8c51",
     "ImageConfig": {
@@ -11032,14 +11032,12 @@
             "https://access.redhat.com/errata/RHSA-2026:57541",
             "https://access.redhat.com/security/cve/CVE-2026-39821",
             "https://bugzilla.redhat.com/2480756",
-            "https://bugzilla.redhat.com/2484207",
-            "https://bugzilla.redhat.com/2498152",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2480756",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2498152",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822",
-            "https://errata.almalinux.org/8/ALSA-2026-38995.html",
+            "https://errata.almalinux.org/9/ALSA-2026-37435.html",
             "https://errata.rockylinux.org/RLSA-2026:37435",
             "https://github.com/golang/go/issues/78760",
             "https://go.dev/cl/767220",
@@ -11055,7 +11053,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
-          "LastModifiedDate": "2026-08-21T13:17:38.087Z"
+          "LastModifiedDate": "2026-08-24T13:18:22.547Z"
         },
         {
           "VulnerabilityID": "CVE-2026-46600",
