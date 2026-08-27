@@ -3,10 +3,10 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a03cff-b167-71cd-8bb6-9d7655132ec6",
-  "CreatedAt": "2026-08-26T07:36:25.191119627Z",
+  "ReportID": "01a0445e-d07f-7682-a792-809ccd65f9ef",
+  "CreatedAt": "2026-08-27T17:57:39.583428038Z",
   "ArtifactID": "sha256:1bdcefeee9707a3905348df81f476df40052a4e96d863dc310770030ef4b6b65",
-  "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:ff8db73714e888dbeb0bbfaf6f2085f8eca35c0a",
+  "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:6d5e0aa9ac607704b11004d981718bc5860f90b0",
   "ArtifactType": "container_image",
   "Metadata": {
     "Size": 312124416,
@@ -29,12 +29,12 @@
       "sha256:ef068512f1997af845be7aa810e7cf83280f9a32ef0b28ebd078a716d0049202"
     ],
     "RepoTags": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase:ff8db73714e888dbeb0bbfaf6f2085f8eca35c0a"
+      "ghcr.io/catull/liquibase/liquibase-liquibase:6d5e0aa9ac607704b11004d981718bc5860f90b0"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:5da7ee5d66944e9f2283b204169061278dc4c2b871c410256fca4de794b55d17"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:387728d582ea1f72357db8d40ccc773225e6daf36513401d98ff69798db671f1"
     ],
-    "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:ff8db73714e888dbeb0bbfaf6f2085f8eca35c0a",
+    "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:6d5e0aa9ac607704b11004d981718bc5860f90b0",
     "ImageConfig": {
       "architecture": "amd64",
       "created": "2026-08-26T07:35:09.137846416Z",
@@ -340,7 +340,7 @@
   },
   "Results": [
     {
-      "Target": "ghcr.io/catull/liquibase/liquibase-liquibase:ff8db73714e888dbeb0bbfaf6f2085f8eca35c0a (ubuntu 24.04)",
+      "Target": "ghcr.io/catull/liquibase/liquibase-liquibase:6d5e0aa9ac607704b11004d981718bc5860f90b0 (ubuntu 24.04)",
       "Class": "os-pkgs",
       "Type": "ubuntu",
       "Packages": [
@@ -10997,6 +10997,8 @@
             "https://access.redhat.com/errata/RHSA-2026:47735",
             "https://access.redhat.com/errata/RHSA-2026:47737",
             "https://access.redhat.com/errata/RHSA-2026:47952",
+            "https://access.redhat.com/errata/RHSA-2026:49702",
+            "https://access.redhat.com/errata/RHSA-2026:49712",
             "https://access.redhat.com/errata/RHSA-2026:50300",
             "https://access.redhat.com/errata/RHSA-2026:50843",
             "https://access.redhat.com/errata/RHSA-2026:51033",
@@ -11030,15 +11032,22 @@
             "https://access.redhat.com/errata/RHSA-2026:56431",
             "https://access.redhat.com/errata/RHSA-2026:57194",
             "https://access.redhat.com/errata/RHSA-2026:57541",
+            "https://access.redhat.com/errata/RHSA-2026:57649",
+            "https://access.redhat.com/errata/RHSA-2026:57845",
+            "https://access.redhat.com/errata/RHSA-2026:59546",
+            "https://access.redhat.com/errata/RHSA-2026:59549",
+            "https://access.redhat.com/errata/RHSA-2026:59562",
+            "https://access.redhat.com/errata/RHSA-2026:60315",
+            "https://access.redhat.com/errata/RHSA-2026:60354",
+            "https://access.redhat.com/errata/RHSA-2026:60387",
             "https://access.redhat.com/security/cve/CVE-2026-39821",
             "https://bugzilla.redhat.com/2480756",
-            "https://bugzilla.redhat.com/2484207",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2480756",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2498152",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822",
-            "https://errata.almalinux.org/10/ALSA-2026-46395.html",
+            "https://errata.almalinux.org/9/ALSA-2026-37435.html",
             "https://errata.rockylinux.org/RLSA-2026:37435",
             "https://github.com/golang/go/issues/78760",
             "https://go.dev/cl/767220",
@@ -11054,7 +11063,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
-          "LastModifiedDate": "2026-08-25T13:18:46.24Z"
+          "LastModifiedDate": "2026-08-27T13:17:48.777Z"
         },
         {
           "VulnerabilityID": "CVE-2026-46600",
