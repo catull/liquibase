@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a090c2-c241-7660-b39a-a7b531d23885",
-  "CreatedAt": "2026-09-11T13:57:57.953419477Z",
+  "ReportID": "01a0a0ae-7c80-7058-9780-6dc046d31468",
+  "CreatedAt": "2026-09-14T16:09:44.832023554Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -898,13 +898,17 @@
             "https://access.redhat.com/errata/RHSA-2026:52930",
             "https://access.redhat.com/errata/RHSA-2026:52978",
             "https://access.redhat.com/errata/RHSA-2026:54532",
+            "https://access.redhat.com/errata/RHSA-2026:59277",
+            "https://access.redhat.com/errata/RHSA-2026:59278",
+            "https://access.redhat.com/errata/RHSA-2026:66488",
+            "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
             "https://bugzilla.redhat.com/2463857",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
             "https://errata.almalinux.org/9/ALSA-2026-22304.html",
-            "https://errata.rockylinux.org/RLSA-2026:22304",
+            "https://errata.rockylinux.org/RLSA-2026:24348",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
@@ -915,7 +919,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-42198"
           ],
           "PublishedDate": "2026-04-29T16:16:25.427Z",
-          "LastModifiedDate": "2026-08-18T12:19:10.97Z"
+          "LastModifiedDate": "2026-09-11T13:17:58.347Z"
         },
         {
           "VulnerabilityID": "CVE-2023-32697",

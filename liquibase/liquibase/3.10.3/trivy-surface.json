@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a090c4-fd3e-7378-a0bd-d510f76c0a6c",
-  "CreatedAt": "2026-09-11T14:00:24.126229596Z",
+  "ReportID": "01a0a0ab-e495-7c32-8f5b-3dc24c493e9f",
+  "CreatedAt": "2026-09-14T16:06:54.869800507Z",
   "ArtifactID": "sha256:3b3119706bb9d14069b5eab36a4d25f9d2ebce093c7324d7a1168011c1ce94ed",
   "ArtifactName": "liquibase/liquibase:3.10.3",
   "ArtifactType": "container_image",
@@ -13733,7 +13733,7 @@
             "CWE-415"
           ],
           "VendorSeverity": {
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -15082,7 +15082,7 @@
             "CWE-415"
           ],
           "VendorSeverity": {
-            "amazon": 3,
+            "amazon": 2,
             "bitnami": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -17862,7 +17862,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "ghsa": 3,
@@ -17983,7 +17983,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -18236,7 +18236,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -18351,7 +18351,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -20853,7 +20853,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "ghsa": 3,
@@ -20974,7 +20974,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "ghsa": 3,
@@ -21227,7 +21227,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -21342,7 +21342,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -22476,7 +22476,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 4,
             "bottlerocket": 2,
             "cbl-mariner": 4,
@@ -24477,13 +24477,17 @@
             "https://access.redhat.com/errata/RHSA-2026:52930",
             "https://access.redhat.com/errata/RHSA-2026:52978",
             "https://access.redhat.com/errata/RHSA-2026:54532",
+            "https://access.redhat.com/errata/RHSA-2026:59277",
+            "https://access.redhat.com/errata/RHSA-2026:59278",
+            "https://access.redhat.com/errata/RHSA-2026:66488",
+            "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
             "https://bugzilla.redhat.com/2463857",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
             "https://errata.almalinux.org/9/ALSA-2026-22304.html",
-            "https://errata.rockylinux.org/RLSA-2026:22304",
+            "https://errata.rockylinux.org/RLSA-2026:24348",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
@@ -24494,7 +24498,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-42198"
           ],
           "PublishedDate": "2026-04-29T16:16:25.427Z",
-          "LastModifiedDate": "2026-08-18T12:19:10.97Z"
+          "LastModifiedDate": "2026-09-11T13:17:58.347Z"
         },
         {
           "VulnerabilityID": "CVE-2023-32697",
