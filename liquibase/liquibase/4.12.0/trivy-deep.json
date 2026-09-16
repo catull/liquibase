@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a0a583-44b8-78be-8193-4521e438e957",
-  "CreatedAt": "2026-09-15T14:40:38.584574566Z",
+  "ReportID": "01a0aaa3-a5bf-7789-835c-43a6779f458a",
+  "CreatedAt": "2026-09-16T14:34:06.655495025Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -700,14 +700,13 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2024/04/02/6",
-            "https://access.redhat.com/errata/RHSA-2024:1435",
             "https://access.redhat.com/errata/RHSA-2024:1436",
             "https://access.redhat.com/security/cve/CVE-2024-1597",
             "https://bugzilla.redhat.com/2266523",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
-            "https://errata.almalinux.org/8/ALSA-2024-1435.html",
+            "https://errata.almalinux.org/9/ALSA-2024-1436.html",
             "https://errata.rockylinux.org/RLSA-2024:1436",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
@@ -878,7 +877,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
-            "https://errata.almalinux.org/8/ALSA-2026-25030.html",
+            "https://errata.almalinux.org/9/ALSA-2026-22304.html",
             "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
