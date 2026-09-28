@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a0d913-fa84-7402-998d-793369d636c6",
-  "CreatedAt": "2026-09-25T14:59:20.324264027Z",
+  "ReportID": "01a0e928-e61a-72e8-af9e-3c2b233f38c5",
+  "CreatedAt": "2026-09-28T17:56:06.810191628Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -2826,7 +2826,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T16:15:51.053Z",
-          "LastModifiedDate": "2026-06-17T09:56:48.383Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66418",
@@ -2912,7 +2912,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T16:15:51.053Z",
-          "LastModifiedDate": "2026-06-17T09:56:48.383Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66418",
@@ -2998,7 +2998,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T16:15:51.053Z",
-          "LastModifiedDate": "2026-06-17T09:56:48.383Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66471",
@@ -3071,12 +3071,16 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
             "https://errata.almalinux.org/10/ALSA-2026-1086.html",
             "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/advisories/GHSA-2xpw-w6gg-jr37",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2026-1994.yaml",
             "https://github.com/urllib3/urllib3",
             "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+            "https://github.com/urllib3/urllib3/commit/d0fde3672e4a4093f7587858dccfc298eb66e46c",
             "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
             "https://linux.oracle.com/cve/CVE-2025-66471.html",
             "https://linux.oracle.com/errata/ELSA-2026-9031.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+            "https://pypi.org/project/urllib3",
             "https://ubuntu.com/security/notices/USN-7927-1",
             "https://ubuntu.com/security/notices/USN-7927-2",
             "https://ubuntu.com/security/notices/USN-7927-3",
@@ -3087,7 +3091,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T17:16:04.4Z",
-          "LastModifiedDate": "2026-06-17T09:56:53.65Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66471",
@@ -3160,12 +3164,16 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
             "https://errata.almalinux.org/10/ALSA-2026-1086.html",
             "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/advisories/GHSA-2xpw-w6gg-jr37",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2026-1994.yaml",
             "https://github.com/urllib3/urllib3",
             "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+            "https://github.com/urllib3/urllib3/commit/d0fde3672e4a4093f7587858dccfc298eb66e46c",
             "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
             "https://linux.oracle.com/cve/CVE-2025-66471.html",
             "https://linux.oracle.com/errata/ELSA-2026-9031.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+            "https://pypi.org/project/urllib3",
             "https://ubuntu.com/security/notices/USN-7927-1",
             "https://ubuntu.com/security/notices/USN-7927-2",
             "https://ubuntu.com/security/notices/USN-7927-3",
@@ -3176,7 +3184,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T17:16:04.4Z",
-          "LastModifiedDate": "2026-06-17T09:56:53.65Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66471",
@@ -3249,12 +3257,16 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-21441",
             "https://errata.almalinux.org/10/ALSA-2026-1086.html",
             "https://errata.rockylinux.org/RLSA-2026:1087",
+            "https://github.com/advisories/GHSA-2xpw-w6gg-jr37",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2026-1994.yaml",
             "https://github.com/urllib3/urllib3",
             "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+            "https://github.com/urllib3/urllib3/commit/d0fde3672e4a4093f7587858dccfc298eb66e46c",
             "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
             "https://linux.oracle.com/cve/CVE-2025-66471.html",
             "https://linux.oracle.com/errata/ELSA-2026-9031.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+            "https://pypi.org/project/urllib3",
             "https://ubuntu.com/security/notices/USN-7927-1",
             "https://ubuntu.com/security/notices/USN-7927-2",
             "https://ubuntu.com/security/notices/USN-7927-3",
@@ -3265,7 +3277,7 @@
             "https://www.openwall.com/lists/oss-security/2025/12/05/4"
           ],
           "PublishedDate": "2025-12-05T17:16:04.4Z",
-          "LastModifiedDate": "2026-06-17T09:56:53.65Z"
+          "LastModifiedDate": "2026-09-25T23:10:00.463Z"
         },
         {
           "VulnerabilityID": "CVE-2026-21441",

@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a0d911-bd3e-72f4-bba6-f8ea08b4230d",
-  "CreatedAt": "2026-09-25T14:56:53.56619663Z",
+  "ReportID": "01a0e925-6d4c-7849-9c01-0e63a0f80ee9",
+  "CreatedAt": "2026-09-28T17:52:19.276544421Z",
   "ArtifactID": "sha256:78db28c6413f27297243721c20fd71b11a05c1bc7e5641c6f8aa32e27b0b19a5",
   "ArtifactName": "liquibase/liquibase:4.4.2",
   "ArtifactType": "container_image",
@@ -27191,6 +27191,72 @@
           ],
           "PublishedDate": "2025-01-29T18:15:47.03Z",
           "LastModifiedDate": "2026-06-17T08:59:36.757Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0839",
+          "VendorIDs": [
+            "GHSA-jvfv-hrrc-6q72"
+          ],
+          "PkgName": "org.liquibase:liquibase-core",
+          "PkgPath": "liquibase/liquibase.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.liquibase/liquibase-core@4.4.2",
+            "UID": "59597c1b91bdfa2"
+          },
+          "InstalledVersion": "4.4.2",
+          "FixedVersion": "4.8.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:5d33db0442a58c6d49d987d72e9542d9ba640bab864a92016675af683574281c",
+            "DiffID": "sha256:fa71f56d968ea5ce8c9b1a261171fc52ec526956f87b784b4e54d5a5e3c8c905"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0839",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:17bdcec3b3b258eed0b57b2058df1a0d6ccfd91426498a5be9f14aca899cec28",
+          "Title": "liquibase: Improper Restriction of XML External Entity",
+          "Description": "Improper Restriction of XML External Entity Reference in GitHub repository liquibase/liquibase prior to 4.8.0.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2025/Apr/14",
+            "https://access.redhat.com/security/cve/CVE-2022-0839",
+            "https://github.com/liquibase/liquibase",
+            "https://github.com/liquibase/liquibase/commit/33d9d925082097fb1a3d2fc8e44423d964cd9381",
+            "https://huntr.dev/bounties/f1ae5779-b406-4594-a8a3-d089c68d6e70",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0839",
+            "https://www.cve.org/CVERecord?id=CVE-2022-0839",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-03-04T15:15:09.097Z",
+          "LastModifiedDate": "2026-06-17T04:21:20.873Z"
         },
         {
           "VulnerabilityID": "CVE-2024-1597",
