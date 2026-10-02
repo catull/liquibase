@@ -1,8 +1,8 @@
 {
-  "scannedAt": "2026-10-01T16:57:19Z",
+  "scannedAt": "2026-10-02T16:11:07Z",
   "image": "liquibase/liquibase",
   "tag": "4.32.0",
   "status": "success",
   "missing_files": [],
-  "workflowRunId": "36894451734"
+  "workflowRunId": "37030935931"
 }
