@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a11756-aaa4-7632-af83-d993c0a1e1bf",
-  "CreatedAt": "2026-10-07T17:08:38.180407389Z",
+  "ReportID": "01a11c7e-af0c-76c4-abd2-67e78b47118c",
+  "CreatedAt": "2026-10-08T17:10:26.828445697Z",
   "ArtifactID": "sha256:d4f37e9340807630f66f8adb1a7121cdadf1830a973232c342a0651cdece8abd",
   "ArtifactName": "liquibase/liquibase:4.9.1",
   "ArtifactType": "container_image",
@@ -10855,7 +10855,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -12022,7 +12022,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -14605,7 +14605,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -16026,7 +16026,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -16662,7 +16662,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -17298,7 +17298,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -18977,7 +18977,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -21212,7 +21212,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -24177,7 +24177,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -24502,7 +24502,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 4,
             "bottlerocket": 2,
             "cbl-mariner": 4,
@@ -26943,7 +26943,7 @@
           "Severity": "HIGH",
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -27008,6 +27008,7 @@
             "https://ubuntu.com/security/notices/USN-8089-1",
             "https://ubuntu.com/security/notices/USN-8089-2",
             "https://ubuntu.com/security/notices/USN-8089-3",
+            "https://ubuntu.com/security/notices/USN-8900-1",
             "https://www.cve.org/CVERecord?id=CVE-2022-27664"
           ],
           "PublishedDate": "2022-09-06T18:15:12.747Z",
@@ -28678,6 +28679,7 @@
             "https://ubuntu.com/security/notices/USN-8089-1",
             "https://ubuntu.com/security/notices/USN-8089-2",
             "https://ubuntu.com/security/notices/USN-8089-3",
+            "https://ubuntu.com/security/notices/USN-8900-1",
             "https://vuln.go.dev/ID/GO-2023-1571.json",
             "https://www.couchbase.com/alerts/",
             "https://www.cve.org/CVERecord?id=CVE-2022-41723"
@@ -29242,7 +29244,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -30221,7 +30223,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -30658,7 +30660,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -32666,6 +32668,7 @@
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json",
             "https://ubuntu.com/security/notices/USN-8416-1",
             "https://ubuntu.com/security/notices/USN-8883-1",
+            "https://ubuntu.com/security/notices/USN-8900-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
@@ -32704,7 +32707,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -33265,7 +33268,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 4,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -33444,7 +33447,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 3,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },

@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a11758-bd10-7495-b0a7-0ad756807b65",
-  "CreatedAt": "2026-10-07T17:10:53.96830175Z",
+  "ReportID": "01a11c79-cdaa-795a-abb0-7acbdb2fc181",
+  "CreatedAt": "2026-10-08T17:05:06.986613928Z",
   "ArtifactID": "sha256:4591add221a022d283f33817df99129a765f542c8f95839591af3f5ff93d1161",
   "ArtifactName": "liquibase/liquibase:4.26.0",
   "ArtifactType": "container_image",
@@ -11187,7 +11187,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-84782"
           ],
           "PublishedDate": "2026-09-29T16:17:12.5Z",
-          "LastModifiedDate": "2026-09-29T21:27:41.13Z"
+          "LastModifiedDate": "2026-10-08T01:20:56.003Z"
         },
         {
           "VulnerabilityID": "CVE-2026-45447",
@@ -11371,7 +11371,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-84782"
           ],
           "PublishedDate": "2026-09-29T16:17:12.5Z",
-          "LastModifiedDate": "2026-09-29T21:27:41.13Z"
+          "LastModifiedDate": "2026-10-08T01:20:56.003Z"
         }
       ]
     },
@@ -12559,7 +12559,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -12996,7 +12996,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -15004,6 +15004,7 @@
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json",
             "https://ubuntu.com/security/notices/USN-8416-1",
             "https://ubuntu.com/security/notices/USN-8883-1",
+            "https://ubuntu.com/security/notices/USN-8900-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
@@ -15042,7 +15043,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -15603,7 +15604,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 4,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -15782,7 +15783,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 3,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },

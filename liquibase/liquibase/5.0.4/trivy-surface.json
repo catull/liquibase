@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a11758-12df-7a00-be2b-a831c6482426",
-  "CreatedAt": "2026-10-07T17:10:10.399657661Z",
+  "ReportID": "01a11c7f-0a56-7197-81b2-cd7dcbdea311",
+  "CreatedAt": "2026-10-08T17:10:50.198105618Z",
   "ArtifactID": "sha256:6cfbd418093a91cac909e24718bc023de5e6825f4ae22c048f814666c2c3fdbe",
   "ArtifactName": "liquibase/liquibase:5.0.4",
   "ArtifactType": "container_image",
@@ -10651,7 +10651,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-84782"
           ],
           "PublishedDate": "2026-09-29T16:17:12.5Z",
-          "LastModifiedDate": "2026-09-29T21:27:41.13Z"
+          "LastModifiedDate": "2026-10-08T01:20:56.003Z"
         },
         {
           "VulnerabilityID": "CVE-2026-84782",
@@ -10706,7 +10706,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-84782"
           ],
           "PublishedDate": "2026-09-29T16:17:12.5Z",
-          "LastModifiedDate": "2026-09-29T21:27:41.13Z"
+          "LastModifiedDate": "2026-10-08T01:20:56.003Z"
         }
       ]
     },
@@ -11254,6 +11254,7 @@
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json",
             "https://ubuntu.com/security/notices/USN-8416-1",
             "https://ubuntu.com/security/notices/USN-8883-1",
+            "https://ubuntu.com/security/notices/USN-8900-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-39821"
           ],
           "PublishedDate": "2026-05-22T16:16:20.41Z",
@@ -11438,7 +11439,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 4,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -11617,7 +11618,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 3,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
