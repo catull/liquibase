@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a11c7c-bd22-7243-8a8d-3b1ec778df6d",
-  "CreatedAt": "2026-10-08T17:08:19.362150181Z",
+  "ReportID": "01a1218b-d9a4-72c4-9465-06a0898b9a66",
+  "CreatedAt": "2026-10-09T16:42:55.780182665Z",
   "ArtifactID": "sha256:89f192b669728dd25d0b5d908943629d9a19c6d29e4611a26ed7ba30a8f52479",
   "ArtifactName": "liquibase/liquibase:4.17.2",
   "ArtifactType": "container_image",
@@ -13221,6 +13221,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -13284,6 +13285,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -13570,6 +13572,7 @@
             "https://access.redhat.com/errata/RHSA-2026:66488",
             "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
+            "https://advisory.echohq.com/cve/CVE-2026-42198",
             "https://bugzilla.redhat.com/2463857",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
@@ -13710,6 +13713,7 @@
             "http://www.openwall.com/lists/oss-security/2023/11/19/1",
             "https://access.redhat.com/errata/RHSA-2022:9058",
             "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://advisory.echohq.com/cve/CVE-2022-1471",
             "https://bitbucket.org/snakeyaml/snakeyaml",
             "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
             "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
@@ -13723,6 +13727,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
             "https://errata.almalinux.org/8/ALSA-2022-9058.html",
             "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
             "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
             "https://github.com/mbechler/marshalsec",
             "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
@@ -14302,7 +14307,7 @@
           "Severity": "HIGH",
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -15320,7 +15325,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-32189"
           ],
           "PublishedDate": "2022-08-10T20:15:47.507Z",
-          "LastModifiedDate": "2026-06-17T04:46:49.81Z"
+          "LastModifiedDate": "2026-10-08T22:17:21.54Z"
         },
         {
           "VulnerabilityID": "CVE-2022-41715",
@@ -16302,7 +16307,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -17281,7 +17286,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -17718,7 +17723,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -19765,7 +19770,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -20326,7 +20331,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 2,
+            "photon": 4,
             "redhat": 3,
             "rocky": 3
           },
@@ -20505,7 +20510,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 2,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3
           },
@@ -20638,6 +20643,104 @@
           ],
           "PublishedDate": "2026-08-13T22:17:22.55Z",
           "LastModifiedDate": "2026-09-03T16:37:52.17Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.18.3",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.18.3",
+            "UID": "d8a4b6e762cfb3b"
+          },
+          "InstalledVersion": "v1.18.3",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:6381b975f1056233ad67bbd9979912113e4cf4f0bddf7e236944834433c4508b",
+            "DiffID": "sha256:6f7995b3e7a439ff804c18771f98078f1d8029b50cbdcd5394e5be66834982de"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:1af6d956601deb5633303fa073c347a28ffe4dad74c9931eb62c85987caf7a1d",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-08T23:17:03.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.18.3",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.18.3",
+            "UID": "d8a4b6e762cfb3b"
+          },
+          "InstalledVersion": "v1.18.3",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:6381b975f1056233ad67bbd9979912113e4cf4f0bddf7e236944834433c4508b",
+            "DiffID": "sha256:6f7995b3e7a439ff804c18771f98078f1d8029b50cbdcd5394e5be66834982de"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:e4fb9f59f1c959d4a7a0b2691262134e0c5f9a1a882b88d3d71bced27715b7ad",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-08T23:17:06.037Z"
         }
       ]
     }

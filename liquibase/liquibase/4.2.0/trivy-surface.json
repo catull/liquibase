@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a11c7f-4d0d-7048-8854-a55f64eb94a0",
-  "CreatedAt": "2026-10-08T17:11:07.277020249Z",
+  "ReportID": "01a1218e-ca6e-79f1-863b-7d732735f40a",
+  "CreatedAt": "2026-10-09T16:46:08.494653273Z",
   "ArtifactID": "sha256:7c0d79b300bd50f729e54f4ed719f7195e986e67d8bacfd4ac67159fe30889ec",
   "ArtifactName": "liquibase/liquibase:4.2.0",
   "ArtifactType": "container_image",
@@ -15356,7 +15356,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-02T13:15:13.17Z",
-          "LastModifiedDate": "2026-06-17T04:05:17.183Z"
+          "LastModifiedDate": "2026-10-08T21:17:40.463Z"
         },
         {
           "VulnerabilityID": "CVE-2022-1271",
@@ -15522,7 +15522,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-39537"
           ],
           "PublishedDate": "2021-09-20T16:15:12.477Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-08T21:17:39.667Z"
         },
         {
           "VulnerabilityID": "CVE-2022-29458",
@@ -17373,7 +17373,7 @@
             "https://www.tenable.com/security/tns-2022-02"
           ],
           "PublishedDate": "2021-08-24T15:15:09.133Z",
-          "LastModifiedDate": "2026-06-17T04:05:36.467Z"
+          "LastModifiedDate": "2026-10-08T21:17:40.947Z"
         },
         {
           "VulnerabilityID": "CVE-2021-23840",
@@ -18381,7 +18381,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -19164,7 +19164,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-39537"
           ],
           "PublishedDate": "2021-09-20T16:15:12.477Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-08T21:17:39.667Z"
         },
         {
           "VulnerabilityID": "CVE-2022-29458",
@@ -19857,7 +19857,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-39537"
           ],
           "PublishedDate": "2021-09-20T16:15:12.477Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-08T21:17:39.667Z"
         },
         {
           "VulnerabilityID": "CVE-2022-29458",
@@ -20103,7 +20103,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-39537"
           ],
           "PublishedDate": "2021-09-20T16:15:12.477Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-08T21:17:39.667Z"
         },
         {
           "VulnerabilityID": "CVE-2022-29458",
@@ -20364,7 +20364,7 @@
             "https://www.tenable.com/security/tns-2022-02"
           ],
           "PublishedDate": "2021-08-24T15:15:09.133Z",
-          "LastModifiedDate": "2026-06-17T04:05:36.467Z"
+          "LastModifiedDate": "2026-10-08T21:17:40.947Z"
         },
         {
           "VulnerabilityID": "CVE-2021-23840",
@@ -21372,7 +21372,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -22023,7 +22023,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 4,
             "bottlerocket": 2,
             "cbl-mariner": 4,
@@ -23315,6 +23315,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -23378,6 +23379,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -23978,6 +23980,7 @@
             "https://access.redhat.com/errata/RHSA-2026:66488",
             "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
+            "https://advisory.echohq.com/cve/CVE-2026-42198",
             "https://bugzilla.redhat.com/2463857",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
@@ -24255,6 +24258,7 @@
             "http://www.openwall.com/lists/oss-security/2023/11/19/1",
             "https://access.redhat.com/errata/RHSA-2022:9058",
             "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://advisory.echohq.com/cve/CVE-2022-1471",
             "https://bitbucket.org/snakeyaml/snakeyaml",
             "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
             "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
@@ -24268,6 +24272,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
             "https://errata.almalinux.org/8/ALSA-2022-9058.html",
             "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
             "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
             "https://github.com/mbechler/marshalsec",
             "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
@@ -24345,6 +24350,7 @@
           "References": [
             "https://access.redhat.com/errata/RHSA-2022:6820",
             "https://access.redhat.com/security/cve/CVE-2022-25857",
+            "https://advisory.echohq.com/cve/CVE-2022-25857",
             "https://bitbucket.org/snakeyaml/snakeyaml/commits/fc300780da21f4bb92c148bc90257201220cf174",
             "https://bitbucket.org/snakeyaml/snakeyaml/issues/525",
             "https://bugzilla.redhat.com/2126789",
@@ -24352,6 +24358,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25857",
             "https://errata.almalinux.org/8/ALSA-2022-6820.html",
             "https://errata.rockylinux.org/RLSA-2022:6820",
+            "https://github.com/advisories/GHSA-3mc7-4q67-w48m",
             "https://github.com/snakeyaml/snakeyaml",
             "https://github.com/snakeyaml/snakeyaml/commit/fc300780da21f4bb92c148bc90257201220cf174",
             "https://linux.oracle.com/cve/CVE-2022-25857.html",
