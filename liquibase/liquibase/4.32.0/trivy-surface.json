@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1218c-2892-7ccc-bc73-64d6778edfad",
-  "CreatedAt": "2026-10-09T16:43:15.986840491Z",
+  "ReportID": "01a13198-9af6-73e8-a248-e11d83f198d0",
+  "CreatedAt": "2026-10-12T19:30:47.158258218Z",
   "ArtifactID": "sha256:e7e081a7e3694fb8b42307622ba7f47f327e178eeb8e4f00ab5da0b12bd0cfb3",
   "ArtifactName": "liquibase/liquibase:4.32.0",
   "ArtifactType": "container_image",
@@ -12642,6 +12642,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "alma": 2,
             "oracle-oval": 3,
             "redhat": 3,
             "rocky": 3,
@@ -12654,12 +12655,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:76918",
+            "https://access.redhat.com/errata/RHSA-2026:77396",
+            "https://access.redhat.com/errata/RHSA-2026:80514",
             "https://access.redhat.com/security/cve/CVE-2026-84782",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2537080",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2537080",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84782",
-            "https://errata.rockylinux.org/RLSA-2026:76918",
+            "https://errata.almalinux.org/9/ALSA-2026-80514.html",
+            "https://errata.rockylinux.org/RLSA-2026:77396",
             "https://github.com/openssl/openssl/commit/906cf0ef1c85ca40ce69163e9086d6d3fe292943",
             "https://github.com/openssl/openssl/commit/9f6b34422af7eb5dac61322e33dac1ae989fa628",
             "https://github.com/openssl/openssl/commit/a383dafdd754eb5b22bf45e37e1bff9d07277a58",
@@ -12835,6 +12840,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "alma": 2,
             "oracle-oval": 3,
             "redhat": 3,
             "rocky": 3,
@@ -12847,12 +12853,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:76918",
+            "https://access.redhat.com/errata/RHSA-2026:77396",
+            "https://access.redhat.com/errata/RHSA-2026:80514",
             "https://access.redhat.com/security/cve/CVE-2026-84782",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2537080",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2537080",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84782",
-            "https://errata.rockylinux.org/RLSA-2026:76918",
+            "https://errata.almalinux.org/9/ALSA-2026-80514.html",
+            "https://errata.rockylinux.org/RLSA-2026:77396",
             "https://github.com/openssl/openssl/commit/906cf0ef1c85ca40ce69163e9086d6d3fe292943",
             "https://github.com/openssl/openssl/commit/9f6b34422af7eb5dac61322e33dac1ae989fa628",
             "https://github.com/openssl/openssl/commit/a383dafdd754eb5b22bf45e37e1bff9d07277a58",
@@ -13855,9 +13865,11 @@
             "CWE-1333"
           ],
           "VendorSeverity": {
+            "alma": 3,
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
+            "rocky": 3,
             "ubuntu": 2
           },
           "CVSS": {
@@ -13871,8 +13883,15 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:77648",
             "https://access.redhat.com/security/cve/CVE-2026-68497",
             "https://advisory.echohq.com/cve/CVE-2026-68497",
+            "https://bugzilla.redhat.com/2531964",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2531964",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-68497",
+            "https://errata.almalinux.org/10/ALSA-2026-77648.html",
+            "https://errata.rockylinux.org/RLSA-2026:77648",
             "https://github.com/FasterXML/jackson-databind",
             "https://github.com/FasterXML/jackson-databind/commit/a99b7e74c8928f43f6975773a8c862c8316178bd",
             "https://github.com/FasterXML/jackson-databind/pull/6127",
@@ -13924,7 +13943,8 @@
           ],
           "VendorSeverity": {
             "ghsa": 3,
-            "redhat": 3
+            "redhat": 3,
+            "ubuntu": 2
           },
           "CVSS": {
             "ghsa": {
@@ -13942,6 +13962,7 @@
             "https://github.com/FasterXML/jackson-databind",
             "https://github.com/FasterXML/jackson-databind/commit/2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577",
             "https://github.com/FasterXML/jackson-databind/issues/6203",
+            "https://github.com/FasterXML/jackson-databind/pull/6203",
             "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.11",
             "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.7",
             "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.3",
@@ -14445,7 +14466,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -14882,7 +14903,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -16929,7 +16950,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -17490,7 +17511,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 4,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -17669,7 +17690,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 3,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -17831,6 +17852,9 @@
           "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
           "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
           "VendorSeverity": {
             "redhat": 3
           },
@@ -17850,7 +17874,61 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-78667"
           ],
           "PublishedDate": "2026-10-08T23:17:03.88Z",
-          "LastModifiedDate": "2026-10-08T23:17:03.88Z"
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.23.8",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.23.8",
+            "UID": "af094e69e359ed3c"
+          },
+          "InstalledVersion": "v1.23.8",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:9dc188453f0392ffaf7354ce0f976d9e32aadfbcf9aa08a4d5b8c071e8f61221",
+            "DiffID": "sha256:917067296a3044589d844057e6a7a75ecc4bd24f75811d248cc8abceefb5d741"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:c769768b27d17d6d505faec1f18c4f7e06a88eb1c3ac7cbda4c47432d97062ac",
+          "Title": "net/http: net/http/internal/http2: golang: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
         },
         {
           "VulnerabilityID": "CVE-2026-97031",
@@ -17880,6 +17958,9 @@
           "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
           "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
           "VendorSeverity": {
             "redhat": 3
           },
@@ -17899,7 +17980,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
           ],
           "PublishedDate": "2026-10-08T23:17:06.037Z",
-          "LastModifiedDate": "2026-10-08T23:17:06.037Z"
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
         }
       ]
     }

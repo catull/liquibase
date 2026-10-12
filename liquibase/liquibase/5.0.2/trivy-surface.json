@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1218e-4fd3-7894-8ea5-0433a535037d",
-  "CreatedAt": "2026-10-09T16:45:37.107564563Z",
+  "ReportID": "01a1319d-c849-770f-ae3e-25cb27366d69",
+  "CreatedAt": "2026-10-12T19:36:26.441463659Z",
   "ArtifactID": "sha256:ff9ccc0f412885d2f350273b856e29f33d5cbd3a86b57d23715fdffe9f11c356",
   "ArtifactName": "liquibase/liquibase:5.0.2",
   "ArtifactType": "container_image",
@@ -10788,6 +10788,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "alma": 2,
             "oracle-oval": 3,
             "redhat": 3,
             "rocky": 3,
@@ -10800,12 +10801,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:76918",
+            "https://access.redhat.com/errata/RHSA-2026:77396",
+            "https://access.redhat.com/errata/RHSA-2026:80514",
             "https://access.redhat.com/security/cve/CVE-2026-84782",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2537080",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2537080",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84782",
-            "https://errata.rockylinux.org/RLSA-2026:76918",
+            "https://errata.almalinux.org/9/ALSA-2026-80514.html",
+            "https://errata.rockylinux.org/RLSA-2026:77396",
             "https://github.com/openssl/openssl/commit/906cf0ef1c85ca40ce69163e9086d6d3fe292943",
             "https://github.com/openssl/openssl/commit/9f6b34422af7eb5dac61322e33dac1ae989fa628",
             "https://github.com/openssl/openssl/commit/a383dafdd754eb5b22bf45e37e1bff9d07277a58",
@@ -10981,6 +10986,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "alma": 2,
             "oracle-oval": 3,
             "redhat": 3,
             "rocky": 3,
@@ -10993,12 +10999,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:76918",
+            "https://access.redhat.com/errata/RHSA-2026:77396",
+            "https://access.redhat.com/errata/RHSA-2026:80514",
             "https://access.redhat.com/security/cve/CVE-2026-84782",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2537080",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2537080",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-84782",
-            "https://errata.rockylinux.org/RLSA-2026:76918",
+            "https://errata.almalinux.org/9/ALSA-2026-80514.html",
+            "https://errata.rockylinux.org/RLSA-2026:77396",
             "https://github.com/openssl/openssl/commit/906cf0ef1c85ca40ce69163e9086d6d3fe292943",
             "https://github.com/openssl/openssl/commit/9f6b34422af7eb5dac61322e33dac1ae989fa628",
             "https://github.com/openssl/openssl/commit/a383dafdd754eb5b22bf45e37e1bff9d07277a58",
@@ -11261,7 +11271,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -13308,7 +13318,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -13869,7 +13879,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 4,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -14048,7 +14058,7 @@
             "amazon": 3,
             "bitnami": 2,
             "oracle-oval": 3,
-            "photon": 3,
+            "photon": 2,
             "redhat": 3,
             "rocky": 3
           },
@@ -14210,6 +14220,9 @@
           "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
           "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
           "VendorSeverity": {
             "redhat": 3
           },
@@ -14229,7 +14242,61 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-78667"
           ],
           "PublishedDate": "2026-10-08T23:17:03.88Z",
-          "LastModifiedDate": "2026-10-08T23:17:03.88Z"
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.25.7",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.25.7",
+            "UID": "4083889a23f61dd5"
+          },
+          "InstalledVersion": "v1.25.7",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:334358fec3557bd2107a578a8e241f43310faa3450b8bdeebacdef14e26c6dcd",
+            "DiffID": "sha256:b84826ae26736d68df8fcf86f4361b697476c69a1d0f50e0d01c811374467f32"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:41d64d97ed9d508ca3eaeace89b9737baf14c64a1d57901efac58d8b85508a14",
+          "Title": "net/http: net/http/internal/http2: golang: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
         },
         {
           "VulnerabilityID": "CVE-2026-97031",
@@ -14259,6 +14326,9 @@
           "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
           "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
           "VendorSeverity": {
             "redhat": 3
           },
@@ -14278,7 +14348,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
           ],
           "PublishedDate": "2026-10-08T23:17:06.037Z",
-          "LastModifiedDate": "2026-10-08T23:17:06.037Z"
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
         }
       ]
     }
