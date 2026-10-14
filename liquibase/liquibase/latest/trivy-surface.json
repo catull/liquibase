@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a135c3-9b85-7e20-ae0c-7ab1b067e70a",
-  "CreatedAt": "2026-10-13T14:56:14.213926874Z",
+  "ReportID": "01a13a74-5a62-7d12-a519-a88ca1a384d7",
+  "CreatedAt": "2026-10-14T12:47:46.27485801Z",
   "ArtifactID": "sha256:54b11f2df609b9b6976d65e0ebca82f877a5ab91db068d6e578ba4d89dc8f6e6",
   "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:f58ccf20b2610fd04ebcabc943842f1d6484402d",
   "ArtifactType": "container_image",
@@ -32,7 +32,7 @@
       "ghcr.io/catull/liquibase/liquibase-liquibase:f58ccf20b2610fd04ebcabc943842f1d6484402d"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:f4b4d2ecf34f86bec3da2d977d7f50a89a1e1e2740a13879bf9b06d92c9544b7"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:959baffc84a2f16641b5669ea1714ab1aa80c18ecc96e7968a10da71e7c67880"
     ],
     "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:f58ccf20b2610fd04ebcabc943842f1d6484402d",
     "ImageConfig": {
@@ -10884,7 +10884,7 @@
             "URL": "https://pkg.go.dev/vuln/"
           },
           "Fingerprint": "sha256:7008a23aa34eb9c3be978a1703276946932171d99efedce8554a84fbb9eb9079",
-          "Title": "net/http: net/http/internal/http2: golang: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
           "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
           "Severity": "HIGH",
           "CweIDs": [
