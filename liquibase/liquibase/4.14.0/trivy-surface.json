@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a13ae1-8202-79be-9a93-9084c520a0b9",
-  "CreatedAt": "2026-10-14T14:46:59.842640885Z",
+  "ReportID": "01a14000-54e4-7914-955f-d6463fbb8b1f",
+  "CreatedAt": "2026-10-15T14:38:45.988596056Z",
   "ArtifactID": "sha256:ca0104bc5ad0ac5a31b3202adcf4f8f9fe587724f490a3434866162ef652a439",
   "ArtifactName": "liquibase/liquibase:4.14.0",
   "ArtifactType": "container_image",
@@ -12729,6 +12729,19 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-264815.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -12758,7 +12771,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.267Z",
-          "LastModifiedDate": "2026-06-17T05:25:12.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:22.45Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0286",
@@ -12830,6 +12843,19 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-264815.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -12859,7 +12885,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.267Z",
-          "LastModifiedDate": "2026-06-17T05:25:12.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:22.45Z"
         }
       ]
     },

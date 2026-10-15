@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a13ae9-a42e-7b97-bd6f-8b07d44b24c4",
-  "CreatedAt": "2026-10-14T14:55:52.878762388Z",
+  "ReportID": "01a14000-6d26-78b3-a453-3d165f71fc7f",
+  "CreatedAt": "2026-10-15T14:38:52.198571636Z",
   "ArtifactID": "sha256:d50ad34f42ca05959eb612614157787a685c93db62a6a7bbf338047611e01964",
   "ArtifactName": "liquibase/liquibase:4.23.2",
   "ArtifactType": "container_image",
@@ -11212,7 +11212,7 @@
             "https://www.qualys.com/cve-2023-4911/"
           ],
           "PublishedDate": "2023-10-03T18:15:10.463Z",
-          "LastModifiedDate": "2026-06-17T06:38:52.787Z"
+          "LastModifiedDate": "2026-10-14T22:17:18.373Z"
         },
         {
           "VulnerabilityID": "CVE-2023-4911",
@@ -11321,7 +11321,7 @@
             "https://www.qualys.com/cve-2023-4911/"
           ],
           "PublishedDate": "2023-10-03T18:15:10.463Z",
-          "LastModifiedDate": "2026-06-17T06:38:52.787Z"
+          "LastModifiedDate": "2026-10-14T22:17:18.373Z"
         },
         {
           "VulnerabilityID": "CVE-2023-38545",
@@ -12023,7 +12023,7 @@
             "https://www.qualys.com/cve-2023-4911/"
           ],
           "PublishedDate": "2023-10-03T18:15:10.463Z",
-          "LastModifiedDate": "2026-06-17T06:38:52.787Z"
+          "LastModifiedDate": "2026-10-14T22:17:18.373Z"
         },
         {
           "VulnerabilityID": "CVE-2026-45447",

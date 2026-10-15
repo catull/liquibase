@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a13ae1-6f1e-796a-8e7f-0b1addf5082f",
-  "CreatedAt": "2026-10-14T14:46:55.006618289Z",
+  "ReportID": "01a14001-7e42-7dd0-b431-610db7d16563",
+  "CreatedAt": "2026-10-15T14:40:02.114908065Z",
   "ArtifactID": "sha256:8f534e665875322d13ea835c2af24feb1dc5ec4070e31588608d24ba78d7ff8b",
   "ArtifactName": "liquibase/liquibase:4.4.1",
   "ArtifactType": "container_image",
@@ -11627,6 +11627,8 @@
             "https://bugzilla.redhat.com/2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2083621",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
             "https://errata.almalinux.org/9/ALSA-2022-8361.html",
             "https://errata.rockylinux.org/RLSA-2022:7720",
@@ -11641,7 +11643,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-1304"
           ],
           "PublishedDate": "2022-04-14T21:15:08.49Z",
-          "LastModifiedDate": "2026-06-17T04:22:11.213Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.393Z"
         },
         {
           "VulnerabilityID": "CVE-2018-12886",
@@ -11829,6 +11831,8 @@
             "https://access.redhat.com/security/cve/CVE-2022-1271",
             "https://bugzilla.redhat.com/2073310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2073310",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1271",
             "https://errata.almalinux.org/9/ALSA-2022-4940.html",
             "https://errata.rockylinux.org/RLSA-2022:4991",
@@ -11849,7 +11853,7 @@
             "https://www.openwall.com/lists/oss-security/2022/04/07/8"
           ],
           "PublishedDate": "2022-08-31T16:15:09.347Z",
-          "LastModifiedDate": "2026-06-17T04:22:07.653Z"
+          "LastModifiedDate": "2026-10-14T13:17:17.76Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -11909,6 +11913,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -11927,7 +11932,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -11994,6 +11999,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -12020,7 +12026,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -12080,6 +12086,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -12098,7 +12105,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -12165,6 +12172,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -12191,7 +12199,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2022-3094",
@@ -12865,6 +12873,8 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=1935128",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1965408",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1977975",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27645",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
@@ -12883,7 +12893,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-33574"
           ],
           "PublishedDate": "2021-05-25T22:15:10.41Z",
-          "LastModifiedDate": "2026-06-17T03:54:48.833Z"
+          "LastModifiedDate": "2026-10-14T12:17:12.52Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35942",
@@ -12944,6 +12954,8 @@
           "References": [
             "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35942.json",
             "https://access.redhat.com/security/cve/CVE-2021-35942",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
             "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
@@ -12958,7 +12970,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-35942"
           ],
           "PublishedDate": "2021-07-22T18:15:23.287Z",
-          "LastModifiedDate": "2026-06-17T03:57:58.39Z"
+          "LastModifiedDate": "2026-10-14T12:17:13.21Z"
         },
         {
           "VulnerabilityID": "CVE-2022-23218",
@@ -13021,6 +13033,9 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2024637",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042013",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042017",
+            "https://cert-portal.siemens.com/productcert/html/ssa-099606.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3999",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23218",
@@ -13038,7 +13053,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-01-14T07:15:08.8Z",
-          "LastModifiedDate": "2026-06-17T04:29:41.163Z"
+          "LastModifiedDate": "2026-10-14T16:17:26.663Z"
         },
         {
           "VulnerabilityID": "CVE-2022-23219",
@@ -13101,6 +13116,9 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2024637",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042013",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042017",
+            "https://cert-portal.siemens.com/productcert/html/ssa-099606.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3999",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23218",
@@ -13118,7 +13136,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-01-14T07:15:08.867Z",
-          "LastModifiedDate": "2026-06-17T04:29:41.34Z"
+          "LastModifiedDate": "2026-10-14T16:17:26.867Z"
         },
         {
           "VulnerabilityID": "CVE-2020-1751",
@@ -13762,6 +13780,8 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=1935128",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1965408",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1977975",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27645",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33574",
@@ -13780,7 +13800,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-33574"
           ],
           "PublishedDate": "2021-05-25T22:15:10.41Z",
-          "LastModifiedDate": "2026-06-17T03:54:48.833Z"
+          "LastModifiedDate": "2026-10-14T12:17:12.52Z"
         },
         {
           "VulnerabilityID": "CVE-2021-35942",
@@ -13841,6 +13861,8 @@
           "References": [
             "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35942.json",
             "https://access.redhat.com/security/cve/CVE-2021-35942",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://linux.oracle.com/cve/CVE-2021-35942.html",
             "https://linux.oracle.com/errata/ELSA-2021-9560.html",
             "https://lists.debian.org/debian-lts-announce/2022/10/msg00021.html",
@@ -13855,7 +13877,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-35942"
           ],
           "PublishedDate": "2021-07-22T18:15:23.287Z",
-          "LastModifiedDate": "2026-06-17T03:57:58.39Z"
+          "LastModifiedDate": "2026-10-14T12:17:13.21Z"
         },
         {
           "VulnerabilityID": "CVE-2022-23218",
@@ -13918,6 +13940,9 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2024637",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042013",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042017",
+            "https://cert-portal.siemens.com/productcert/html/ssa-099606.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3999",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23218",
@@ -13935,7 +13960,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-01-14T07:15:08.8Z",
-          "LastModifiedDate": "2026-06-17T04:29:41.163Z"
+          "LastModifiedDate": "2026-10-14T16:17:26.663Z"
         },
         {
           "VulnerabilityID": "CVE-2022-23219",
@@ -13998,6 +14023,9 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2024637",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042013",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2042017",
+            "https://cert-portal.siemens.com/productcert/html/ssa-099606.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-831302.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3999",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23218",
@@ -14015,7 +14043,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-01-14T07:15:08.867Z",
-          "LastModifiedDate": "2026-06-17T04:29:41.34Z"
+          "LastModifiedDate": "2026-10-14T16:17:26.867Z"
         },
         {
           "VulnerabilityID": "CVE-2020-1751",
@@ -14654,6 +14682,8 @@
             "https://bugzilla.redhat.com/2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2083621",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
             "https://errata.almalinux.org/9/ALSA-2022-8361.html",
             "https://errata.rockylinux.org/RLSA-2022:7720",
@@ -14668,7 +14698,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-1304"
           ],
           "PublishedDate": "2022-04-14T21:15:08.49Z",
-          "LastModifiedDate": "2026-06-17T04:22:11.213Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.393Z"
         },
         {
           "VulnerabilityID": "CVE-2019-8457",
@@ -15415,6 +15445,8 @@
             "https://bugzilla.redhat.com/2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2083621",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
             "https://errata.almalinux.org/9/ALSA-2022-8361.html",
             "https://errata.rockylinux.org/RLSA-2022:7720",
@@ -15429,7 +15461,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-1304"
           ],
           "PublishedDate": "2022-04-14T21:15:08.49Z",
-          "LastModifiedDate": "2026-06-17T04:22:11.213Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.393Z"
         },
         {
           "VulnerabilityID": "CVE-2018-12886",
@@ -15612,6 +15644,7 @@
           "References": [
             "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33560.json",
             "https://access.redhat.com/security/cve/CVE-2021-33560",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://dev.gnupg.org/T5305",
             "https://dev.gnupg.org/T5328",
             "https://dev.gnupg.org/T5466",
@@ -15634,7 +15667,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-06-08T11:15:07.767Z",
-          "LastModifiedDate": "2026-06-17T03:54:47.733Z"
+          "LastModifiedDate": "2026-10-14T12:17:12.267Z"
         },
         {
           "VulnerabilityID": "CVE-2021-43618",
@@ -15701,6 +15734,7 @@
             "https://bugs.debian.org/994405",
             "https://bugzilla.redhat.com/2024904",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2024904",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43618",
             "https://errata.almalinux.org/9/ALSA-2023-6661.html",
@@ -15718,7 +15752,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-43618"
           ],
           "PublishedDate": "2021-11-15T04:15:06.873Z",
-          "LastModifiedDate": "2026-06-17T04:11:12.263Z"
+          "LastModifiedDate": "2026-10-14T12:17:16.35Z"
         },
         {
           "VulnerabilityID": "CVE-2022-2509",
@@ -15782,6 +15816,7 @@
             "https://access.redhat.com/security/cve/CVE-2022-2509",
             "https://bugzilla.redhat.com/2108977",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2108977",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2509",
             "https://errata.almalinux.org/9/ALSA-2022-6854.html",
             "https://errata.rockylinux.org/RLSA-2022:7105",
@@ -15798,7 +15833,7 @@
             "https://www.debian.org/security/2022/dsa-5203"
           ],
           "PublishedDate": "2022-08-01T14:15:09.89Z",
-          "LastModifiedDate": "2026-06-17T04:42:01.723Z"
+          "LastModifiedDate": "2026-10-14T13:17:21.447Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0361",
@@ -15859,6 +15894,8 @@
             "https://bugzilla.redhat.com/2162596",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2131152",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2162596",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-806742.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0361",
             "https://errata.almalinux.org/9/ALSA-2023-1141.html",
             "https://errata.rockylinux.org/RLSA-2023:1569",
@@ -15878,7 +15915,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-0361"
           ],
           "PublishedDate": "2023-02-15T18:15:11.683Z",
-          "LastModifiedDate": "2026-06-17T05:25:21.96Z"
+          "LastModifiedDate": "2026-10-14T20:17:23.223Z"
         },
         {
           "VulnerabilityID": "CVE-2024-0553",
@@ -15953,6 +15990,7 @@
             "https://bugzilla.redhat.com/2258412",
             "https://bugzilla.redhat.com/2258544",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2258412",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0553",
             "https://errata.almalinux.org/9/ALSA-2024-0533.html",
             "https://errata.rockylinux.org/RLSA-2024:0627",
@@ -15971,7 +16009,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2024-0553"
           ],
           "PublishedDate": "2024-01-16T12:15:45.557Z",
-          "LastModifiedDate": "2026-06-17T06:53:45.66Z"
+          "LastModifiedDate": "2026-10-15T01:17:17.377Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -16031,6 +16069,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -16049,7 +16088,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -16116,6 +16155,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -16142,7 +16182,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -16202,6 +16242,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -16220,7 +16261,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -16287,6 +16328,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -16313,7 +16355,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2019-12290",
@@ -18255,6 +18297,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -18273,7 +18316,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -18340,6 +18383,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -18366,7 +18410,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -18426,6 +18470,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -18444,7 +18489,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -18511,6 +18556,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -18537,7 +18583,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -18597,6 +18643,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -18615,7 +18662,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -18682,6 +18729,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -18708,7 +18756,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -18768,6 +18816,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -18786,7 +18835,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -18853,6 +18902,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -18879,7 +18929,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -18939,6 +18989,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -18957,7 +19008,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -19024,6 +19075,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -19050,7 +19102,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2021-36222",
@@ -19110,6 +19162,7 @@
             "https://access.redhat.com/security/cve/CVE-2021-36222",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1983720",
             "https://bugzilla.redhat.com/show_bug.cgi?id=1996834",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36222",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37750",
@@ -19128,7 +19181,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2021.html"
           ],
           "PublishedDate": "2021-07-22T18:15:23.337Z",
-          "LastModifiedDate": "2026-06-17T03:58:32.843Z"
+          "LastModifiedDate": "2026-10-14T12:17:14.713Z"
         },
         {
           "VulnerabilityID": "CVE-2022-42898",
@@ -19195,6 +19248,7 @@
             "https://bugzilla.redhat.com/2140960",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140960",
             "https://bugzilla.samba.org/show_bug.cgi?id=15203",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42898",
             "https://errata.almalinux.org/9/ALSA-2022-8637.html",
             "https://errata.rockylinux.org/RLSA-2022:8638",
@@ -19221,7 +19275,7 @@
             "https://www.samba.org/samba/security/CVE-2022-42898.html"
           ],
           "PublishedDate": "2022-12-25T06:15:09.427Z",
-          "LastModifiedDate": "2026-06-17T05:05:33.057Z"
+          "LastModifiedDate": "2026-10-14T19:16:52.49Z"
         },
         {
           "VulnerabilityID": "CVE-2022-3515",
@@ -19451,6 +19505,7 @@
           "References": [
             "https://access.redhat.com/security/cve/CVE-2022-29155",
             "https://bugs.openldap.org/show_bug.cgi?id=9815",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://lists.debian.org/debian-lts-announce/2022/05/msg00032.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2022-29155",
             "https://security.netapp.com/advisory/ntap-20220609-0007/",
@@ -19460,7 +19515,7 @@
             "https://www.debian.org/security/2022/dsa-5140"
           ],
           "PublishedDate": "2022-05-04T20:15:07.69Z",
-          "LastModifiedDate": "2026-06-17T04:39:41.943Z"
+          "LastModifiedDate": "2026-10-14T17:17:38.26Z"
         },
         {
           "VulnerabilityID": "CVE-2023-2953",
@@ -19525,6 +19580,8 @@
             "https://bugs.openldap.org/show_bug.cgi?id=9904",
             "https://bugzilla.redhat.com/2210651",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2210651",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-806742.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2953",
             "https://errata.almalinux.org/8/ALSA-2024-4264.html",
@@ -19541,7 +19598,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-2953"
           ],
           "PublishedDate": "2023-05-30T22:15:10.613Z",
-          "LastModifiedDate": "2026-06-17T05:53:52.317Z"
+          "LastModifiedDate": "2026-10-14T21:17:15.61Z"
         },
         {
           "VulnerabilityID": "CVE-2022-29155",
@@ -19608,6 +19665,7 @@
           "References": [
             "https://access.redhat.com/security/cve/CVE-2022-29155",
             "https://bugs.openldap.org/show_bug.cgi?id=9815",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://lists.debian.org/debian-lts-announce/2022/05/msg00032.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2022-29155",
             "https://security.netapp.com/advisory/ntap-20220609-0007/",
@@ -19617,7 +19675,7 @@
             "https://www.debian.org/security/2022/dsa-5140"
           ],
           "PublishedDate": "2022-05-04T20:15:07.69Z",
-          "LastModifiedDate": "2026-06-17T04:39:41.943Z"
+          "LastModifiedDate": "2026-10-14T17:17:38.26Z"
         },
         {
           "VulnerabilityID": "CVE-2023-2953",
@@ -19682,6 +19740,8 @@
             "https://bugs.openldap.org/show_bug.cgi?id=9904",
             "https://bugzilla.redhat.com/2210651",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2210651",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-806742.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2953",
             "https://errata.almalinux.org/8/ALSA-2024-4264.html",
@@ -19698,7 +19758,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-2953"
           ],
           "PublishedDate": "2023-05-30T22:15:10.613Z",
-          "LastModifiedDate": "2026-06-17T05:53:52.317Z"
+          "LastModifiedDate": "2026-10-14T21:17:15.61Z"
         },
         {
           "VulnerabilityID": "CVE-2022-3094",
@@ -20371,6 +20431,8 @@
             "https://access.redhat.com/security/cve/CVE-2022-1271",
             "https://bugzilla.redhat.com/2073310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2073310",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1271",
             "https://errata.almalinux.org/9/ALSA-2022-4940.html",
             "https://errata.rockylinux.org/RLSA-2022:4991",
@@ -20391,7 +20453,7 @@
             "https://www.openwall.com/lists/oss-security/2022/04/07/8"
           ],
           "PublishedDate": "2022-08-31T16:15:09.347Z",
-          "LastModifiedDate": "2026-06-17T04:22:07.653Z"
+          "LastModifiedDate": "2026-10-14T13:17:17.76Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -20620,6 +20682,8 @@
             "https://access.redhat.com/errata/RHSA-2023:6698",
             "https://access.redhat.com/security/cve/CVE-2023-29491",
             "https://bugzilla.redhat.com/2191704",
+            "https://cert-portal.siemens.com/productcert/html/ssa-202008.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://errata.almalinux.org/9/ALSA-2023-6698.html",
             "https://invisible-island.net/ncurses/NEWS.html#index-t20230408",
             "https://linux.oracle.com/cve/CVE-2023-29491.html",
@@ -20637,7 +20701,7 @@
             "https://www.openwall.com/lists/oss-security/2023/04/13/4"
           ],
           "PublishedDate": "2023-04-14T01:15:08.57Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-14T23:17:18.18Z"
         },
         {
           "VulnerabilityID": "CVE-2022-1586",
@@ -20976,6 +21040,7 @@
             "http://www.openwall.com/lists/oss-security/2022/02/23/4",
             "https://access.redhat.com/security/cve/CVE-2022-24407",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2055326",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24407",
             "https://errata.almalinux.org/8/ALSA-2022-0658.html",
             "https://errata.rockylinux.org/RLSA-2022:0658",
@@ -20996,7 +21061,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-02-24T15:15:29.35Z",
-          "LastModifiedDate": "2026-06-17T04:31:47.05Z"
+          "LastModifiedDate": "2026-10-14T16:17:27.843Z"
         },
         {
           "VulnerabilityID": "CVE-2022-24407",
@@ -21057,6 +21122,7 @@
             "http://www.openwall.com/lists/oss-security/2022/02/23/4",
             "https://access.redhat.com/security/cve/CVE-2022-24407",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2055326",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24407",
             "https://errata.almalinux.org/8/ALSA-2022-0658.html",
             "https://errata.rockylinux.org/RLSA-2022:0658",
@@ -21077,7 +21143,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-02-24T15:15:29.35Z",
-          "LastModifiedDate": "2026-06-17T04:31:47.05Z"
+          "LastModifiedDate": "2026-10-14T16:17:27.843Z"
         },
         {
           "VulnerabilityID": "CVE-2022-24407",
@@ -21138,6 +21204,7 @@
             "http://www.openwall.com/lists/oss-security/2022/02/23/4",
             "https://access.redhat.com/security/cve/CVE-2022-24407",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2055326",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24407",
             "https://errata.almalinux.org/8/ALSA-2022-0658.html",
             "https://errata.rockylinux.org/RLSA-2022:0658",
@@ -21158,7 +21225,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-02-24T15:15:29.35Z",
-          "LastModifiedDate": "2026-06-17T04:31:47.05Z"
+          "LastModifiedDate": "2026-10-14T16:17:27.843Z"
         },
         {
           "VulnerabilityID": "CVE-2020-35527",
@@ -21450,6 +21517,10 @@
             "https://access.redhat.com/security/cve/CVE-2023-7104",
             "https://bugzilla.redhat.com/2256194",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2256194",
+            "https://cert-portal.siemens.com/productcert/html/ssa-000297.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-277137.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-915275.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7104",
             "https://errata.almalinux.org/9/ALSA-2024-0465.html",
             "https://errata.rockylinux.org/RLSA-2024:0253",
@@ -21469,7 +21540,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-7104"
           ],
           "PublishedDate": "2023-12-29T10:15:13.89Z",
-          "LastModifiedDate": "2026-06-17T06:52:04.587Z"
+          "LastModifiedDate": "2026-10-14T23:17:21.387Z"
         },
         {
           "VulnerabilityID": "CVE-2022-1304",
@@ -21531,6 +21602,8 @@
             "https://bugzilla.redhat.com/2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2083621",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
             "https://errata.almalinux.org/9/ALSA-2022-8361.html",
             "https://errata.rockylinux.org/RLSA-2022:7720",
@@ -21545,7 +21618,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-1304"
           ],
           "PublishedDate": "2022-04-14T21:15:08.49Z",
-          "LastModifiedDate": "2026-06-17T04:22:11.213Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.393Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3711",
@@ -21889,7 +21962,7 @@
             "https://www.tenable.com/security/tns-2022-09"
           ],
           "PublishedDate": "2022-03-15T17:15:08.513Z",
-          "LastModifiedDate": "2026-06-17T04:21:13.53Z"
+          "LastModifiedDate": "2026-10-14T13:17:14.377Z"
         },
         {
           "VulnerabilityID": "CVE-2022-1292",
@@ -21964,6 +22037,12 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2097310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2100554",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2104905",
+            "https://cert-portal.siemens.com/productcert/html/ssa-146325.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-942865.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-953464.html",
             "https://cert-portal.siemens.com/productcert/pdf/ssa-953464.pdf",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
@@ -22004,7 +22083,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-05-03T16:15:18.823Z",
-          "LastModifiedDate": "2026-06-17T04:22:09.873Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.103Z"
         },
         {
           "VulnerabilityID": "CVE-2022-2068",
@@ -22079,6 +22158,10 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2097310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2100554",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2104905",
+            "https://cert-portal.siemens.com/productcert/html/ssa-146325.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-332410.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
             "https://cert-portal.siemens.com/productcert/pdf/ssa-332410.pdf",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
@@ -22111,7 +22194,7 @@
             "https://www.openssl.org/news/secadv/20220621.txt"
           ],
           "PublishedDate": "2022-06-21T15:15:09.06Z",
-          "LastModifiedDate": "2026-06-17T04:41:13.477Z"
+          "LastModifiedDate": "2026-10-14T13:17:20.11Z"
         },
         {
           "VulnerabilityID": "CVE-2022-4450",
@@ -22189,6 +22272,17 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-699386.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -22211,7 +22305,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:23.973Z",
-          "LastModifiedDate": "2026-06-17T05:20:54.027Z"
+          "LastModifiedDate": "2026-10-14T15:17:00.197Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0215",
@@ -22289,6 +22383,16 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -22320,7 +22424,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.107Z",
-          "LastModifiedDate": "2026-06-17T05:25:02.56Z"
+          "LastModifiedDate": "2026-10-14T19:16:57.987Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0286",
@@ -22395,6 +22499,19 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-264815.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -22424,7 +22541,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.267Z",
-          "LastModifiedDate": "2026-06-17T05:25:12.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:22.45Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0464",
@@ -22492,6 +22609,16 @@
             "https://bugzilla.redhat.com/2182565",
             "https://bugzilla.redhat.com/2188461",
             "https://bugzilla.redhat.com/2207947",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-077170.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-341067.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
             "https://errata.almalinux.org/9/ALSA-2023-3722.html",
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2017771e2db3e2b96f89bbe8766c3209f6a99545",
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2dcd4f1e3115f38cefa43e3efbe9b801c27e642e",
@@ -22516,7 +22643,7 @@
             "https://www.openssl.org/news/secadv/20230322.txt"
           ],
           "PublishedDate": "2023-03-22T17:15:13.13Z",
-          "LastModifiedDate": "2026-06-17T05:25:36.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:23.47Z"
         },
         {
           "VulnerabilityID": "CVE-2018-12886",
@@ -22833,6 +22960,7 @@
             "https://bugzilla.redhat.com/2175611",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2175611",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2190153",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26604",
             "https://errata.almalinux.org/8/ALSA-2023-3837.html",
             "https://errata.rockylinux.org/RLSA-2023:3837",
@@ -22847,7 +22975,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-26604"
           ],
           "PublishedDate": "2023-03-03T16:15:10.607Z",
-          "LastModifiedDate": "2026-06-17T05:43:41.773Z"
+          "LastModifiedDate": "2026-10-14T23:17:15.447Z"
         },
         {
           "VulnerabilityID": "CVE-2023-50387",
@@ -23132,6 +23260,7 @@
             "https://bugs.gentoo.org/866237",
             "https://bugzilla.redhat.com/2140058",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2140058",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46848",
             "https://errata.almalinux.org/9/ALSA-2023-0343.html",
             "https://errata.rockylinux.org/RLSA-2023:0116",
@@ -23152,7 +23281,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2021-46848"
           ],
           "PublishedDate": "2022-10-24T14:15:49.973Z",
-          "LastModifiedDate": "2026-06-17T04:15:39.577Z"
+          "LastModifiedDate": "2026-10-14T13:17:13.013Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -23381,6 +23510,8 @@
             "https://access.redhat.com/errata/RHSA-2023:6698",
             "https://access.redhat.com/security/cve/CVE-2023-29491",
             "https://bugzilla.redhat.com/2191704",
+            "https://cert-portal.siemens.com/productcert/html/ssa-202008.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://errata.almalinux.org/9/ALSA-2023-6698.html",
             "https://invisible-island.net/ncurses/NEWS.html#index-t20230408",
             "https://linux.oracle.com/cve/CVE-2023-29491.html",
@@ -23398,7 +23529,7 @@
             "https://www.openwall.com/lists/oss-security/2023/04/13/4"
           ],
           "PublishedDate": "2023-04-14T01:15:08.57Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-14T23:17:18.18Z"
         },
         {
           "VulnerabilityID": "CVE-2019-3843",
@@ -23593,6 +23724,7 @@
             "https://bugzilla.redhat.com/2175611",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2175611",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2190153",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-26604",
             "https://errata.almalinux.org/8/ALSA-2023-3837.html",
             "https://errata.rockylinux.org/RLSA-2023:3837",
@@ -23607,7 +23739,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2023-26604"
           ],
           "PublishedDate": "2023-03-03T16:15:10.607Z",
-          "LastModifiedDate": "2026-06-17T05:43:41.773Z"
+          "LastModifiedDate": "2026-10-14T23:17:15.447Z"
         },
         {
           "VulnerabilityID": "CVE-2023-50387",
@@ -24072,6 +24204,9 @@
             "https://access.redhat.com/errata/RHSA-2022:0899",
             "https://access.redhat.com/security/cve/CVE-2022-23308",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2056913",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-942865.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23308",
             "https://errata.rockylinux.org/RLSA-2022:0899",
@@ -24096,7 +24231,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-02-26T05:15:08.28Z",
-          "LastModifiedDate": "2026-06-17T04:29:50.673Z"
+          "LastModifiedDate": "2026-10-14T16:17:27.06Z"
         },
         {
           "VulnerabilityID": "CVE-2022-40303",
@@ -24168,6 +24303,12 @@
             "https://bugzilla.redhat.com/2136288",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2136266",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2136288",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-341067.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40303",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40304",
             "https://errata.almalinux.org/9/ALSA-2023-0338.html",
@@ -24188,7 +24329,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-40303"
           ],
           "PublishedDate": "2022-11-23T00:15:11.007Z",
-          "LastModifiedDate": "2026-06-17T05:01:16.323Z"
+          "LastModifiedDate": "2026-10-14T18:17:04.783Z"
         },
         {
           "VulnerabilityID": "CVE-2022-40304",
@@ -24260,6 +24401,12 @@
             "https://bugzilla.redhat.com/2136288",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2136266",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2136288",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-341067.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40303",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40304",
             "https://errata.almalinux.org/9/ALSA-2023-0338.html",
@@ -24281,7 +24428,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2022-40304"
           ],
           "PublishedDate": "2022-11-23T18:15:12.167Z",
-          "LastModifiedDate": "2026-06-17T05:01:16.623Z"
+          "LastModifiedDate": "2026-10-14T18:17:05.05Z"
         },
         {
           "VulnerabilityID": "CVE-2024-25062",
@@ -24348,6 +24495,8 @@
             "https://access.redhat.com/security/cve/CVE-2024-25062",
             "https://bugzilla.redhat.com/2262726",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2262726",
+            "https://cert-portal.siemens.com/productcert/html/ssa-784301.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25062",
             "https://errata.almalinux.org/9/ALSA-2024-2679.html",
@@ -24366,7 +24515,7 @@
             "https://www.oracle.com/security-alerts/cpuoct2024.html"
           ],
           "PublishedDate": "2024-02-04T16:15:45.12Z",
-          "LastModifiedDate": "2026-06-17T07:15:26.073Z"
+          "LastModifiedDate": "2026-10-15T01:17:20.35Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -24595,6 +24744,8 @@
             "https://access.redhat.com/errata/RHSA-2023:6698",
             "https://access.redhat.com/security/cve/CVE-2023-29491",
             "https://bugzilla.redhat.com/2191704",
+            "https://cert-portal.siemens.com/productcert/html/ssa-202008.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://errata.almalinux.org/9/ALSA-2023-6698.html",
             "https://invisible-island.net/ncurses/NEWS.html#index-t20230408",
             "https://linux.oracle.com/cve/CVE-2023-29491.html",
@@ -24612,7 +24763,7 @@
             "https://www.openwall.com/lists/oss-security/2023/04/13/4"
           ],
           "PublishedDate": "2023-04-14T01:15:08.57Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-14T23:17:18.18Z"
         },
         {
           "VulnerabilityID": "CVE-2021-39537",
@@ -24841,6 +24992,8 @@
             "https://access.redhat.com/errata/RHSA-2023:6698",
             "https://access.redhat.com/security/cve/CVE-2023-29491",
             "https://bugzilla.redhat.com/2191704",
+            "https://cert-portal.siemens.com/productcert/html/ssa-202008.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
             "https://errata.almalinux.org/9/ALSA-2023-6698.html",
             "https://invisible-island.net/ncurses/NEWS.html#index-t20230408",
             "https://linux.oracle.com/cve/CVE-2023-29491.html",
@@ -24858,7 +25011,7 @@
             "https://www.openwall.com/lists/oss-security/2023/04/13/4"
           ],
           "PublishedDate": "2023-04-14T01:15:08.57Z",
-          "LastModifiedDate": "2026-07-27T13:43:06.743Z"
+          "LastModifiedDate": "2026-10-14T23:17:18.18Z"
         },
         {
           "VulnerabilityID": "CVE-2021-3711",
@@ -25202,7 +25355,7 @@
             "https://www.tenable.com/security/tns-2022-09"
           ],
           "PublishedDate": "2022-03-15T17:15:08.513Z",
-          "LastModifiedDate": "2026-06-17T04:21:13.53Z"
+          "LastModifiedDate": "2026-10-14T13:17:14.377Z"
         },
         {
           "VulnerabilityID": "CVE-2022-1292",
@@ -25277,6 +25430,12 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2097310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2100554",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2104905",
+            "https://cert-portal.siemens.com/productcert/html/ssa-146325.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-419740.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-942865.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-953464.html",
             "https://cert-portal.siemens.com/productcert/pdf/ssa-953464.pdf",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
@@ -25317,7 +25476,7 @@
             "https://www.oracle.com/security-alerts/cpujul2022.html"
           ],
           "PublishedDate": "2022-05-03T16:15:18.823Z",
-          "LastModifiedDate": "2026-06-17T04:22:09.873Z"
+          "LastModifiedDate": "2026-10-14T13:17:18.103Z"
         },
         {
           "VulnerabilityID": "CVE-2022-2068",
@@ -25392,6 +25551,10 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2097310",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2100554",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2104905",
+            "https://cert-portal.siemens.com/productcert/html/ssa-146325.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-332410.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
             "https://cert-portal.siemens.com/productcert/pdf/ssa-332410.pdf",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
@@ -25424,7 +25587,7 @@
             "https://www.openssl.org/news/secadv/20220621.txt"
           ],
           "PublishedDate": "2022-06-21T15:15:09.06Z",
-          "LastModifiedDate": "2026-06-17T04:41:13.477Z"
+          "LastModifiedDate": "2026-10-14T13:17:20.11Z"
         },
         {
           "VulnerabilityID": "CVE-2022-4450",
@@ -25502,6 +25665,17 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-699386.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -25524,7 +25698,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:23.973Z",
-          "LastModifiedDate": "2026-06-17T05:20:54.027Z"
+          "LastModifiedDate": "2026-10-14T15:17:00.197Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0215",
@@ -25602,6 +25776,16 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -25633,7 +25817,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.107Z",
-          "LastModifiedDate": "2026-06-17T05:25:02.56Z"
+          "LastModifiedDate": "2026-10-14T19:16:57.987Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0286",
@@ -25708,6 +25892,19 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164487",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164492",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2164494",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-264815.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-455250.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-561322.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-943925.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
@@ -25737,7 +25934,7 @@
             "https://www.openssl.org/news/secadv/20230207.txt"
           ],
           "PublishedDate": "2023-02-08T20:15:24.267Z",
-          "LastModifiedDate": "2026-06-17T05:25:12.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:22.45Z"
         },
         {
           "VulnerabilityID": "CVE-2023-0464",
@@ -25805,6 +26002,16 @@
             "https://bugzilla.redhat.com/2182565",
             "https://bugzilla.redhat.com/2188461",
             "https://bugzilla.redhat.com/2207947",
+            "https://cert-portal.siemens.com/productcert/html/ssa-028723.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-077170.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-337522.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-341067.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-398330.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-556635.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-625862.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-769027.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-794697.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-879734.html",
             "https://errata.almalinux.org/9/ALSA-2023-3722.html",
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2017771e2db3e2b96f89bbe8766c3209f6a99545",
             "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2dcd4f1e3115f38cefa43e3efbe9b801c27e642e",
@@ -25829,7 +26036,7 @@
             "https://www.openssl.org/news/secadv/20230322.txt"
           ],
           "PublishedDate": "2023-03-22T17:15:13.13Z",
-          "LastModifiedDate": "2026-06-17T05:25:36.637Z"
+          "LastModifiedDate": "2026-10-14T20:17:23.47Z"
         },
         {
           "VulnerabilityID": "CVE-2020-16156",
@@ -26180,7 +26387,7 @@
             "https://www.debian.org/security/2022/dsa-5218"
           ],
           "PublishedDate": "2022-08-05T07:15:07.24Z",
-          "LastModifiedDate": "2026-07-14T12:16:47.66Z"
+          "LastModifiedDate": "2026-10-14T18:17:03.63Z"
         },
         {
           "VulnerabilityID": "CVE-2023-45853",
@@ -26264,7 +26471,7 @@
             "https://www.winimage.com/zLibDll/minizip.html"
           ],
           "PublishedDate": "2023-10-14T02:15:09.323Z",
-          "LastModifiedDate": "2026-07-14T13:17:02.983Z"
+          "LastModifiedDate": "2026-10-15T00:16:39.75Z"
         },
         {
           "VulnerabilityID": "CVE-2018-25032",
