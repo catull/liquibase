@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a13ffb-6ada-78eb-ada7-a835bd766644",
-  "CreatedAt": "2026-10-15T14:33:23.930585997Z",
+  "ReportID": "01a1451a-1eab-70f1-850e-bf7121afdcf5",
+  "CreatedAt": "2026-10-16T14:25:02.123062866Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -601,9 +601,10 @@
             "https://access.redhat.com/security/cve/CVE-2024-1597",
             "https://bugzilla.redhat.com/2266523",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
             "https://errata.almalinux.org/9/ALSA-2024-1436.html",
-            "https://errata.rockylinux.org/RLSA-2024:1435",
+            "https://errata.rockylinux.org/RLSA-2024:1436",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee%20%28REL42.7.2%29",
@@ -700,7 +701,7 @@
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
             "https://errata.almalinux.org/9/ALSA-2026-22304.html",
-            "https://errata.rockylinux.org/RLSA-2026:25030",
+            "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
