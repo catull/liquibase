@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a14519-79d3-79e0-876a-3a21e7d80c1e",
-  "CreatedAt": "2026-10-16T14:24:19.923648875Z",
+  "ReportID": "01a1550e-03f9-7b63-9e69-3c45284a5ccd",
+  "CreatedAt": "2026-10-19T16:45:44.313747542Z",
   "ArtifactID": "sha256:b7df0ca874520d5e5445264d93b0546fae28d07232572cd75de3a0fd3130a9ef",
   "ArtifactName": "liquibase/liquibase:4.6",
   "ArtifactType": "container_image",
@@ -32177,7 +32177,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-61729"
           ],
           "PublishedDate": "2025-12-02T19:15:51.447Z",
-          "LastModifiedDate": "2026-06-17T09:50:48.507Z"
+          "LastModifiedDate": "2026-10-18T18:10:00.1Z"
         },
         {
           "VulnerabilityID": "CVE-2026-25679",
@@ -35174,10 +35174,15 @@
             "CWE-770"
           ],
           "VendorSeverity": {
+            "bitnami": 3,
             "redhat": 3,
             "ubuntu": 2
           },
           "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
@@ -35229,10 +35234,16 @@
             "CWE-405"
           ],
           "VendorSeverity": {
+            "azure": 3,
+            "bitnami": 3,
             "redhat": 3,
             "ubuntu": 2
           },
           "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
@@ -35286,9 +35297,14 @@
             "CWE-405"
           ],
           "VendorSeverity": {
+            "bitnami": 3,
             "redhat": 3
           },
           "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
