@@ -3,41 +3,41 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a15952-8aa9-7352-b32e-678aee779c9a",
-  "CreatedAt": "2026-10-20T12:39:04.1052188Z",
-  "ArtifactID": "sha256:471be99cd14ada05f39466a98f9fda62f13a193f9acc37b23a37cf8472a792d0",
+  "ReportID": "01a15e84-163e-72c7-bc0b-3a338bbdc90b",
+  "CreatedAt": "2026-10-21T12:51:17.182183643Z",
+  "ArtifactID": "sha256:d78a6fa246a6ca310f8c1ea5f6a84f239c4e764313b967a07c20558ae95046fb",
   "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 313546240,
+    "Size": 316041216,
     "OS": {
       "Family": "ubuntu",
       "Name": "24.04"
     },
-    "ImageID": "sha256:24859bff72b8243c4d6d58f7eed6ec085552f9c93451c9cc8646d98bd118e738",
+    "ImageID": "sha256:9ace4bf53389582a0c0e1d1ad30616f4869bf046c69bbbebc52620796438bee3",
     "DiffIDs": [
       "sha256:32ab39660fd51c6dc3aae486b42d42bbe8fe4c1db78eaf57bb9c21198de48a16",
       "sha256:07dffa5a9b8833130170fb168a3bbac892fb71118bbb5aa583cee04edfd155a6",
       "sha256:9ae994ece5779d6844710cd00c3e2f02b118a8cf3684cf353e619014e3c3ed9f",
       "sha256:e6597d5a261a4ae0ed71830b0a9c7c7a0c9ac2829bd60871052ae0968f6eb77c",
       "sha256:ec133e5ede0f84c473e908ea82dd14c9b0a3d81184ec6863370cdd58827eae5d",
-      "sha256:999c395b5e1e89a93f017f03a38d86253093c0f2ba0820dc576dc445bb2ed933",
+      "sha256:e30d900c6098fea671abb6691fb9bde003c391770f8163775921f9396aca03bc",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1",
-      "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de",
-      "sha256:ca6d261291718e691256b4b948e6ffc3c8f52dbfc25a6e413125eb96da9c4fd8",
-      "sha256:0dc644bec188c9d8ca16b62f8cbb693b1b9b7077a49650b06a2089facf5ccb93"
+      "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09",
+      "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba",
+      "sha256:51b2fa78f9a267bb00047cb75277d4acaa1534b8d4c7820184d1df75fc582c39",
+      "sha256:37fb294a1c65f4e84eedb36393f6d146ca87b912a60f231db52b3a92bbf6bc5c"
     ],
     "RepoTags": [
       "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:21572776888aec370df2a914e0494b74cd4a4e36ff37ea221ea74a8b3bc22222"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:aa6457af080d2b9f1a287d49ebf9686680772fc99c677f545b2b6b6c89042653"
     ],
     "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-10-19T14:30:56.086167349Z",
+      "created": "2026-10-21T12:49:54.332980814Z",
       "history": [
         {
           "created": "2026-10-02T08:10:52.386018095Z",
@@ -114,121 +114,121 @@
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:45.96548157Z",
+          "created": "2026-10-21T12:49:40.902219971Z",
           "created_by": "RUN /bin/sh -c groupadd --gid 1001 liquibase \u0026\u0026     useradd --uid 1001 --gid liquibase --create-home --home-dir /liquibase liquibase \u0026\u0026     chown liquibase:root /liquibase \u0026\u0026     chmod g+rx /liquibase # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:45.973452423Z",
+          "created": "2026-10-21T12:49:40.909861667Z",
           "created_by": "WORKDIR /liquibase",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "ARG LIQUIBASE_VERSION=5.0.4",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "ARG LB_SHA256=bb08638d70dddd6af8cca6e033148576f8214b5996831b1f8864eb3528f4cfce",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "RUN |2 LIQUIBASE_VERSION=5.0.4 LB_SHA256=bb08638d70dddd6af8cca6e033148576f8214b5996831b1f8864eb3528f4cfce /bin/sh -c wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz \"https://package.liquibase.com/downloads/dockerhub/official/liquibase-${LIQUIBASE_VERSION}.tar.gz\" \u0026\u0026     echo \"$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz\" | sha256sum -c - \u0026\u0026     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz \u0026\u0026     rm liquibase-${LIQUIBASE_VERSION}.tar.gz \u0026\u0026     ln -s /liquibase/liquibase /usr/local/bin/liquibase \u0026\u0026     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh \u0026\u0026     liquibase --version # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "ARG LPM_VERSION=0.3.7",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "ARG LPM_SHA256=329eafbe9289d1e83a62cb89844ac461bb5b9d4c5f5f184c8f26244e350e8a95",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "ARG LPM_SHA256_ARM=893abdadeb08fd7e8b9caa46cdd0bc6d0b43ccd02c2f6761638b69b29a19fe14",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "LABEL org.opencontainers.image.description=Liquibase Container Image",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "LABEL org.opencontainers.image.vendor=Liquibase",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "LABEL org.opencontainers.image.version=5.0.4",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:47.576137029Z",
+          "created": "2026-10-21T12:49:42.464907493Z",
           "created_by": "LABEL org.opencontainers.image.documentation=https://docs.liquibase.com",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:56.066184334Z",
+          "created": "2026-10-21T12:49:54.316131076Z",
           "created_by": "RUN |5 LIQUIBASE_VERSION=5.0.4 LB_SHA256=bb08638d70dddd6af8cca6e033148576f8214b5996831b1f8864eb3528f4cfce LPM_VERSION=0.3.7 LPM_SHA256=329eafbe9289d1e83a62cb89844ac461bb5b9d4c5f5f184c8f26244e350e8a95 LPM_SHA256_ARM=893abdadeb08fd7e8b9caa46cdd0bc6d0b43ccd02c2f6761638b69b29a19fe14 /bin/sh -c apt-get update \u0026\u0026     DEBIAN_FRONTEND=noninteractive apt-get -yqq upgrade \u0026\u0026     apt-get -yqq install unzip --no-install-recommends \u0026\u0026     rm -rf /var/lib/apt/lists/* \u0026\u0026     mkdir /liquibase/bin \u0026\u0026     arch=\"$(dpkg --print-architecture)\" \u0026\u0026     case \"$arch\" in     amd64)  DOWNLOAD_ARCH=\"\"  ;;     arm64)  DOWNLOAD_ARCH=\"-arm64\" \u0026\u0026 LPM_SHA256=$LPM_SHA256_ARM ;;     *) echo \u003e\u00262 \"error: unsupported architecture '$arch'\" \u0026\u0026 exit 1 ;;     esac \u0026\u0026 wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip \"https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip\" \u0026\u0026     echo \"$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip\" | sha256sum -c - \u0026\u0026     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ \u0026\u0026     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip \u0026\u0026     apt-get purge -y --auto-remove unzip \u0026\u0026     ln -s /liquibase/bin/lpm /usr/local/bin/lpm \u0026\u0026     lpm --version # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:56.066184334Z",
+          "created": "2026-10-21T12:49:54.316131076Z",
           "created_by": "ENV LIQUIBASE_HOME=/liquibase",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:56.066184334Z",
+          "created": "2026-10-21T12:49:54.316131076Z",
           "created_by": "ENV DOCKER_LIQUIBASE=true",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:56.078060035Z",
+          "created": "2026-10-21T12:49:54.325904484Z",
           "created_by": "COPY docker-entrypoint.sh ./ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:56.086167349Z",
+          "created": "2026-10-21T12:49:54.332980814Z",
           "created_by": "COPY liquibase.docker.properties ./ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-19T14:30:56.086167349Z",
+          "created": "2026-10-21T12:49:54.332980814Z",
           "created_by": "USER liquibase:liquibase",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:56.086167349Z",
+          "created": "2026-10-21T12:49:54.332980814Z",
           "created_by": "ENTRYPOINT [\"/liquibase/docker-entrypoint.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-19T14:30:56.086167349Z",
+          "created": "2026-10-21T12:49:54.332980814Z",
           "created_by": "CMD [\"--help\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -243,12 +243,12 @@
           "sha256:9ae994ece5779d6844710cd00c3e2f02b118a8cf3684cf353e619014e3c3ed9f",
           "sha256:e6597d5a261a4ae0ed71830b0a9c7c7a0c9ac2829bd60871052ae0968f6eb77c",
           "sha256:ec133e5ede0f84c473e908ea82dd14c9b0a3d81184ec6863370cdd58827eae5d",
-          "sha256:999c395b5e1e89a93f017f03a38d86253093c0f2ba0820dc576dc445bb2ed933",
+          "sha256:e30d900c6098fea671abb6691fb9bde003c391770f8163775921f9396aca03bc",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-          "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1",
-          "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de",
-          "sha256:ca6d261291718e691256b4b948e6ffc3c8f52dbfc25a6e413125eb96da9c4fd8",
-          "sha256:0dc644bec188c9d8ca16b62f8cbb693b1b9b7077a49650b06a2089facf5ccb93"
+          "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09",
+          "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba",
+          "sha256:51b2fa78f9a267bb00047cb75277d4acaa1534b8d4c7820184d1df75fc582c39",
+          "sha256:37fb294a1c65f4e84eedb36393f6d146ca87b912a60f231db52b3a92bbf6bc5c"
         ]
       },
       "config": {
@@ -308,8 +308,8 @@
       },
       {
         "Size": 23552,
-        "Digest": "sha256:251d78ac2bd3c83adae6046362b88eecea5df4b421ec582ff959699899c66a56",
-        "DiffID": "sha256:999c395b5e1e89a93f017f03a38d86253093c0f2ba0820dc576dc445bb2ed933"
+        "Digest": "sha256:8fd1c4d61c8ec1d298b23c074ac5be17bcfd75675b979239d58705d06768bdc1",
+        "DiffID": "sha256:e30d900c6098fea671abb6691fb9bde003c391770f8163775921f9396aca03bc"
       },
       {
         "Size": 1024,
@@ -318,23 +318,23 @@
       },
       {
         "Size": 10009600,
-        "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-        "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+        "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+        "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
       },
       {
-        "Size": 11583488,
-        "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-        "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+        "Size": 14078464,
+        "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+        "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
       },
       {
         "Size": 7168,
-        "Digest": "sha256:a7bd309460badf77823799d85e8061fe447b0778f0f168e8271d722d5f93b3b7",
-        "DiffID": "sha256:ca6d261291718e691256b4b948e6ffc3c8f52dbfc25a6e413125eb96da9c4fd8"
+        "Digest": "sha256:6c5da221f0c418dba6eee039980ce695969af636f07308228a28653918bcd19a",
+        "DiffID": "sha256:51b2fa78f9a267bb00047cb75277d4acaa1534b8d4c7820184d1df75fc582c39"
       },
       {
         "Size": 2560,
-        "Digest": "sha256:6194c2a5ef80dbe0455d2a8a2948109a3ad68e90f57f7850fff7c77914aaa283",
-        "DiffID": "sha256:0dc644bec188c9d8ca16b62f8cbb693b1b9b7077a49650b06a2089facf5ccb93"
+        "Digest": "sha256:2b17b635609d8890b95e833c27b6827b4b9df7e0f991cba27e5e959cdb8cc6cc",
+        "DiffID": "sha256:37fb294a1c65f4e84eedb36393f6d146ca87b912a60f231db52b3a92bbf6bc5c"
       }
     ]
   },
@@ -887,16 +887,16 @@
           "AnalyzedBy": "dpkg"
         },
         {
-          "ID": "ca-certificates@20260601~24.04.1",
+          "ID": "ca-certificates@20260816ubuntu0.24.04.1",
           "Name": "ca-certificates",
           "Identifier": {
-            "PURL": "pkg:deb/ubuntu/ca-certificates@20260601~24.04.1?arch=all\u0026distro=ubuntu-24.04",
-            "UID": "f5444782a8649d46"
+            "PURL": "pkg:deb/ubuntu/ca-certificates@20260816ubuntu0.24.04.1?arch=all\u0026distro=ubuntu-24.04",
+            "UID": "4d86fe3985020953"
           },
-          "Version": "20260601~24.04.1",
+          "Version": "20260816ubuntu0.24.04.1",
           "Arch": "all",
           "SrcName": "ca-certificates",
-          "SrcVersion": "20260601~24.04.1",
+          "SrcVersion": "20260816ubuntu0.24.04.1",
           "Licenses": [
             "GPL-2.0-or-later",
             "GPL-2.0-only",
@@ -911,8 +911,8 @@
             "openssl@3.0.13-0ubuntu3.16"
           ],
           "Layer": {
-            "Digest": "sha256:aaf861d4f8188e5ffe8a72588a029791e5605215fc8e74d125ac87d2372d07ff",
-            "DiffID": "sha256:07dffa5a9b8833130170fb168a3bbac892fb71118bbb5aa583cee04edfd155a6"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "InstalledFiles": [
             "/usr/sbin/update-ca-certificates",
@@ -925,7 +925,6 @@
             "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_2.crt",
             "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_3.crt",
             "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_4.crt",
-            "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_2011.crt",
             "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Root_CA_ECC_TLS_2021.crt",
             "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Root_CA_RSA_TLS_2021.crt",
             "/usr/share/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt",
@@ -957,7 +956,6 @@
             "/usr/share/ca-certificates/mozilla/DigiCert_TLS_ECC_P384_Root_G5.crt",
             "/usr/share/ca-certificates/mozilla/DigiCert_TLS_RSA4096_Root_G5.crt",
             "/usr/share/ca-certificates/mozilla/DigiCert_Trusted_Root_G4.crt",
-            "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt",
             "/usr/share/ca-certificates/mozilla/GDCA_TrustAUTH_R5_ROOT.crt",
             "/usr/share/ca-certificates/mozilla/GTS_Root_R1.crt",
             "/usr/share/ca-certificates/mozilla/GTS_Root_R3.crt",
@@ -992,6 +990,8 @@
             "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_1_G3.crt",
             "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2_G3.crt",
             "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3_G3.crt",
+            "/usr/share/ca-certificates/mozilla/SECOM_TLS_ECC_Root_CA_2024.crt",
+            "/usr/share/ca-certificates/mozilla/SECOM_TLS_RSA_Root_CA_2024.crt",
             "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_ECC.crt",
             "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_RSA_R2.crt",
             "/usr/share/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_ECC.crt",
@@ -1001,7 +1001,6 @@
             "/usr/share/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt",
             "/usr/share/ca-certificates/mozilla/Sectigo_Public_Server_Authentication_Root_E46.crt",
             "/usr/share/ca-certificates/mozilla/Sectigo_Public_Server_Authentication_Root_R46.crt",
-            "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA12.crt",
             "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA14.crt",
             "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA15.crt",
             "/usr/share/ca-certificates/mozilla/Security_Communication_ECC_RootCA1.crt",
@@ -1017,6 +1016,8 @@
             "/usr/share/ca-certificates/mozilla/TWCA_Root_Certification_Authority.crt",
             "/usr/share/ca-certificates/mozilla/Telekom_Security_TLS_ECC_Root_2020.crt",
             "/usr/share/ca-certificates/mozilla/Telekom_Security_TLS_RSA_Root_2023.crt",
+            "/usr/share/ca-certificates/mozilla/Telia_EC_TLS_Root_CA_v3.crt",
+            "/usr/share/ca-certificates/mozilla/Telia_RSA_TLS_Root_CA_v3.crt",
             "/usr/share/ca-certificates/mozilla/Telia_Root_CA_v2.crt",
             "/usr/share/ca-certificates/mozilla/TrustAsia_Global_Root_CA_G3.crt",
             "/usr/share/ca-certificates/mozilla/TrustAsia_Global_Root_CA_G4.crt",
@@ -1030,9 +1031,7 @@
             "/usr/share/ca-certificates/mozilla/certSIGN_Root_CA_G2.crt",
             "/usr/share/ca-certificates/mozilla/e-Szigno_Root_CA_2017.crt",
             "/usr/share/ca-certificates/mozilla/e-Szigno_TLS_Root_CA_2023.crt",
-            "/usr/share/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt",
             "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_C3.crt",
-            "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt",
             "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt",
             "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt",
             "/usr/share/ca-certificates/mozilla/vTrus_ECC_Root_CA.crt",
@@ -3084,7 +3083,7 @@
           "Name": "libapt-pkg6.0t64",
           "Identifier": {
             "PURL": "pkg:deb/ubuntu/libapt-pkg6.0t64@2.8.3?arch=amd64\u0026distro=ubuntu-24.04",
-            "UID": "b0ac41b52a854c47"
+            "UID": "5957e6422a967a9d"
           },
           "Version": "2.8.3",
           "Arch": "amd64",
@@ -3106,7 +3105,7 @@
             "libgcc-s1@14.2.0-4ubuntu2~24.04.1",
             "libgcrypt20@1.10.3-2ubuntu0.2",
             "liblz4-1@1.9.4-1build1.1",
-            "liblzma5@5.6.1+really5.4.5-1ubuntu0.3",
+            "liblzma5@5.6.1+really5.4.5-1ubuntu0.4",
             "libstdc++6@14.2.0-4ubuntu2~24.04.1",
             "libsystemd0@255.4-1ubuntu8.18",
             "libudev1@255.4-1ubuntu8.18",
@@ -4952,18 +4951,18 @@
           "AnalyzedBy": "dpkg"
         },
         {
-          "ID": "liblzma5@5.6.1+really5.4.5-1ubuntu0.3",
+          "ID": "liblzma5@5.6.1+really5.4.5-1ubuntu0.4",
           "Name": "liblzma5",
           "Identifier": {
-            "PURL": "pkg:deb/ubuntu/liblzma5@5.6.1%2Breally5.4.5-1ubuntu0.3?arch=amd64\u0026distro=ubuntu-24.04",
-            "UID": "2c08fc3d1ba3b412"
+            "PURL": "pkg:deb/ubuntu/liblzma5@5.6.1%2Breally5.4.5-1ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04",
+            "UID": "d648f5c079f4cba9"
           },
           "Version": "5.6.1+really5.4.5",
-          "Release": "1ubuntu0.3",
+          "Release": "1ubuntu0.4",
           "Arch": "amd64",
           "SrcName": "xz-utils",
           "SrcVersion": "5.6.1+really5.4.5",
-          "SrcRelease": "1ubuntu0.3",
+          "SrcRelease": "1ubuntu0.4",
           "Licenses": [
             "PD",
             "probably-PD",
@@ -4989,8 +4988,8 @@
             "libc6@2.39-0ubuntu8.9"
           ],
           "Layer": {
-            "Digest": "sha256:f2b4ef06ff01a67d4bed7657a4ae379a7d07934b7c3e743454a22a0d5275fb2b",
-            "DiffID": "sha256:32ab39660fd51c6dc3aae486b42d42bbe8fe4c1db78eaf57bb9c21198de48a16"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5",
@@ -6408,7 +6407,7 @@
           "Name": "libsystemd0",
           "Identifier": {
             "PURL": "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.18?arch=amd64\u0026distro=ubuntu-24.04",
-            "UID": "a0db9e9e0760fe92"
+            "UID": "d3fb3a21b7ecaa65"
           },
           "Version": "255.4",
           "Release": "1ubuntu8.18",
@@ -6435,12 +6434,12 @@
             "libcap2@1:2.66-5ubuntu2.4",
             "libgcrypt20@1.10.3-2ubuntu0.2",
             "liblz4-1@1.9.4-1build1.1",
-            "liblzma5@5.6.1+really5.4.5-1ubuntu0.3",
+            "liblzma5@5.6.1+really5.4.5-1ubuntu0.4",
             "libzstd1@1.5.5+dfsg2-2build1.1"
           ],
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.38.0",
@@ -6559,8 +6558,8 @@
             "libcap2@1:2.66-5ubuntu2.4"
           ],
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libudev.so.1.7.8",
@@ -10610,8 +10609,8 @@
           },
           "Version": "2.4.240",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/h2.jar",
           "AnalyzedBy": "jar"
@@ -10624,8 +10623,8 @@
           },
           "Version": "5.12.0",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/opencsv.jar",
           "AnalyzedBy": "jar"
@@ -10638,8 +10637,8 @@
           },
           "Version": "2.22.0",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/commons-io.jar",
           "AnalyzedBy": "jar"
@@ -10652,8 +10651,8 @@
           },
           "Version": "4.7.7",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/picocli.jar",
           "AnalyzedBy": "jar"
@@ -10666,8 +10665,8 @@
           },
           "Version": "4.6.0",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/commons-collections4.jar",
           "AnalyzedBy": "jar"
@@ -10680,8 +10679,8 @@
           },
           "Version": "3.20.0",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/commons-lang3.jar",
           "AnalyzedBy": "jar"
@@ -10694,8 +10693,8 @@
           },
           "Version": "1.15.0",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/commons-text.jar",
           "AnalyzedBy": "jar"
@@ -10708,8 +10707,8 @@
           },
           "Version": "5.0.4",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/liquibase-core.jar",
           "AnalyzedBy": "jar"
@@ -10722,8 +10721,8 @@
           },
           "Version": "2.6",
           "Layer": {
-            "Digest": "sha256:f2de30660457964dd1d734cf2be131225d5c5a773ce554e6da451f1770699a1f",
-            "DiffID": "sha256:0c9fb69bd153f040e3a0e7af6fac5bffac73729d73273d637cf6b1b5ad4435d1"
+            "Digest": "sha256:e5a7a34d09fbaa06dec458732e5592ab6de3faaa2e0566db20ef294ee7ed5525",
+            "DiffID": "sha256:0aaf7dea16b105c93a4cfbb5d4db3b69072db29eb965506f33b31f931c20ec09"
           },
           "FilePath": "liquibase/internal/lib/snakeyaml.jar",
           "AnalyzedBy": "jar"
@@ -10745,8 +10744,8 @@
           "Version": "v1.26.8",
           "Relationship": "direct",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10759,8 +10758,8 @@
           },
           "Version": "v1.9.0",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10773,8 +10772,8 @@
           },
           "Version": "v1.10.2",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10787,8 +10786,8 @@
           },
           "Version": "v1.0.9",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "AnalyzedBy": "gobinary"
         },
@@ -10800,8 +10799,8 @@
             "UID": "13ea817821fe4afd"
           },
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "AnalyzedBy": "gobinary"
         }
@@ -10822,8 +10821,8 @@
           "FixedVersion": "1.26.9, 1.27.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
           "DataSource": {
@@ -10831,7 +10830,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:fe4f71c055c701e327e41a5f7468a52bf7c07d64723143e53d3fcdb8dd58ae41",
+          "Fingerprint": "sha256:1b7f2508171eaa0f2227bf47810a66da07dfe6647b2f741305fc0bf68e11f5b6",
           "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
           "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
           "Severity": "HIGH",
@@ -10861,6 +10860,7 @@
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
             "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://ubuntu.com/security/notices/USN-8935-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-78667",
             "https://www.openwall.com/lists/oss-security/2026/10/08/9"
           ],
@@ -10882,8 +10882,8 @@
           "FixedVersion": "1.26.9, 1.27.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
           "DataSource": {
@@ -10891,7 +10891,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:511e9bdbd56fc92b9c2877f99f423e1001aacc1662e9ea7f542f84c7fbb2f175",
+          "Fingerprint": "sha256:671befed3d1c9a3771ef799e0342bd69d9357bac92137e87c8bdd69626b3526d",
           "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
           "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
           "Severity": "HIGH",
@@ -10924,6 +10924,7 @@
             "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
             "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://ubuntu.com/security/notices/USN-8935-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-78669",
             "https://www.openwall.com/lists/oss-security/2026/10/08/9"
           ],
@@ -10945,8 +10946,8 @@
           "FixedVersion": "1.26.9, 1.27.2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:7544db21df29373aca912e5248ac24c0e684f7b0c70f54efe8dc408ab8c3c492",
-            "DiffID": "sha256:c7a99b1c5906c0d36add7a3831ef66d8ffa6bb64bc5e502f1d9493df7e4059de"
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
           "DataSource": {
@@ -10954,7 +10955,7 @@
             "Name": "The Go Vulnerability Database",
             "URL": "https://pkg.go.dev/vuln/"
           },
-          "Fingerprint": "sha256:9f189d7be3d559b8fe4fc8b3f029f37707f0e8e987447e682119d53b43982c16",
+          "Fingerprint": "sha256:9875fce267b92a51b8a33b899f717773d1cf3ffd983548ee7efae57cc5797e2f",
           "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
           "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
           "Severity": "HIGH",
