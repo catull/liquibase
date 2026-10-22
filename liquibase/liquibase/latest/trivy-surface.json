@@ -3,10 +3,10 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a15e84-163e-72c7-bc0b-3a338bbdc90b",
-  "CreatedAt": "2026-10-21T12:51:17.182183643Z",
+  "ReportID": "01a163ac-a88b-7304-bd9c-47f3a7a4be16",
+  "CreatedAt": "2026-10-22T12:53:42.155199594Z",
   "ArtifactID": "sha256:d78a6fa246a6ca310f8c1ea5f6a84f239c4e764313b967a07c20558ae95046fb",
-  "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd",
+  "ArtifactName": "ghcr.io/catull/liquibase/liquibase-liquibase:b13b98ed949a61cb4232445f06276a25166ac08f",
   "ArtifactType": "container_image",
   "Metadata": {
     "Size": 316041216,
@@ -29,12 +29,12 @@
       "sha256:37fb294a1c65f4e84eedb36393f6d146ca87b912a60f231db52b3a92bbf6bc5c"
     ],
     "RepoTags": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd"
+      "ghcr.io/catull/liquibase/liquibase-liquibase:b13b98ed949a61cb4232445f06276a25166ac08f"
     ],
     "RepoDigests": [
-      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:aa6457af080d2b9f1a287d49ebf9686680772fc99c677f545b2b6b6c89042653"
+      "ghcr.io/catull/liquibase/liquibase-liquibase@sha256:a28fe30d9707c085bcf5653494b564a38f1a1fa36b96232068462c63f706d694"
     ],
-    "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd",
+    "Reference": "ghcr.io/catull/liquibase/liquibase-liquibase:b13b98ed949a61cb4232445f06276a25166ac08f",
     "ImageConfig": {
       "architecture": "amd64",
       "created": "2026-10-21T12:49:54.332980814Z",
@@ -340,7 +340,7 @@
   },
   "Results": [
     {
-      "Target": "ghcr.io/catull/liquibase/liquibase-liquibase:d4da1cca41792308a83bc5aa80228d485a8e74bd (ubuntu 24.04)",
+      "Target": "ghcr.io/catull/liquibase/liquibase-liquibase:b13b98ed949a61cb4232445f06276a25166ac08f (ubuntu 24.04)",
       "Class": "os-pkgs",
       "Type": "ubuntu",
       "Packages": [
@@ -10807,6 +10807,73 @@
       ],
       "Vulnerabilities": [
         {
+          "VulnerabilityID": "CVE-2026-111943",
+          "VendorIDs": [
+            "GO-2026-6809"
+          ],
+          "PkgID": "stdlib@v1.26.8",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.8",
+            "UID": "f5237265e3e2d484"
+          },
+          "InstalledVersion": "v1.26.8",
+          "FixedVersion": "1.26.10, 1.27.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:973489be0aec90d56f3dbc1dd8d34e98fe84e9526f3355476c4b1f3041b9c1f5",
+            "DiffID": "sha256:6bb85e38f566eee26e5db0c35f72a1450015c855174b7e3046b3b6ed8b7dfdba"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-111943",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:872ad494019cc0646770092fb38324252725f1780b5fd5b9b74ff8fe7ce11195",
+          "Title": "golang: crypto/x509: Go: crypto/x509: mitigation for security concerns with a specific Certificate Authority",
+          "Description": "On most platforms, Go uses the given system root certificates. However, in some narrower cases, the system trust stores may not be updated without further action. To defend against the narrower set of cases that may remain affected, a denylist was added in crypto/x509 to return an error when calling Verify with any of the known intermediate certificates that are no longer considered to be trustworthy.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/10/20/29",
+            "https://access.redhat.com/errata/RHSA-2026:86203",
+            "https://access.redhat.com/security/cve/CVE-2026-111943",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548334",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548336",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2556068",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78667",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78669",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97031",
+            "https://errata.rockylinux.org/RLSA-2026:86203",
+            "https://github.com/golang/go/issues/82345",
+            "https://go.dev/cl/851047",
+            "https://go.dev/issue/82345",
+            "https://groups.google.com/g/golang-announce/c/66pojueaQek",
+            "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU",
+            "https://linux.oracle.com/cve/CVE-2026-111943.html",
+            "https://linux.oracle.com/errata/ELSA-2026-500451.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
+            "https://pkg.go.dev/vuln/GO-2026-6809",
+            "https://www.cve.org/CVERecord?id=CVE-2026-111943"
+          ],
+          "PublishedDate": "2026-10-21T01:17:20.797Z",
+          "LastModifiedDate": "2026-10-21T02:17:06.71Z"
+        },
+        {
           "VulnerabilityID": "CVE-2026-78667",
           "VendorIDs": [
             "GO-2026-6609"
@@ -10840,6 +10907,7 @@
           "VendorSeverity": {
             "bitnami": 3,
             "redhat": 3,
+            "rocky": 3,
             "ubuntu": 2
           },
           "CVSS": {
@@ -10853,7 +10921,18 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:86203",
             "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548334",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548336",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2556068",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78667",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78669",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97031",
+            "https://errata.rockylinux.org/RLSA-2026:86203",
             "https://github.com/golang/go/issues/81858",
             "https://go.dev/cl/847309",
             "https://go.dev/issue/81858",
@@ -10902,6 +10981,7 @@
             "azure": 3,
             "bitnami": 3,
             "redhat": 3,
+            "rocky": 3,
             "ubuntu": 2
           },
           "CVSS": {
@@ -10915,7 +10995,18 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:86203",
             "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548334",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548336",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2556068",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78667",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78669",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97031",
+            "https://errata.rockylinux.org/RLSA-2026:86203",
             "https://github.com/golang/go/issues/81742",
             "https://go.dev/cl/847186",
             "https://go.dev/cl/847308",
@@ -10964,7 +11055,8 @@
           ],
           "VendorSeverity": {
             "bitnami": 3,
-            "redhat": 3
+            "redhat": 3,
+            "rocky": 3
           },
           "CVSS": {
             "bitnami": {
@@ -10977,7 +11069,18 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:86203",
             "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548334",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548336",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2548344",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2556068",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78667",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-78669",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97031",
+            "https://errata.rockylinux.org/RLSA-2026:86203",
             "https://go.dev/cl/847312",
             "https://go.dev/issue/81855",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
