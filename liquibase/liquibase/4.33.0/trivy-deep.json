@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a16935-fa91-7257-8da0-c2fc4cc58ad9",
-  "CreatedAt": "2026-10-23T14:41:47.66515495Z",
+  "ReportID": "01a1790c-47bb-7903-ac20-3c2aa3795cf8",
+  "CreatedAt": "2026-10-26T16:30:10.363592261Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -483,7 +483,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-68494"
           ],
           "PublishedDate": "2026-08-04T15:16:41.443Z",
-          "LastModifiedDate": "2026-09-08T19:29:32.2Z"
+          "LastModifiedDate": "2026-10-23T23:10:00.157Z"
         },
         {
           "VulnerabilityID": "CVE-2026-89407",
@@ -708,7 +708,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54512"
           ],
           "PublishedDate": "2026-06-23T21:17:02.203Z",
-          "LastModifiedDate": "2026-06-27T21:01:36.47Z"
+          "LastModifiedDate": "2026-10-25T23:10:00.167Z"
         },
         {
           "VulnerabilityID": "CVE-2026-54513",
@@ -805,7 +805,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54513"
           ],
           "PublishedDate": "2026-06-23T21:17:02.333Z",
-          "LastModifiedDate": "2026-09-14T13:18:40.63Z"
+          "LastModifiedDate": "2026-10-25T23:10:00.167Z"
         },
         {
           "VulnerabilityID": "CVE-2026-68497",
@@ -838,6 +838,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "amazon": 3,
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
@@ -911,6 +912,7 @@
             "CWE-400"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "ghsa": 3,
             "redhat": 3,
             "ubuntu": 2
@@ -974,6 +976,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
+            "amazon": 3,
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
@@ -2547,7 +2550,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54284"
           ],
           "PublishedDate": "2026-08-17T18:17:11.4Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-54284",
@@ -2604,7 +2607,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54284"
           ],
           "PublishedDate": "2026-08-17T18:17:11.4Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-54284",
@@ -2661,7 +2664,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-54284"
           ],
           "PublishedDate": "2026-08-17T18:17:11.4Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-59893",
@@ -2717,7 +2720,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-59893"
           ],
           "PublishedDate": "2026-08-17T18:17:35.73Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-59893",
@@ -2773,7 +2776,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-59893"
           ],
           "PublishedDate": "2026-08-17T18:17:35.73Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-59893",
@@ -2829,7 +2832,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-59893"
           ],
           "PublishedDate": "2026-08-17T18:17:35.73Z",
-          "LastModifiedDate": "2026-09-18T20:09:01.757Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-71491",
@@ -2886,7 +2889,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-71491"
           ],
           "PublishedDate": "2026-08-17T18:18:12.12Z",
-          "LastModifiedDate": "2026-09-09T21:11:46.833Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-71491",
@@ -2943,7 +2946,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-71491"
           ],
           "PublishedDate": "2026-08-17T18:18:12.12Z",
-          "LastModifiedDate": "2026-09-09T21:11:46.833Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2026-71491",
@@ -3000,7 +3003,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-71491"
           ],
           "PublishedDate": "2026-08-17T18:18:12.12Z",
-          "LastModifiedDate": "2026-09-09T21:11:46.833Z"
+          "LastModifiedDate": "2026-10-23T16:10:00.313Z"
         },
         {
           "VulnerabilityID": "CVE-2023-43804",
