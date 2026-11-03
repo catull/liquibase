@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a19dd8-bd4b-7016-9aae-8ededcadabb8",
-  "CreatedAt": "2026-11-02T19:59:49.579006987Z",
+  "ReportID": "01a1a273-4bdd-7466-af92-3565a63d72d4",
+  "CreatedAt": "2026-11-03T17:27:07.485289438Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -4525,6 +4525,7 @@
             "ghsa": 3,
             "nvd": 2,
             "oracle-oval": 2,
+            "photon": 2,
             "redhat": 2,
             "rocky": 3,
             "ubuntu": 2
@@ -4606,6 +4607,7 @@
             "ghsa": 3,
             "nvd": 2,
             "oracle-oval": 2,
+            "photon": 2,
             "redhat": 2,
             "rocky": 3,
             "ubuntu": 2
@@ -4687,6 +4689,7 @@
             "ghsa": 3,
             "nvd": 2,
             "oracle-oval": 2,
+            "photon": 2,
             "redhat": 2,
             "rocky": 3,
             "ubuntu": 2
@@ -4767,6 +4770,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2
@@ -4848,6 +4852,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2
@@ -4929,6 +4934,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2
@@ -5011,6 +5017,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2
@@ -5091,6 +5098,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2
@@ -5171,6 +5179,7 @@
             "ghsa": 3,
             "nvd": 3,
             "oracle-oval": 3,
+            "photon": 3,
             "redhat": 3,
             "rocky": 3,
             "ubuntu": 2

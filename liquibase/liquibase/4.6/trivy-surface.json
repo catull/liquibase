@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a19dd7-97a6-7294-9bea-19571054063c",
-  "CreatedAt": "2026-11-02T19:58:34.406170553Z",
+  "ReportID": "01a1a274-b5c8-7580-82d4-8077f3dfed87",
+  "CreatedAt": "2026-11-03T17:28:40.136362365Z",
   "ArtifactID": "sha256:b7df0ca874520d5e5445264d93b0546fae28d07232572cd75de3a0fd3130a9ef",
   "ArtifactName": "liquibase/liquibase:4.6",
   "ArtifactType": "container_image",
@@ -20344,7 +20344,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2019-20454"
           ],
           "PublishedDate": "2020-02-14T14:15:10.593Z",
-          "LastModifiedDate": "2026-06-17T02:30:28.893Z"
+          "LastModifiedDate": "2026-11-02T18:18:27.177Z"
         },
         {
           "VulnerabilityID": "CVE-2022-24407",
@@ -35555,7 +35555,7 @@
             "alma": 3,
             "amazon": 3,
             "bitnami": 3,
-            "oracle-oval": 4,
+            "oracle-oval": 3,
             "redhat": 3,
             "rocky": 4
           },
@@ -35593,7 +35593,7 @@
             "https://go.dev/issue/81855",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://linux.oracle.com/cve/CVE-2026-97031.html",
-            "https://linux.oracle.com/errata/ELSA-2026-89744.html",
+            "https://linux.oracle.com/errata/ELSA-2026-89751.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
             "https://pkg.go.dev/vuln/GO-2026-6607",
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
