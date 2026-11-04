@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1a272-5459-7de6-8021-cff035a0e589",
-  "CreatedAt": "2026-11-03T17:26:04.121912758Z",
+  "ReportID": "01a1a7a4-c81e-7a21-b656-814c4a1f3e5a",
+  "CreatedAt": "2026-11-04T17:39:16.638665689Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -704,14 +704,12 @@
           "References": [
             "http://www.openwall.com/lists/oss-security/2024/04/02/6",
             "https://access.redhat.com/errata/RHSA-2024:1435",
-            "https://access.redhat.com/errata/RHSA-2024:1436",
             "https://access.redhat.com/security/cve/CVE-2024-1597",
             "https://bugzilla.redhat.com/2266523",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
-            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
             "https://errata.almalinux.org/8/ALSA-2024-1435.html",
-            "https://errata.rockylinux.org/RLSA-2024:1436",
+            "https://errata.rockylinux.org/RLSA-2024:1435",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee%20%28REL42.7.2%29",
@@ -889,7 +887,7 @@
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
             "https://errata.almalinux.org/8/ALSA-2026-25030.html",
-            "https://errata.rockylinux.org/RLSA-2026:22304",
+            "https://errata.rockylinux.org/RLSA-2026:25030",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
