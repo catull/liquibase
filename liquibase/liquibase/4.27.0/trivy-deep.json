@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1a7a7-3395-74f0-a0a5-a803a8076ec1",
-  "CreatedAt": "2026-11-04T17:41:55.221324955Z",
+  "ReportID": "01a1acd8-e137-768e-ae9b-4664079b7ed3",
+  "CreatedAt": "2026-11-05T17:54:17.015430833Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -505,7 +505,8 @@
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
-            "rocky": 3
+            "rocky": 3,
+            "ubuntu": 2
           },
           "CVSS": {
             "bitnami": {
@@ -541,9 +542,10 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
-            "https://errata.almalinux.org/8/ALSA-2026-25030.html",
-            "https://errata.rockylinux.org/RLSA-2026:25030",
+            "https://errata.almalinux.org/9/ALSA-2026-22304.html",
+            "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
+            "https://github.com/pgjdbc/pgjdbc/commit/c9d41d1332a7426fcef19ff89f2e6b1116429143%20%28REL42.7.11%29",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
             "https://linux.oracle.com/cve/CVE-2026-42198.html",

@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1a7a4-ea2e-7306-904a-4566eb685095",
-  "CreatedAt": "2026-11-04T17:39:25.358199428Z",
+  "ReportID": "01a1acd5-b96b-7f28-9460-9c8113d0ff77",
+  "CreatedAt": "2026-11-05T17:50:50.219994339Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -733,13 +733,14 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2024/04/02/6",
-            "https://access.redhat.com/errata/RHSA-2024:1435",
+            "https://access.redhat.com/errata/RHSA-2024:1436",
             "https://access.redhat.com/security/cve/CVE-2024-1597",
             "https://bugzilla.redhat.com/2266523",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
-            "https://errata.almalinux.org/8/ALSA-2024-1435.html",
-            "https://errata.rockylinux.org/RLSA-2024:1435",
+            "https://errata.almalinux.org/9/ALSA-2024-1436.html",
+            "https://errata.rockylinux.org/RLSA-2024:1436",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee%20%28REL42.7.2%29",
@@ -880,7 +881,8 @@
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
-            "rocky": 3
+            "rocky": 3,
+            "ubuntu": 2
           },
           "CVSS": {
             "bitnami": {
@@ -916,9 +918,10 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
-            "https://errata.almalinux.org/8/ALSA-2026-25030.html",
-            "https://errata.rockylinux.org/RLSA-2026:25030",
+            "https://errata.almalinux.org/9/ALSA-2026-22304.html",
+            "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
+            "https://github.com/pgjdbc/pgjdbc/commit/c9d41d1332a7426fcef19ff89f2e6b1116429143%20%28REL42.7.11%29",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
             "https://linux.oracle.com/cve/CVE-2026-42198.html",
