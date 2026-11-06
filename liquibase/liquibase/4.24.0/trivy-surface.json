@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1acd1-3589-7f3f-997b-ef0cedcc22bb",
-  "CreatedAt": "2026-11-05T17:45:54.314001064Z",
+  "ReportID": "01a1b1d0-dd1a-7d51-b179-b14e47fb16c1",
+  "CreatedAt": "2026-11-06T17:03:37.754875649Z",
   "ArtifactID": "sha256:e2d6603014c3b43a2bb24300d77ec317d3a49b1afcd76491bc8342d08a8ecd01",
   "ArtifactName": "liquibase/liquibase:4.24.0",
   "ArtifactType": "container_image",
@@ -14332,7 +14332,7 @@
             "https://groups.google.com/g/golang-announce/c/66pojueaQek",
             "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU",
             "https://linux.oracle.com/cve/CVE-2026-111943.html",
-            "https://linux.oracle.com/errata/ELSA-2026-91720.html",
+            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
             "https://pkg.go.dev/vuln/GO-2026-6809",
             "https://www.cve.org/CVERecord?id=CVE-2026-111943"
@@ -17383,7 +17383,7 @@
             "https://go.dev/issue/81858",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://linux.oracle.com/cve/CVE-2026-78667.html",
-            "https://linux.oracle.com/errata/ELSA-2026-90462.html",
+            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
             "https://pkg.go.dev/vuln/GO-2026-6609",
             "https://ubuntu.com/security/notices/USN-8935-1",
@@ -17472,7 +17472,7 @@
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
             "https://linux.oracle.com/cve/CVE-2026-78669.html",
-            "https://linux.oracle.com/errata/ELSA-2026-91138.html",
+            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
             "https://pkg.go.dev/vuln/GO-2026-6611",
             "https://ubuntu.com/security/notices/USN-8935-1",
@@ -17556,7 +17556,7 @@
             "https://go.dev/issue/81855",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://linux.oracle.com/cve/CVE-2026-97031.html",
-            "https://linux.oracle.com/errata/ELSA-2026-89751.html",
+            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
             "https://pkg.go.dev/vuln/GO-2026-6607",
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
