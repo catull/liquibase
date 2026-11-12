@@ -1,13 +1,8 @@
 {
-  "scannedAt": "2026-11-11T15:06:40Z",
+  "scannedAt": "2026-11-12T15:58:46Z",
   "image": "liquibase/liquibase",
   "tag": "latest",
   "status": "success",
-  "missing_files": [
-  "trivy-surface.json",
-  "trivy-deep.json",
-  "grype-results.json",
-  "runtime-scan.json"
-],
-  "workflowRunId": "43043861460"
+  "missing_files": [],
+  "workflowRunId": "43252600019"
 }
