@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1e5ee-6656-756b-adb4-9abfec9e046a",
-  "CreatedAt": "2026-11-16T19:56:08.662356245Z",
+  "ReportID": "01a1eade-4150-77cd-92e3-b9ec4b4cf6bf",
+  "CreatedAt": "2026-11-17T18:56:36.688512584Z",
   "ArtifactID": "sha256:12b3d92af2689c67389937901bbe48fb3bb13084a203976598ee02c039c21538",
   "ArtifactName": "liquibase/liquibase:4.1.1",
   "ArtifactType": "container_image",
@@ -22950,10 +22950,12 @@
             "https://github.com/madler/zlib/blob/ac8f12c97d1afd9bafa9c710f827d40a407d3266/contrib/README.contrib#L1-L4",
             "https://github.com/madler/zlib/commit/73331a6a0481067628f065ffe87bb1d8f787d10c",
             "https://github.com/madler/zlib/pull/843",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/pyminizip/PYSEC-2026-501.yaml",
             "https://github.com/smihica/pyminizip",
             "https://github.com/smihica/pyminizip/blob/master/zlib-1.2.11/contrib/minizip/zip.c",
             "https://lists.debian.org/debian-lts-announce/2023/11/msg00026.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2023-45853",
+            "https://pypi.org/project/pyminizip",
             "https://pypi.org/project/pyminizip/#history",
             "https://security.gentoo.org/glsa/202401-18",
             "https://security.netapp.com/advisory/ntap-20231130-0009",

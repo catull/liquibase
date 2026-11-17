@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1e5f3-5e5f-78db-be93-f49084cf7897",
-  "CreatedAt": "2026-11-16T20:01:34.303582905Z",
+  "ReportID": "01a1eadb-650d-73a4-be3d-98a8d0b6fc8e",
+  "CreatedAt": "2026-11-17T18:53:29.229239934Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -597,7 +597,7 @@
             "ghsa": 3,
             "oracle-oval": 3,
             "redhat": 3,
-            "rocky": 2,
+            "rocky": 3,
             "ubuntu": 2
           },
           "CVSS": {
@@ -612,6 +612,7 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:86706",
+            "https://access.redhat.com/errata/RHSA-2026:98493",
             "https://access.redhat.com/security/cve/CVE-2026-89425",
             "https://advisory.echohq.com/cve/CVE-2026-89425",
             "https://bugzilla.redhat.com/2538720",
@@ -622,7 +623,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89407",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89425",
             "https://errata.almalinux.org/9/ALSA-2026-86706.html",
-            "https://errata.rockylinux.org/RLSA-2026:86706",
+            "https://errata.rockylinux.org/RLSA-2026:98493",
             "https://github.com/FasterXML/jackson-core",
             "https://github.com/FasterXML/jackson-core/commit/211cf2c5d91abbec38067f37efc1363cd4e88ee3",
             "https://github.com/FasterXML/jackson-core/pull/1698",
@@ -1001,6 +1002,7 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:85231",
+            "https://access.redhat.com/errata/RHSA-2026:98492",
             "https://access.redhat.com/security/cve/CVE-2026-91777",
             "https://advisory.echohq.com/cve/CVE-2026-91777",
             "https://bugzilla.redhat.com/2539085",
@@ -1008,7 +1010,7 @@
             "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-91777",
             "https://errata.almalinux.org/9/ALSA-2026-85231.html",
-            "https://errata.rockylinux.org/RLSA-2026:85231",
+            "https://errata.rockylinux.org/RLSA-2026:98492",
             "https://github.com/FasterXML/jackson-databind",
             "https://github.com/FasterXML/jackson-databind/commit/37ad9b81712cbb9fb62c2d2c1813593252a24b67",
             "https://github.com/FasterXML/jackson-databind/issues/6204",
