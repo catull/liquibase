@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1efef-d1a9-7afe-a2ac-ab22c211c490",
-  "CreatedAt": "2026-11-18T18:33:53.833722567Z",
+  "ReportID": "01a1f529-5051-7d80-8565-295f80e145df",
+  "CreatedAt": "2026-11-19T18:54:47.889887584Z",
   "ArtifactID": "sha256:89f192b669728dd25d0b5d908943629d9a19c6d29e4611a26ed7ba30a8f52479",
   "ArtifactName": "liquibase/liquibase:4.17.2",
   "ArtifactType": "container_image",
@@ -16331,7 +16331,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -17312,7 +17312,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -17780,7 +17780,7 @@
             "https://groups.google.com/g/golang-announce/c/66pojueaQek",
             "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU",
             "https://linux.oracle.com/cve/CVE-2026-111943.html",
-            "https://linux.oracle.com/errata/ELSA-2026-95638.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
             "https://pkg.go.dev/vuln/GO-2026-6809",
             "https://www.cve.org/CVERecord?id=CVE-2026-111943"
@@ -17822,7 +17822,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -18275,7 +18275,7 @@
             "https://go.dev/issue/79694",
             "https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw",
             "https://linux.oracle.com/cve/CVE-2026-27145.html",
-            "https://linux.oracle.com/errata/ELSA-2026-53416.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97644.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-27145",
             "https://pkg.go.dev/vuln/GO-2026-5037",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json",
@@ -18544,7 +18544,7 @@
             "https://go.dev/issue/78282",
             "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
             "https://linux.oracle.com/cve/CVE-2026-32280.html",
-            "https://linux.oracle.com/errata/ELSA-2026-65886-0.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97555.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-32280",
             "https://pkg.go.dev/vuln/GO-2026-4947",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-32280.json",
@@ -19079,7 +19079,7 @@
             "https://go.dev/issue/78803",
             "https://groups.google.com/g/golang-announce/c/qcCIEXso47M",
             "https://linux.oracle.com/cve/CVE-2026-33811.html",
-            "https://linux.oracle.com/errata/ELSA-2026-65886-0.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97644.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-33811",
             "https://pkg.go.dev/vuln/GO-2026-4981",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33811.json",
@@ -20706,7 +20706,7 @@
             "https://go.dev/issue/80528",
             "https://groups.google.com/g/golang-announce/c/94pEornpRlI",
             "https://linux.oracle.com/cve/CVE-2026-56862.html",
-            "https://linux.oracle.com/errata/ELSA-2026-70641.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-56862",
             "https://pkg.go.dev/vuln/GO-2026-6090",
             "https://ubuntu.com/security/notices/USN-8935-1",
@@ -20983,13 +20983,57 @@
             "https://go.dev/issue/81855",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://linux.oracle.com/cve/CVE-2026-97031.html",
-            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
             "https://pkg.go.dev/vuln/GO-2026-6607",
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
           ],
           "PublishedDate": "2026-10-08T23:17:06.037Z",
           "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97054",
+          "VendorIDs": [
+            "GO-2026-6859"
+          ],
+          "PkgID": "stdlib@v1.18.3",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.18.3",
+            "UID": "d8a4b6e762cfb3b"
+          },
+          "InstalledVersion": "v1.18.3",
+          "FixedVersion": "1.26.11, 1.27.4",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:6381b975f1056233ad67bbd9979912113e4cf4f0bddf7e236944834433c4508b",
+            "DiffID": "sha256:6f7995b3e7a439ff804c18771f98078f1d8029b50cbdcd5394e5be66834982de"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97054",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d6446fc56fd593bd8aed4ebcce5b92f663b7499a3530ceab0ef81ab31b9d09d9",
+          "Title": "For HTTP/1 servers, when MaxBytesReader's limit is exceeded, \"Connecti ...",
+          "Description": "For HTTP/1 servers, when MaxBytesReader's limit is exceeded, \"Connection: close\" header is automatically set without synchronization, which might race with another header being set explicitly in the server handler. As a result, an HTTP/1 server that utilizes MaxBytesReader or MaxBytesHandler can crash due to runtime panic if its handler reads the request body concurrently with writing the response header.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-362",
+            "CWE-820"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://go.dev/cl/862185",
+            "https://go.dev/issue/82563",
+            "https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM",
+            "https://pkg.go.dev/vuln/GO-2026-6859"
+          ],
+          "PublishedDate": "2026-11-11T05:19:58.943Z",
+          "LastModifiedDate": "2026-11-16T16:17:56.29Z"
         }
       ]
     }

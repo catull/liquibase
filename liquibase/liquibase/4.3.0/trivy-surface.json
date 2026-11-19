@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1eff4-0a40-73c8-a47b-23cb9c188ec6",
-  "CreatedAt": "2026-11-18T18:38:30.464249516Z",
+  "ReportID": "01a1f520-0965-7451-9195-78b3ab8991b0",
+  "CreatedAt": "2026-11-19T18:44:39.909284952Z",
   "ArtifactID": "sha256:123ebf59dfc05f037535c0a6d3c4fc77fc43053d469b6c9de8f1a02d4dfe5348",
   "ArtifactName": "liquibase/liquibase:4.3.0",
   "ArtifactType": "container_image",
@@ -15389,7 +15389,7 @@
           ],
           "VendorSeverity": {
             "alma": 1,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -15527,7 +15527,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -15648,7 +15648,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -16169,7 +16169,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -18450,7 +18450,7 @@
           ],
           "VendorSeverity": {
             "alma": 1,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -18588,7 +18588,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -18709,7 +18709,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -19230,7 +19230,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -19565,7 +19565,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 4,
             "bottlerocket": 2,
             "cbl-mariner": 4,

@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a1eff4-f04b-7e82-bc95-c9ecf1776659",
-  "CreatedAt": "2026-11-18T18:39:29.355952993Z",
+  "ReportID": "01a1f522-e4f2-7a58-8fe9-efbfd0b5d4f1",
+  "CreatedAt": "2026-11-19T18:47:47.18667941Z",
   "ArtifactID": "sha256:06a0f01f5b37abdebc0a00c482c6dc735ba55e253807f8d6068effb0e5182f2f",
   "ArtifactName": "liquibase/liquibase:4.8.0",
   "ArtifactType": "container_image",
@@ -10855,7 +10855,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -12033,7 +12033,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -14657,7 +14657,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -16178,7 +16178,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -16816,7 +16816,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -17454,7 +17454,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -19147,7 +19147,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "nvd": 3,
             "oracle-oval": 2,
@@ -21047,7 +21047,7 @@
           ],
           "VendorSeverity": {
             "alma": 1,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -21185,7 +21185,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -21306,7 +21306,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -21827,7 +21827,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -23356,7 +23356,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "ghsa": 2,
             "nvd": 3,
@@ -24331,7 +24331,7 @@
           ],
           "VendorSeverity": {
             "alma": 1,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -24469,7 +24469,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -24590,7 +24590,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "cbl-mariner": 3,
             "julia": 3,
             "nvd": 3,
@@ -25111,7 +25111,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "cbl-mariner": 3,
             "julia": 3,
@@ -25446,7 +25446,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 4,
             "bottlerocket": 2,
             "cbl-mariner": 4,
@@ -30179,7 +30179,7 @@
           ],
           "VendorSeverity": {
             "alma": 2,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 3,
             "bitnami": 3,
             "cbl-mariner": 3,
@@ -31160,7 +31160,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 3,
+            "amazon": 2,
             "azure": 2,
             "bitnami": 3,
             "cbl-mariner": 2,
@@ -31628,7 +31628,7 @@
             "https://groups.google.com/g/golang-announce/c/66pojueaQek",
             "https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU",
             "https://linux.oracle.com/cve/CVE-2026-111943.html",
-            "https://linux.oracle.com/errata/ELSA-2026-95638.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
             "https://pkg.go.dev/vuln/GO-2026-6809",
             "https://www.cve.org/CVERecord?id=CVE-2026-111943"
@@ -31670,7 +31670,7 @@
           ],
           "VendorSeverity": {
             "alma": 3,
-            "amazon": 2,
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "oracle-oval": 3,
@@ -32123,7 +32123,7 @@
             "https://go.dev/issue/79694",
             "https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw",
             "https://linux.oracle.com/cve/CVE-2026-27145.html",
-            "https://linux.oracle.com/errata/ELSA-2026-53416.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97644.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-27145",
             "https://pkg.go.dev/vuln/GO-2026-5037",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json",
@@ -32392,7 +32392,7 @@
             "https://go.dev/issue/78282",
             "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
             "https://linux.oracle.com/cve/CVE-2026-32280.html",
-            "https://linux.oracle.com/errata/ELSA-2026-65886-0.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97555.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-32280",
             "https://pkg.go.dev/vuln/GO-2026-4947",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-32280.json",
@@ -32927,7 +32927,7 @@
             "https://go.dev/issue/78803",
             "https://groups.google.com/g/golang-announce/c/qcCIEXso47M",
             "https://linux.oracle.com/cve/CVE-2026-33811.html",
-            "https://linux.oracle.com/errata/ELSA-2026-65886-0.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97644.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-33811",
             "https://pkg.go.dev/vuln/GO-2026-4981",
             "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-33811.json",
@@ -34554,7 +34554,7 @@
             "https://go.dev/issue/80528",
             "https://groups.google.com/g/golang-announce/c/94pEornpRlI",
             "https://linux.oracle.com/cve/CVE-2026-56862.html",
-            "https://linux.oracle.com/errata/ELSA-2026-70641.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-56862",
             "https://pkg.go.dev/vuln/GO-2026-6090",
             "https://ubuntu.com/security/notices/USN-8935-1",
@@ -34831,13 +34831,57 @@
             "https://go.dev/issue/81855",
             "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
             "https://linux.oracle.com/cve/CVE-2026-97031.html",
-            "https://linux.oracle.com/errata/ELSA-2026-95519.html",
+            "https://linux.oracle.com/errata/ELSA-2026-97877.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
             "https://pkg.go.dev/vuln/GO-2026-6607",
             "https://www.cve.org/CVERecord?id=CVE-2026-97031"
           ],
           "PublishedDate": "2026-10-08T23:17:06.037Z",
           "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97054",
+          "VendorIDs": [
+            "GO-2026-6859"
+          ],
+          "PkgID": "stdlib@v1.17.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.17.6",
+            "UID": "fcaaaff07629d34b"
+          },
+          "InstalledVersion": "v1.17.6",
+          "FixedVersion": "1.26.11, 1.27.4",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:d37d60047c0987b4305941922945951491c266c49735712813ab8230da69bf31",
+            "DiffID": "sha256:bd35e3c03a3b1822d16c40158f80e57b65ce63178c20d650ad052dd3d4069eec"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97054",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:62bcead6a08202e977fdc7f3630c65c925247ea863d408c591f54e8bdfc42422",
+          "Title": "For HTTP/1 servers, when MaxBytesReader's limit is exceeded, \"Connecti ...",
+          "Description": "For HTTP/1 servers, when MaxBytesReader's limit is exceeded, \"Connection: close\" header is automatically set without synchronization, which might race with another header being set explicitly in the server handler. As a result, an HTTP/1 server that utilizes MaxBytesReader or MaxBytesHandler can crash due to runtime panic if its handler reads the request body concurrently with writing the response header.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-362",
+            "CWE-820"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://go.dev/cl/862185",
+            "https://go.dev/issue/82563",
+            "https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM",
+            "https://pkg.go.dev/vuln/GO-2026-6859"
+          ],
+          "PublishedDate": "2026-11-11T05:19:58.943Z",
+          "LastModifiedDate": "2026-11-16T16:17:56.29Z"
         }
       ]
     }
