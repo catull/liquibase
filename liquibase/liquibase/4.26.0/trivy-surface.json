@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "01a2143f-ff70-72ce-ac96-89d2d94fe247",
-  "CreatedAt": "2026-11-25T19:47:48.208185575Z",
+  "ReportID": "01a2194e-21c2-74a4-8d44-a20fa36d6176",
+  "CreatedAt": "2026-11-26T19:21:20.578306375Z",
   "ArtifactID": "sha256:4591add221a022d283f33817df99129a765f542c8f95839591af3f5ff93d1161",
   "ArtifactName": "liquibase/liquibase:4.26.0",
   "ArtifactType": "container_image",
@@ -11211,6 +11211,7 @@
             "https://errata.rockylinux.org/RLSA-2026:90495",
             "https://github.com/advisories/GHSA-9v8h-qqgm-4m35",
             "https://github.com/andybalholm/brotli/releases/tag/v1.2.7",
+            "https://github.com/andybalholm/brotli/security/advisories/GHSA-c9gr-gmg4-2vqv",
             "https://github.com/dotnet/announcements/issues/494",
             "https://github.com/google/brotli",
             "https://github.com/google/brotli/commit/0ed4268a4401abcb4472096340477cf4af7d1a2b",
@@ -11231,6 +11232,7 @@
             "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
             "https://opensourcemalware.com/blog/node2shell-affects-python",
             "https://patchtheplanet.org/brotli",
+            "https://pkg.go.dev/vuln/GO-2026-6888",
             "https://pypi.org/project/Brotli",
             "https://pypi.org/project/brotlicffi",
             "https://ubuntu.com/security/notices/USN-8956-1",
